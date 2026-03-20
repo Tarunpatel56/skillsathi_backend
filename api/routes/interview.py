@@ -12,7 +12,7 @@ from core.prompts import (
     ANSWER_EVALUATION_PROMPT,
 )
 from api.deps import get_groq_service
-from services.groq_service import GroqService
+from services.groq_service import GroqService, GroqServiceError
 
 router = APIRouter(prefix="/interview", tags=["Interview Prep"])
 
@@ -32,6 +32,8 @@ async def start_interview(
         )
         reply = await groq.chat(INTERVIEW_COACH_SYSTEM, prompt)
         return {"success": True, "question": reply, "feedback": None}
+    except GroqServiceError as e:
+        raise HTTPException(status_code=e.status_code, detail=e.message)
     except Exception as e:
         print(f"❌ Interview start error: {e}")
         raise HTTPException(status_code=500, detail=str(e))
@@ -52,6 +54,8 @@ async def submit_answer(
         )
         reply = await groq.chat(INTERVIEW_COACH_SYSTEM, prompt)
         return {"success": True, "question": reply, "feedback": None}
+    except GroqServiceError as e:
+        raise HTTPException(status_code=e.status_code, detail=e.message)
     except Exception as e:
         print(f"❌ Interview answer error: {e}")
         raise HTTPException(status_code=500, detail=str(e))
@@ -71,6 +75,8 @@ async def evaluate_answer(
         )
         result = await groq.chat_json(INTERVIEW_COACH_SYSTEM, prompt)
         return {"success": True, "data": result}
+    except GroqServiceError as e:
+        raise HTTPException(status_code=e.status_code, detail=e.message)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
@@ -88,5 +94,7 @@ async def get_common_questions(
         )
         result = await groq.chat_json(INTERVIEW_COACH_SYSTEM, prompt)
         return {"success": True, "data": result}
+    except GroqServiceError as e:
+        raise HTTPException(status_code=e.status_code, detail=e.message)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

@@ -18,7 +18,7 @@ from core.prompts import (
     LESSON_TEST_PROMPT,
 )
 from api.deps import get_groq_service
-from services.groq_service import GroqService
+from services.groq_service import GroqService, GroqServiceError
 import json
 
 router = APIRouter(prefix="/english", tags=["English Learning"])
@@ -42,6 +42,8 @@ async def english_chat(
         system = ENGLISH_TEACHER_SYSTEM + f"\n\nUser's level: {req.level}" + lang_instruction
         reply = await groq.chat(system, req.message)
         return ChatResponse(response=reply)
+    except GroqServiceError as e:
+        raise HTTPException(status_code=e.status_code, detail=e.message)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
@@ -56,6 +58,8 @@ async def grammar_check(
         prompt = GRAMMAR_CHECK_PROMPT.format(text=req.text)
         result = await groq.chat_json(ENGLISH_TEACHER_SYSTEM, prompt)
         return {"success": True, "data": result}
+    except GroqServiceError as e:
+        raise HTTPException(status_code=e.status_code, detail=e.message)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
@@ -70,6 +74,8 @@ async def generate_vocabulary(
         prompt = VOCABULARY_PROMPT.format(count=req.count, level=req.level)
         result = await groq.chat_json(ENGLISH_TEACHER_SYSTEM, prompt)
         return {"success": True, "data": result}
+    except GroqServiceError as e:
+        raise HTTPException(status_code=e.status_code, detail=e.message)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
@@ -84,6 +90,8 @@ async def translate_text(
         prompt = f"Translate the following from {req.source_lang} to {req.target_lang}:\n\n{req.text}"
         reply = await groq.chat(ENGLISH_TEACHER_SYSTEM, prompt, temperature=0.3)
         return ChatResponse(response=reply)
+    except GroqServiceError as e:
+        raise HTTPException(status_code=e.status_code, detail=e.message)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
@@ -102,6 +110,8 @@ async def check_sentence(
         )
         result = await groq.chat_json(ENGLISH_TEACHER_SYSTEM, prompt)
         return {"success": True, "data": result}
+    except GroqServiceError as e:
+        raise HTTPException(status_code=e.status_code, detail=e.message)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
@@ -131,6 +141,8 @@ async def generate_lesson_test(
         )
         result = await groq.chat_json(ENGLISH_TEACHER_SYSTEM, prompt)
         return {"success": True, "data": result, "is_retry": is_retry}
+    except GroqServiceError as e:
+        raise HTTPException(status_code=e.status_code, detail=e.message)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
@@ -172,6 +184,8 @@ Return a JSON with:
 """
         result = await groq.chat_json(ENGLISH_TEACHER_SYSTEM, prompt)
         return {"success": True, "evaluation": result}
+    except GroqServiceError as e:
+        raise HTTPException(status_code=e.status_code, detail=e.message)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
@@ -324,5 +338,7 @@ async def generate_lesson(
             result["total_lessons"] = len(topics)
 
         return result
+    except GroqServiceError as e:
+        raise HTTPException(status_code=e.status_code, detail=e.message)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

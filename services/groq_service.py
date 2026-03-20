@@ -1,39 +1,80 @@
 """
-Groq API service – handles all LLM calls.
+Groq API service - handles all LLM calls.
 """
 import json
+
+from groq import Groq
+
 from core.config import settings
 
-try:
-    from groq import Groq
-except ImportError:  # pragma: no cover - depends on local environment
-    Groq = None
+
+class GroqServiceError(Exception):
+    """Raised when the Groq provider rejects a request or config is invalid."""
+
+    def __init__(self, message: str, status_code: int = 502):
+        super().__init__(message)
+        self.message = message
+        self.status_code = status_code
 
 
 class GroqService:
     """Wrapper around the Groq SDK for chat completions."""
 
     def __init__(self):
-        self._client = None
-        self.model = settings.GROQ_MODEL
-        self.max_tokens = settings.GROQ_MAX_TOKENS
-        self.temperature = settings.GROQ_TEMPERATURE
+        self.client = None
+        self.api_key = ""
+        self.model = ""
+        self.max_tokens = 0
+        self.temperature = 0.0
+        self._refresh_client()
 
-    def ensure_available(self) -> None:
-        """Validate SDK and API key before handling a request."""
-        if Groq is None:
-            raise RuntimeError(
-                "Groq SDK is not installed. Run `pip install -r requirements.txt` in edusarthi_backend."
-            )
+    def _refresh_client(self):
+        """Reload `.env` values and rebuild the SDK client if config changed."""
+        settings.reload()
+
         if not settings.GROQ_API_KEY:
-            raise RuntimeError("GROQ_API_KEY is missing in the backend environment.")
+            raise GroqServiceError(
+                "Groq API key is missing. Set `GROQ_API_KEY` in the backend `.env` file.",
+                status_code=500,
+            )
 
-    @property
-    def client(self):
-        self.ensure_available()
-        if self._client is None:
-            self._client = Groq(api_key=settings.GROQ_API_KEY)
-        return self._client
+        config_changed = (
+            self.client is None
+            or self.api_key != settings.GROQ_API_KEY
+            or self.model != settings.GROQ_MODEL
+            or self.max_tokens != settings.GROQ_MAX_TOKENS
+            or self.temperature != settings.GROQ_TEMPERATURE
+        )
+
+        if config_changed:
+            self.client = Groq(api_key=settings.GROQ_API_KEY)
+            self.api_key = settings.GROQ_API_KEY
+            self.model = settings.GROQ_MODEL
+            self.max_tokens = settings.GROQ_MAX_TOKENS
+            self.temperature = settings.GROQ_TEMPERATURE
+
+    @staticmethod
+    def _wrap_error(error: Exception) -> GroqServiceError:
+        message = str(error)
+        lowered = message.lower()
+
+        if "organization_restricted" in lowered:
+            return GroqServiceError(
+                "The current Groq account is restricted. Please use a different Groq API key or contact Groq support for this account.",
+                status_code=503,
+            )
+
+        if (
+            "invalid api key" in lowered
+            or "authentication" in lowered
+            or "unauthorized" in lowered
+        ):
+            return GroqServiceError(
+                "Groq API key is invalid or unauthorized. Update `GROQ_API_KEY` in the backend `.env` and retry.",
+                status_code=401,
+            )
+
+        return GroqServiceError(f"Groq API error: {message}")
 
     async def chat(
         self,
@@ -44,6 +85,7 @@ class GroqService:
     ) -> str:
         """Send a chat completion request and return the assistant's reply."""
         try:
+            self._refresh_client()
             response = self.client.chat.completions.create(
                 model=self.model,
                 messages=[
@@ -54,8 +96,10 @@ class GroqService:
                 max_tokens=max_tokens or self.max_tokens,
             )
             return response.choices[0].message.content
-        except Exception as e:
-            raise Exception(f"Groq API error: {str(e)}")
+        except Exception as error:
+            if isinstance(error, GroqServiceError):
+                raise
+            raise self._wrap_error(error) from error
 
     async def chat_with_history(
         self,
@@ -66,6 +110,7 @@ class GroqService:
     ) -> str:
         """Chat completion with full message history for multi-turn conversations."""
         try:
+            self._refresh_client()
             all_messages = [{"role": "system", "content": system_prompt}] + messages
             response = self.client.chat.completions.create(
                 model=self.model,
@@ -74,8 +119,10 @@ class GroqService:
                 max_tokens=max_tokens or self.max_tokens,
             )
             return response.choices[0].message.content
-        except Exception as e:
-            raise Exception(f"Groq API error: {str(e)}")
+        except Exception as error:
+            if isinstance(error, GroqServiceError):
+                raise
+            raise self._wrap_error(error) from error
 
     async def chat_json(
         self,
@@ -85,9 +132,7 @@ class GroqService:
     ) -> dict:
         """Send a chat request and parse the response as JSON."""
         raw = await self.chat(system_prompt, user_message, temperature)
-        # Try to extract JSON from the response
         try:
-            # Handle markdown-wrapped JSON (```json ... ```)
             if "```json" in raw:
                 raw = raw.split("```json")[1].split("```")[0].strip()
             elif "```" in raw:
@@ -97,5 +142,4 @@ class GroqService:
             return {"raw_response": raw}
 
 
-# Singleton instance
 groq_service = GroqService()

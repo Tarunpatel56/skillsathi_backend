@@ -11,7 +11,7 @@ Powered by Groq LLM (LLaMA 3.3)
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from core.config import settings
-from api.routes import english, interview, aptitude, signaling, ai_tutor
+from api.routes import english, interview, aptitude
 
 # ── App Setup ─────────────────────────────────
 app = FastAPI(
@@ -35,8 +35,6 @@ app.add_middleware(
 app.include_router(english.router, prefix="/api/v1")
 app.include_router(interview.router, prefix="/api/v1")
 app.include_router(aptitude.router, prefix="/api/v1")
-app.include_router(signaling.router, prefix="/api/v1")
-app.include_router(ai_tutor.router, prefix="/api/v1")
 
 
 # ── Health Check ─────────────────────────────
@@ -51,20 +49,13 @@ async def root():
             "english": "/api/v1/english",
             "interview": "/api/v1/interview",
             "aptitude": "/api/v1/aptitude",
-            "ai_tutor": "/api/v1/ai-tutor",
-            "signaling_ws": "ws://<host>:8000/api/v1/ws/signaling",
-            "rooms": "/api/v1/rooms",
         },
     }
 
 
 @app.get("/health", tags=["Health"])
 async def health_check():
-    return {
-        "status": "healthy",
-        "groq_configured": bool(settings.GROQ_API_KEY),
-        "gemini_configured": bool(settings.GEMINI_API_KEY),
-    }
+    return {"status": "healthy", "groq_configured": bool(settings.GROQ_API_KEY)}
 
 
 # ── Run with Uvicorn ─────────────────────────

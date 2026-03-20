@@ -12,7 +12,7 @@ from core.prompts import (
     EVALUATE_QUIZ_PROMPT,
 )
 from api.deps import get_groq_service
-from services.groq_service import GroqService
+from services.groq_service import GroqService, GroqServiceError
 import json
 
 router = APIRouter(prefix="/aptitude", tags=["Aptitude & Quizzes"])
@@ -37,6 +37,8 @@ async def generate_quiz(
             "difficulty": req.difficulty,
             "questions": result if isinstance(result, list) else result.get("questions", result),
         }
+    except GroqServiceError as e:
+        raise HTTPException(status_code=e.status_code, detail=e.message)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
@@ -53,6 +55,8 @@ async def submit_quiz(
         )
         result = await groq.chat_json(APTITUDE_MASTER_SYSTEM, prompt)
         return {"success": True, "evaluation": result}
+    except GroqServiceError as e:
+        raise HTTPException(status_code=e.status_code, detail=e.message)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
