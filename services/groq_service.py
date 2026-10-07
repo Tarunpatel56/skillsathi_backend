@@ -131,15 +131,26 @@ class GroqService:
         temperature: float | None = None,
     ) -> dict:
         """Send a chat request and parse the response as JSON."""
+        # Force JSON response via prompt engineering to ensure safety across models
+        system_prompt += "\n\nIMPORTANT: You must return ONLY valid JSON. Do not wrap it in markdown block if possible, or if you do, use ```json ... ```."
         raw = await self.chat(system_prompt, user_message, temperature)
         try:
-            if "```json" in raw:
-                raw = raw.split("```json")[1].split("```")[0].strip()
-            elif "```" in raw:
-                raw = raw.split("```")[1].split("```")[0].strip()
-            return json.loads(raw)
-        except json.JSONDecodeError:
-            return {"raw_response": raw}
+            # Clean up potential markdown formatting and tags
+            cleaned = raw.strip()
+            if cleaned.startswith("```json"):
+                cleaned = cleaned.split("```json", 1)[1]
+                if "```" in cleaned:
+                    cleaned = cleaned.rsplit("```", 1)[0]
+            elif cleaned.startswith("```"):
+                cleaned = cleaned.split("```", 1)[1]
+                if "```" in cleaned:
+                    cleaned = cleaned.rsplit("```", 1)[0]
+            
+            cleaned = cleaned.strip()
+            return json.loads(cleaned)
+        except json.JSONDecodeError as e:
+            print(f"❌ JSON Decode Error: {e}\nRaw Response: {raw}")
+            return {"raw_response": raw, "error": str(e)}
 
 
 groq_service = GroqService()
