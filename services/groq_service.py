@@ -132,18 +132,23 @@ class GroqService:
     ) -> dict:
         """Send a chat request and parse the response as JSON."""
         # Force JSON response via prompt engineering to ensure safety across models
-        system_prompt += "\n\nIMPORTANT: You must return ONLY valid JSON. Do not wrap it in markdown block if possible, or if you do, use ```json ... ```."
+        system_prompt += (
+            "\n\nIMPORTANT: You must return ONLY valid JSON. "
+            "Do not use LaTeX or backslashes in any string values. "
+            "Write math expressions in plain text only (e.g. '7/9' not '\\frac{7}{9}'). "
+            "Do not wrap the JSON in markdown code blocks."
+        )
         raw = await self.chat(system_prompt, user_message, temperature)
         try:
-            # Clean up potential markdown formatting and tags
             import re
             cleaned = raw.strip()
-            # 1. Try markdown code block first
+
+            # 1. Extract from markdown code block if present
             match = re.search(r'```(?:json)?\s*([\s\S]*?)```', cleaned)
             if match:
                 cleaned = match.group(1).strip()
             else:
-                # 2. Find the first JSON boundary character and last closing character
+                # 2. Find the outermost JSON boundaries
                 start_idx = cleaned.find('[')
                 start_dict = cleaned.find('{')
                 if start_idx != -1 and start_dict != -1:
@@ -155,7 +160,34 @@ class GroqService:
                     end_dict = cleaned.rfind('}')
                     end = max(end_idx, end_dict)
                     if end != -1 and end > start:
-                        cleaned = cleaned[start:end+1]
+                        cleaned = cleaned[start:end + 1]
+
+            # 3. Fix invalid JSON escape sequences produced by AI math content.
+            #    JSON only allows: \" \\ \/ \b \f \n \r \t \uXXXX
+            #    Any other \X is invalid and must be replaced with the literal char.
+            def _fix_escapes(s: str) -> str:
+                valid_escapes = set('"\\\/bfnrtu')
+                result = []
+                i = 0
+                while i < len(s):
+                    if s[i] == '\\' and i + 1 < len(s):
+                        next_char = s[i + 1]
+                        if next_char in valid_escapes:
+                            # Valid escape – keep both characters
+                            result.append(s[i])
+                            result.append(next_char)
+                            i += 2
+                        else:
+                            # Invalid escape – drop the backslash, keep the char
+                            result.append(next_char)
+                            i += 2
+                    else:
+                        result.append(s[i])
+                        i += 1
+                return ''.join(result)
+
+            cleaned = _fix_escapes(cleaned)
+
             return json.loads(cleaned)
         except json.JSONDecodeError as e:
             print(f"❌ JSON Decode Error: {e}\nRaw Response: {raw}")
