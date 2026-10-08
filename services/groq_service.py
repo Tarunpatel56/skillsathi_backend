@@ -124,6 +124,34 @@ class GroqService:
                 raise
             raise self._wrap_error(error) from error
 
+    async def _chat_raw(
+        self,
+        system_prompt: str,
+        user_message: str,
+        temperature: float | None = None,
+        response_format: dict | None = None,
+    ) -> str:
+        """Low-level chat call. Optionally passes response_format to the Groq API."""
+        try:
+            self._refresh_client()
+            kwargs = dict(
+                model=self.model,
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_message},
+                ],
+                temperature=temperature if temperature is not None else self.temperature,
+                max_tokens=self.max_tokens,
+            )
+            if response_format:
+                kwargs["response_format"] = response_format
+            response = self.client.chat.completions.create(**kwargs)
+            return response.choices[0].message.content or ""
+        except Exception as error:
+            if isinstance(error, GroqServiceError):
+                raise
+            raise self._wrap_error(error) from error
+
     async def chat_json(
         self,
         system_prompt: str,
@@ -131,92 +159,97 @@ class GroqService:
         temperature: float | None = None,
         max_retries: int = 3,
     ) -> dict:
-        """Send a chat request and parse the response as JSON.
+        """Send a chat request and return parsed JSON.
 
-        Retries up to *max_retries* times on empty or unparseable responses.
-        Also sanitises invalid JSON escape sequences that AI math content can produce.
+        Strategy:
+        1. Try Groq native JSON mode (response_format=json_object) – guarantees
+           valid JSON at the API level; no prompt tricks needed.
+        2. If the model doesn't support JSON mode (raises an error), fall back to
+           plain text with escape sanitisation + retry loop.
         """
         import re
 
-        # Append a concise JSON-only instruction without confusing the model.
+        # ── Instruction that works for both JSON-mode and text-mode ──────────
         json_instruction = (
-            "\n\nRESPOND WITH VALID JSON ONLY. "
-            "No markdown fences. No explanatory text before or after the JSON. "
-            "Do NOT use backslashes in string values (write fractions as '7/9', not '\\frac{7}{9}')."
+            "\n\nYou MUST respond with valid JSON only. "
+            "No markdown. No prose. Just the raw JSON structure requested. "
+            "For math, write plain text (e.g. '7/9', not LaTeX)."
         )
         full_system = system_prompt + json_instruction
 
+        # ── Attempt 1: native JSON mode ───────────────────────────────────────
+        try:
+            raw = await self._chat_raw(
+                full_system,
+                user_message,
+                temperature,
+                response_format={"type": "json_object"},
+            )
+            if raw and raw.strip():
+                return json.loads(raw)           # API already guarantees valid JSON
+        except (GroqServiceError, Exception) as e:
+            # JSON mode not supported by this model – fall through to text mode
+            print(f"⚠️  JSON mode unavailable ({e}); falling back to text mode.")
+
+        # ── Fallback: text mode with sanitisation + retries ───────────────────
         last_error: Exception = ValueError("No attempts made")
 
         for attempt in range(1, max_retries + 1):
-            raw = await self.chat(full_system, user_message, temperature)
+            raw = await self._chat_raw(full_system, user_message, temperature)
 
-            # Guard: empty response from the model
             if not raw or not raw.strip():
-                print(f"⚠️  Attempt {attempt}: AI returned empty response. Retrying…")
+                print(f"⚠️  Attempt {attempt}/{max_retries}: empty response. Retrying…")
                 last_error = ValueError("AI returned an empty response.")
                 continue
 
             try:
                 cleaned = raw.strip()
 
-                # 1. Strip markdown code fences if present
+                # Strip markdown fences
                 match = re.search(r'```(?:json)?\s*([\s\S]*?)```', cleaned)
                 if match:
                     cleaned = match.group(1).strip()
                 else:
-                    # 2. Trim to the outermost JSON structure
-                    start_arr = cleaned.find('[')
-                    start_obj = cleaned.find('{')
-                    if start_arr != -1 and start_obj != -1:
-                        start = min(start_arr, start_obj)
+                    # Trim to outermost JSON boundary
+                    s_arr, s_obj = cleaned.find('['), cleaned.find('{')
+                    if s_arr != -1 and s_obj != -1:
+                        start = min(s_arr, s_obj)
                     else:
-                        start = max(start_arr, start_obj)
-
+                        start = max(s_arr, s_obj)
                     if start != -1:
-                        end_arr = cleaned.rfind(']')
-                        end_obj = cleaned.rfind('}')
-                        end = max(end_arr, end_obj)
-                        if end != -1 and end > start:
+                        e_arr, e_obj = cleaned.rfind(']'), cleaned.rfind('}')
+                        end = max(e_arr, e_obj)
+                        if end > start:
                             cleaned = cleaned[start:end + 1]
 
-                # Guard: still empty after trimming
                 if not cleaned:
-                    raise ValueError("JSON body is empty after cleaning.")
+                    raise ValueError("JSON body empty after trimming.")
 
-                # 3. Fix invalid JSON escape sequences.
-                #    Valid JSON escapes: \" \\ \/ \b \f \n \r \t \uXXXX
-                #    Everything else (e.g. \f from \frac, \t from \times) must be
-                #    replaced by the bare character so json.loads succeeds.
+                # Fix invalid escape sequences (\frac → frac, \times → times, …)
+                # JSON allows: \" \\ \/ \b \f \n \r \t \uXXXX  – everything else is stripped.
                 def _fix_escapes(s: str) -> str:
                     valid = set('"\\\/bfnrtu')
                     out, i = [], 0
                     while i < len(s):
                         if s[i] == '\\' and i + 1 < len(s):
                             nxt = s[i + 1]
-                            if nxt in valid:
-                                out.append(s[i])
-                                out.append(nxt)
-                            else:
-                                # Drop the backslash; keep the next character.
-                                out.append(nxt)
+                            out.append(s[i] if nxt in valid else '')
+                            out.append(nxt)
                             i += 2
                         else:
                             out.append(s[i])
                             i += 1
                     return ''.join(out)
 
-                cleaned = _fix_escapes(cleaned)
-
-                return json.loads(cleaned)
+                return json.loads(_fix_escapes(cleaned))
 
             except (json.JSONDecodeError, ValueError) as e:
-                print(f"⚠️  Attempt {attempt}: JSON parse error – {e}\nRaw: {raw[:300]}")
+                print(f"⚠️  Attempt {attempt}/{max_retries}: parse error – {e}\nRaw[:300]: {raw[:300]}")
                 last_error = e
-                # Retry on parse failure
 
-        # All attempts exhausted
-        raise ValueError(f"AI returned invalid JSON after {max_retries} attempts: {last_error}")
+        raise ValueError(
+            f"AI returned invalid JSON after {max_retries} attempts. Last error: {last_error}"
+        )
 
 
 groq_service = GroqService()
