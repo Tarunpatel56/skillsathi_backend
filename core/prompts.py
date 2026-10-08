@@ -250,6 +250,13 @@ For each question provide:
 - "explanation": step-by-step solution
 - "topic": sub-topic category
 
+IMPORTANT FORMATTING RULES (apply to ALL difficulty levels):
+- Write ALL math in plain text. NO LaTeX. NO backslashes.
+- Use: 'sqrt(16)' not '\\sqrt{{16}}', 'pi' not '\\pi', '7/9' not '\\frac{{7}}{{9}}'
+- Use: '<=' not '\\leq', '>=' not '\\geq', 'x' not '\\times', '%' not percent symbol
+- Use '^' for powers: '2^3 = 8', not '2³'
+- This rule is MANDATORY even for hard difficulty.
+
 Return as a JSON array.
 """
 

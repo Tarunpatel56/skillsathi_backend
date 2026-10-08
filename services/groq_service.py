@@ -173,7 +173,10 @@ class GroqService:
         json_instruction = (
             "\n\nYou MUST respond with valid JSON only. "
             "No markdown. No prose. Just the raw JSON structure requested. "
-            "For math, write plain text (e.g. '7/9', not LaTeX)."
+            "CRITICAL: Do NOT use LaTeX or backslashes in string values. "
+            "Write ALL math in plain text: use 'sqrt(16)' not '\\sqrt{16}', "
+            "'pi' not '\\pi', '7/9' not '\\frac{7}{9}', "
+            "'<=' not '\\leq', '>=' not '\\geq', 'x' not '\\times'."
         )
         full_system = system_prompt + json_instruction
 
@@ -225,23 +228,17 @@ class GroqService:
                 if not cleaned:
                     raise ValueError("JSON body empty after trimming.")
 
-                # Fix invalid escape sequences (\frac → frac, \times → times, …)
-                # JSON allows: \" \\ \/ \b \f \n \r \t \uXXXX  – everything else is stripped.
-                def _fix_escapes(s: str) -> str:
-                    valid = set('"\\\/bfnrtu')
-                    out, i = [], 0
-                    while i < len(s):
-                        if s[i] == '\\' and i + 1 < len(s):
-                            nxt = s[i + 1]
-                            out.append(s[i] if nxt in valid else '')
-                            out.append(nxt)
-                            i += 2
-                        else:
-                            out.append(s[i])
-                            i += 1
-                    return ''.join(out)
+                # ── Robust regex-based escape sanitiser ──────────────────────
+                # JSON only allows: \" \\ \/ \b \f \n \r \t \uXXXX
+                # Step 1: drop the backslash for any \X where X is NOT one of the
+                #         valid single-char JSON escape characters.
+                #         Handles: \sqrt → sqrt, \pi → pi, \div → div, \leq → leq …
+                cleaned = re.sub(r'\\([^"\\/bfnrtu])', r'\1', cleaned)
+                # Step 2: \u not followed by exactly 4 hex digits is also invalid.
+                #         e.g. "unequal" written as \unequal → uunequal after this.
+                cleaned = re.sub(r'\\u(?![0-9a-fA-F]{4})', 'u', cleaned)
 
-                return json.loads(_fix_escapes(cleaned))
+                return json.loads(cleaned)
 
             except (json.JSONDecodeError, ValueError) as e:
                 print(f"⚠️  Attempt {attempt}/{max_retries}: parse error – {e}\nRaw[:300]: {raw[:300]}")
