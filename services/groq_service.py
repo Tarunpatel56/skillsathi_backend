@@ -136,21 +136,30 @@ class GroqService:
         raw = await self.chat(system_prompt, user_message, temperature)
         try:
             # Clean up potential markdown formatting and tags
+            import re
             cleaned = raw.strip()
-            if cleaned.startswith("```json"):
-                cleaned = cleaned.split("```json", 1)[1]
-                if "```" in cleaned:
-                    cleaned = cleaned.rsplit("```", 1)[0]
-            elif cleaned.startswith("```"):
-                cleaned = cleaned.split("```", 1)[1]
-                if "```" in cleaned:
-                    cleaned = cleaned.rsplit("```", 1)[0]
-            
-            cleaned = cleaned.strip()
+            # 1. Try markdown code block first
+            match = re.search(r'```(?:json)?\s*([\s\S]*?)```', cleaned)
+            if match:
+                cleaned = match.group(1).strip()
+            else:
+                # 2. Find the first JSON boundary character and last closing character
+                start_idx = cleaned.find('[')
+                start_dict = cleaned.find('{')
+                if start_idx != -1 and start_dict != -1:
+                    start = min(start_idx, start_dict)
+                else:
+                    start = max(start_idx, start_dict)
+                if start != -1:
+                    end_idx = cleaned.rfind(']')
+                    end_dict = cleaned.rfind('}')
+                    end = max(end_idx, end_dict)
+                    if end != -1 and end > start:
+                        cleaned = cleaned[start:end+1]
             return json.loads(cleaned)
         except json.JSONDecodeError as e:
             print(f"❌ JSON Decode Error: {e}\nRaw Response: {raw}")
-            return {"raw_response": raw, "error": str(e)}
+            raise ValueError(f"AI returned invalid JSON: {e}. Raw: {raw[:200]}")
 
 
 groq_service = GroqService()
