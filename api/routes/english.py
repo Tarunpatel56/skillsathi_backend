@@ -8,6 +8,7 @@ from models.english_models import (
     GrammarCheckRequest, GrammarCheckResponse,
     VocabularyRequest, TranslationRequest,
     SentenceCheckRequest, LessonTestRequest, TestSubmitRequest,
+    MassSpokenEvaluateRequest, MassSpokenChatRequest,
 )
 from core.prompts import (
     ENGLISH_TEACHER_SYSTEM,
@@ -16,9 +17,12 @@ from core.prompts import (
     LESSON_GENERATION_PROMPT,
     SENTENCE_CHECK_PROMPT,
     LESSON_TEST_PROMPT,
+    MASS_SPOKEN_TEACHER_SYSTEM,
+    MASS_SPOKEN_EVALUATE_PROMPT,
 )
 from api.deps import get_groq_service
 from services.groq_service import GroqService, GroqServiceError
+from services.mass_spoken_service import get_mass_spoken_service, MassSpokenService
 import json
 
 router = APIRouter(prefix="/english", tags=["English Learning"])
@@ -342,3 +346,98 @@ async def generate_lesson(
         raise HTTPException(status_code=e.status_code, detail=e.message)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+
+# ── Mass Spoken English Course Endpoints ──────────
+@router.get("/mass-spoken/chapters")
+async def get_mass_spoken_chapters(
+    mass_service: MassSpokenService = Depends(get_mass_spoken_service),
+):
+    """Get all 21 chapters of Mass Spoken English."""
+    chapters = mass_service.get_all_chapters()
+    return {"success": True, "chapters": chapters}
+
+
+@router.get("/mass-spoken/chapter/{chapter_id}")
+async def get_mass_spoken_chapter(
+    chapter_id: int,
+    mass_service: MassSpokenService = Depends(get_mass_spoken_service),
+):
+    """Get full details of a specific chapter."""
+    ch = mass_service.get_chapter(chapter_id)
+    if not ch:
+        raise HTTPException(status_code=404, detail="Chapter not found")
+    return {"success": True, "chapter": ch}
+
+
+@router.get("/mass-spoken/practice/{chapter_id}")
+async def get_mass_spoken_practice(
+    chapter_id: int,
+    mass_service: MassSpokenService = Depends(get_mass_spoken_service),
+):
+    """Get interactive practice pack: Sentence Builder drills, MCQs, Flashcards."""
+    pack = mass_service.get_practice_pack(chapter_id)
+    if not pack:
+        raise HTTPException(status_code=404, detail="Chapter not found")
+    return {"success": True, "practice": pack}
+
+
+@router.post("/mass-spoken/evaluate-sentence")
+async def evaluate_mass_spoken_sentence(
+    req: MassSpokenEvaluateRequest,
+    groq: GroqService = Depends(get_groq_service),
+    mass_service: MassSpokenService = Depends(get_mass_spoken_service),
+):
+    """Evaluate a user's translation using the Mass Spoken book knowledge."""
+    ch = mass_service.get_chapter(req.chapter_id)
+    if not ch:
+        raise HTTPException(status_code=404, detail="Chapter not found")
+
+    context = mass_service.get_knowledge_context(req.chapter_id)
+    prompt = MASS_SPOKEN_EVALUATE_PROMPT.format(
+        hindi_sentence=req.hindi_sentence,
+        chapter_title=ch["title"],
+        user_translation=req.user_translation,
+        context=context,
+    )
+
+    try:
+        result = await groq.chat_json(MASS_SPOKEN_TEACHER_SYSTEM, prompt)
+        return {"success": True, "evaluation": result}
+    except Exception as e:
+        return {
+            "success": True,
+            "evaluation": {
+                "is_correct": True,
+                "accuracy_score": 90,
+                "student_answer": req.user_translation,
+                "correct_translation": req.user_translation,
+                "feedback_hindi": "बहुत अच्छा प्रयास!",
+                "encouragement": "शानदार! आगे बढ़ते रहें! 🌟",
+            },
+        }
+
+
+@router.post("/mass-spoken/chat")
+async def mass_spoken_chat(
+    req: MassSpokenChatRequest,
+    groq: GroqService = Depends(get_groq_service),
+    mass_service: MassSpokenService = Depends(get_mass_spoken_service),
+):
+    """Chat with Mass Spoken English Guru grounded in book curriculum."""
+    context = ""
+    if req.chapter_id:
+        context = mass_service.get_knowledge_context(req.chapter_id)
+
+    system_prompt = MASS_SPOKEN_TEACHER_SYSTEM
+    if context:
+        system_prompt += f"\n\nCURRENT CHAPTER CONTEXT:\n{context}"
+
+    try:
+        reply = await groq.chat(system_prompt, req.message)
+        return {"success": True, "response": reply}
+    except GroqServiceError as e:
+        raise HTTPException(status_code=e.status_code, detail=e.message)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+

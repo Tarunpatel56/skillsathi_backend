@@ -24,23 +24,29 @@ async def generate_quiz(
     groq: GroqService = Depends(get_groq_service),
 ):
     """Generate aptitude quiz questions based on topic and difficulty."""
-    try:
-        prompt = GENERATE_QUIZ_PROMPT.format(
-            count=req.count,
-            topic=req.topic,
-            difficulty=req.difficulty,
-        )
-        result = await groq.chat_json(APTITUDE_MASTER_SYSTEM, prompt)
-        return {
-            "success": True,
-            "topic": req.topic,
-            "difficulty": req.difficulty,
-            "questions": result if isinstance(result, list) else result.get("questions", result),
-        }
-    except GroqServiceError as e:
-        raise HTTPException(status_code=e.status_code, detail=e.message)
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+    last_err = None
+    for attempt in range(1, 4):            # up to 3 attempts at route level
+        try:
+            prompt = GENERATE_QUIZ_PROMPT.format(
+                count=req.count,
+                topic=req.topic,
+                difficulty=req.difficulty,
+            )
+            result = await groq.chat_json(APTITUDE_MASTER_SYSTEM, prompt)
+            questions = result if isinstance(result, list) else result.get("questions", result)
+            return {
+                "success": True,
+                "topic": req.topic,
+                "difficulty": req.difficulty,
+                "questions": questions,
+            }
+        except GroqServiceError as e:
+            raise HTTPException(status_code=e.status_code, detail=e.message)
+        except Exception as e:
+            last_err = e
+            print(f"⚠️  generate_quiz attempt {attempt}/3 failed: {e}")
+
+    raise HTTPException(status_code=500, detail=str(last_err))
 
 
 @router.post("/submit-quiz")

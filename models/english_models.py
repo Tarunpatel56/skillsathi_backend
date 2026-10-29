@@ -63,3 +63,17 @@ class GrammarCheckResponse(BaseModel):
     original: str
     corrected: str
     errors: list = []
+
+
+class MassSpokenEvaluateRequest(BaseModel):
+    """Request to evaluate a user's translation for a Mass Spoken chapter."""
+    chapter_id: int = Field(..., ge=1, le=25)
+    hindi_sentence: str = Field(..., min_length=1)
+    user_translation: str = Field(..., min_length=1)
+
+
+class MassSpokenChatRequest(BaseModel):
+    """Chat with the Mass Spoken English AI Guru."""
+    message: str = Field(..., min_length=1)
+    chapter_id: Optional[int] = Field(None, description="Optional chapter ID context")
+

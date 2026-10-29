@@ -1,0 +1,6158 @@
+{
+  "metadata": {
+    "source": "Mass Spoken English Complete Course",
+    "total_chapters": 21,
+    "total_pages": 150,
+    "description": "Comprehensive Hindi-to-English Spoken English Course with formulas, examples, worksheets, and interactive drills."
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Self Introduction",
+      "hindi_title": "अपना परिचय देना सीखें",
+      "category": "Foundation",
+      "level": "beginner",
+      "emoji": "👋",
+      "page_start": 3,
+      "page_end": 5,
+      "definition": "जब भी हम किसी इंटरव्यू, ऑफिस मीटिंग, फैमिली गैदरिंग या नए लोगों से मिलते हैं, तो हमें अपना परिचय (Self Introduction) देना होता है। Mass Spoken तरीके से स्टेप-बाय-स्टेप परिचय देना सबसे आसान है।",
+      "structures": [
+        {
+          "name": "Formal Greeting",
+          "formula": "Good morning / Good afternoon / Good evening Sir/Madam",
+          "hindi": "बड़ों व फॉर्मल जगह पर"
+        },
+        {
+          "name": "Name",
+          "formula": "My name is [Full Name] / I am [Name]",
+          "hindi": "नाम बताने का सही तरीका"
+        },
+        {
+          "name": "Place",
+          "formula": "I belong to [City] / I am from [City]",
+          "hindi": "कहाँ से हैं"
+        },
+        {
+          "name": "Qualification",
+          "formula": "I have completed [Degree] / I am pursuing [Course]",
+          "hindi": "पढ़ाई व शिक्षा"
+        },
+        {
+          "name": "Closing",
+          "formula": "That's all about me, thank you!",
+          "hindi": "परिचय समाप्त करने का तरीका"
+        }
+      ],
+      "golden_rules": [
+        "कभी भी 'Myself Rohit' न कहें – यह व्याकरण की दृष्टि से गलत है। 'My name is...' या 'I am...' कहें।",
+        "उम्र या एडजेक्टिव जोड़ें: 'I am punctual, self-motivated and hardworking.'",
+        "अंत में हमेशा 'That's all about me, thank you' कहकर धन्यवाद दें।"
+      ],
+      "vocabulary": [
+        {
+          "word": "Punctual",
+          "meaning": "समय का पाबंद",
+          "example": "I am a punctual person."
+        },
+        {
+          "word": "Self-motivated",
+          "meaning": "खुद से प्रेरित",
+          "example": "She is self-motivated."
+        },
+        {
+          "word": "Belong to",
+          "meaning": "का निवासी होना",
+          "example": "I belong to Patna."
+        },
+        {
+          "word": "Pursuing",
+          "meaning": "कर रहा हूँ / जारी है",
+          "example": "I am pursuing graduation."
+        }
+      ],
+      "manual_examples": [
+        {
+          "hindi": "मेरा नाम रोहित कुमार है।",
+          "english": "My name is Rohit Kumar."
+        },
+        {
+          "hindi": "मैं पटना, बिहार से हूँ।",
+          "english": "I belong to Patna, Bihar."
+        },
+        {
+          "hindi": "मैं एक शिक्षक हूँ।",
+          "english": "I am a teacher."
+        },
+        {
+          "hindi": "मैंने पटना विश्वविद्यालय से स्नातक पूरा किया है।",
+          "english": "I have completed graduation from Patna University."
+        },
+        {
+          "hindi": "मेरी रुचि किताबें पढ़ने में है।",
+          "english": "My hobby is reading books."
+        },
+        {
+          "hindi": "मेरी ताकत मेरा संचार कौशल है।",
+          "english": "My strength is my communication skill."
+        },
+        {
+          "hindi": "मैं समय का पाबंद और मेहनती हूँ।",
+          "english": "I am punctual and hardworking."
+        },
+        {
+          "hindi": "मेरे बारे में बस इतना ही, धन्यवाद।",
+          "english": "That's all about me, thank you."
+        }
+      ],
+      "examples": [
+        {
+          "hindi": "मेरा नाम रोहित कुमार है।",
+          "english": "My name is Rohit Kumar."
+        },
+        {
+          "hindi": "मैं पटना, बिहार से हूँ।",
+          "english": "I belong to Patna, Bihar."
+        },
+        {
+          "hindi": "मैं एक शिक्षक हूँ।",
+          "english": "I am a teacher."
+        },
+        {
+          "hindi": "मैंने पटना विश्वविद्यालय से स्नातक पूरा किया है।",
+          "english": "I have completed graduation from Patna University."
+        },
+        {
+          "hindi": "मेरी रुचि किताबें पढ़ने में है।",
+          "english": "My hobby is reading books."
+        },
+        {
+          "hindi": "मेरी ताकत मेरा संचार कौशल है।",
+          "english": "My strength is my communication skill."
+        },
+        {
+          "hindi": "मैं समय का पाबंद और मेहनती हूँ।",
+          "english": "I am punctual and hardworking."
+        },
+        {
+          "hindi": "मेरे बारे में बस इतना ही, धन्यवाद।",
+          "english": "That's all about me, thank you."
+        }
+      ],
+      "sentence_builder_drills": [
+        {
+          "hindi": "मेरा नाम रोहित कुमार है।",
+          "english": "My name is Rohit Kumar.",
+          "target_words": [
+            "My",
+            "name",
+            "is",
+            "Rohit",
+            "Kumar"
+          ],
+          "scrambled_words": [
+            "Rohit",
+            "Kumar",
+            "name",
+            "My",
+            "is"
+          ]
+        },
+        {
+          "hindi": "मैं पटना, बिहार से हूँ।",
+          "english": "I belong to Patna, Bihar.",
+          "target_words": [
+            "I",
+            "belong",
+            "to",
+            "Patna,",
+            "Bihar"
+          ],
+          "scrambled_words": [
+            "Patna,",
+            "belong",
+            "I",
+            "to",
+            "Bihar"
+          ]
+        },
+        {
+          "hindi": "मैं एक शिक्षक हूँ।",
+          "english": "I am a teacher.",
+          "target_words": [
+            "I",
+            "am",
+            "a",
+            "teacher"
+          ],
+          "scrambled_words": [
+            "teacher",
+            "I",
+            "a",
+            "am"
+          ]
+        },
+        {
+          "hindi": "मैंने पटना विश्वविद्यालय से स्नातक पूरा किया है।",
+          "english": "I have completed graduation from Patna University.",
+          "target_words": [
+            "I",
+            "have",
+            "completed",
+            "graduation",
+            "from",
+            "Patna",
+            "University"
+          ],
+          "scrambled_words": [
+            "graduation",
+            "Patna",
+            "have",
+            "University",
+            "I",
+            "from",
+            "completed"
+          ]
+        },
+        {
+          "hindi": "मेरी रुचि किताबें पढ़ने में है।",
+          "english": "My hobby is reading books.",
+          "target_words": [
+            "My",
+            "hobby",
+            "is",
+            "reading",
+            "books"
+          ],
+          "scrambled_words": [
+            "hobby",
+            "books",
+            "reading",
+            "is",
+            "My"
+          ]
+        },
+        {
+          "hindi": "मेरी ताकत मेरा संचार कौशल है।",
+          "english": "My strength is my communication skill.",
+          "target_words": [
+            "My",
+            "strength",
+            "is",
+            "my",
+            "communication",
+            "skill"
+          ],
+          "scrambled_words": [
+            "communication",
+            "is",
+            "strength",
+            "my",
+            "skill",
+            "My"
+          ]
+        }
+      ],
+      "worksheet_quiz": [
+        {
+          "id": 1,
+          "question": "Translate into English: 'मेरा नाम रोहित कुमार है।'",
+          "hindi_sentence": "मेरा नाम रोहित कुमार है।",
+          "options": [
+            "name My is Rohit Kumar.",
+            "My name was Rohit Kumar.",
+            "My name is Rohit Kumar."
+          ],
+          "correct_answer": "My name is Rohit Kumar.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'My name is Rohit Kumar.' है।"
+        },
+        {
+          "id": 2,
+          "question": "Translate into English: 'मैं पटना, बिहार से हूँ।'",
+          "hindi_sentence": "मैं पटना, बिहार से हूँ।",
+          "options": [
+            "belong I to Patna, Bihar.",
+            "I belong for Patna, Bihar.",
+            "I belong to Patna, Bihar."
+          ],
+          "correct_answer": "I belong to Patna, Bihar.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'I belong to Patna, Bihar.' है।"
+        },
+        {
+          "id": 3,
+          "question": "Translate into English: 'मैं एक शिक्षक हूँ।'",
+          "hindi_sentence": "मैं एक शिक्षक हूँ।",
+          "options": [
+            "am I a teacher.",
+            "I am a teacher."
+          ],
+          "correct_answer": "I am a teacher.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'I am a teacher.' है।"
+        },
+        {
+          "id": 4,
+          "question": "Translate into English: 'मैंने पटना विश्वविद्यालय से स्नातक पूरा किया है।'",
+          "hindi_sentence": "मैंने पटना विश्वविद्यालय से स्नातक पूरा किया है।",
+          "options": [
+            "have I completed graduation from Patna University.",
+            "I have completed graduation from Patna University."
+          ],
+          "correct_answer": "I have completed graduation from Patna University.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'I have completed graduation from Patna University.' है।"
+        },
+        {
+          "id": 5,
+          "question": "Translate into English: 'मेरी रुचि किताबें पढ़ने में है।'",
+          "hindi_sentence": "मेरी रुचि किताबें पढ़ने में है।",
+          "options": [
+            "My hobby is reading books.",
+            "hobby My is reading books.",
+            "My hobby was reading books."
+          ],
+          "correct_answer": "My hobby is reading books.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'My hobby is reading books.' है।"
+        },
+        {
+          "id": 6,
+          "question": "Translate into English: 'मेरी ताकत मेरा संचार कौशल है।'",
+          "hindi_sentence": "मेरी ताकत मेरा संचार कौशल है।",
+          "options": [
+            "strength My is my communication skill.",
+            "My strength is my communication skill.",
+            "My strength was my communication skill."
+          ],
+          "correct_answer": "My strength is my communication skill.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'My strength is my communication skill.' है।"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Basics of English",
+      "hindi_title": "अंग्रेजी की बुनियाद (वर्णमाला और कर्ता)",
+      "category": "Foundation",
+      "level": "beginner",
+      "emoji": "📖",
+      "page_start": 6,
+      "page_end": 7,
+      "definition": "अंग्रेजी वर्णमाला (Alphabet) में कुल 26 अक्षरस होते हैं। इन्हें दो भागों में बांटा गया है: Vowels (स्वर) 5 (A, E, I, O, U) और Consonants (व्यंजन) 21। इसके अलावा 'Y' को Semi-vowel कहा जाता है क्योंकि इसका उच्चारण कभी स्वर तो कभी व्यंजन जैसा होता है।",
+      "structures": [
+        {
+          "name": "Singular Subject",
+          "formula": "He (वह - लड़का), She (वह - लड़की), It (यह/वह), Single Name (राम)",
+          "hindi": "एकवचन कर्ता"
+        },
+        {
+          "name": "Plural Subject",
+          "formula": "I (मैं), We (हम), You (तुम/आप), They (वे), 2 Names (राम और रहीम)",
+          "hindi": "बहुवचन कर्ता"
+        }
+      ],
+      "golden_rules": [
+        "Trick: EDUCATION शब्द में पांचों Vowels (A, E, I, O, U) आते हैं!",
+        "Semi-vowel 'Y': University में 'य' (Consonant sound) है, जबकि Cry में 'ई' (Vowel sound) है।",
+        "अंग्रेजी का कोई भी वाक्य बिना Subject और Verb के अधूरा होता है।"
+      ],
+      "vocabulary": [
+        {
+          "word": "Subject",
+          "meaning": "कर्ता (काम करने वाला)",
+          "example": "He is the subject of this sentence."
+        },
+        {
+          "word": "Vowel",
+          "meaning": "स्वर (A, E, I, O, U)",
+          "example": "There are five vowels."
+        },
+        {
+          "word": "Consonant",
+          "meaning": "व्यंजन",
+          "example": "There are 21 consonants in English."
+        }
+      ],
+      "manual_examples": [
+        {
+          "hindi": "वह स्कूल जाता है।",
+          "english": "He goes to school."
+        },
+        {
+          "hindi": "हम अंग्रेजी सीखते हैं।",
+          "english": "We learn English."
+        },
+        {
+          "hindi": "तुम एक अच्छे विद्यार्थी हो।",
+          "english": "You are a good student."
+        },
+        {
+          "hindi": "यह एक सुंदर बगीचा है।",
+          "english": "It is a beautiful garden."
+        },
+        {
+          "hindi": "वे क्रिकेट खेलते हैं।",
+          "english": "They play cricket."
+        },
+        {
+          "hindi": "राम और रहीम दोस्त हैं।",
+          "english": "Ram and Rahim are friends."
+        }
+      ],
+      "examples": [
+        {
+          "hindi": "वह स्कूल जाता है।",
+          "english": "He goes to school."
+        },
+        {
+          "hindi": "हम अंग्रेजी सीखते हैं।",
+          "english": "We learn English."
+        },
+        {
+          "hindi": "तुम एक अच्छे विद्यार्थी हो।",
+          "english": "You are a good student."
+        },
+        {
+          "hindi": "यह एक सुंदर बगीचा है।",
+          "english": "It is a beautiful garden."
+        },
+        {
+          "hindi": "वे क्रिकेट खेलते हैं।",
+          "english": "They play cricket."
+        },
+        {
+          "hindi": "राम और रहीम दोस्त हैं।",
+          "english": "Ram and Rahim are friends."
+        }
+      ],
+      "sentence_builder_drills": [
+        {
+          "hindi": "वह स्कूल जाता है।",
+          "english": "He goes to school.",
+          "target_words": [
+            "He",
+            "goes",
+            "to",
+            "school"
+          ],
+          "scrambled_words": [
+            "school",
+            "goes",
+            "He",
+            "to"
+          ]
+        },
+        {
+          "hindi": "हम अंग्रेजी सीखते हैं।",
+          "english": "We learn English.",
+          "target_words": [
+            "We",
+            "learn",
+            "English"
+          ],
+          "scrambled_words": [
+            "English",
+            "learn",
+            "We"
+          ]
+        },
+        {
+          "hindi": "तुम एक अच्छे विद्यार्थी हो।",
+          "english": "You are a good student.",
+          "target_words": [
+            "You",
+            "are",
+            "a",
+            "good",
+            "student"
+          ],
+          "scrambled_words": [
+            "student",
+            "You",
+            "are",
+            "a",
+            "good"
+          ]
+        },
+        {
+          "hindi": "यह एक सुंदर बगीचा है।",
+          "english": "It is a beautiful garden.",
+          "target_words": [
+            "It",
+            "is",
+            "a",
+            "beautiful",
+            "garden"
+          ],
+          "scrambled_words": [
+            "is",
+            "a",
+            "garden",
+            "beautiful",
+            "It"
+          ]
+        },
+        {
+          "hindi": "वे क्रिकेट खेलते हैं।",
+          "english": "They play cricket.",
+          "target_words": [
+            "They",
+            "play",
+            "cricket"
+          ],
+          "scrambled_words": [
+            "cricket",
+            "play",
+            "They"
+          ]
+        },
+        {
+          "hindi": "राम और रहीम दोस्त हैं।",
+          "english": "Ram and Rahim are friends.",
+          "target_words": [
+            "Ram",
+            "and",
+            "Rahim",
+            "are",
+            "friends"
+          ],
+          "scrambled_words": [
+            "are",
+            "and",
+            "Ram",
+            "Rahim",
+            "friends"
+          ]
+        }
+      ],
+      "worksheet_quiz": [
+        {
+          "id": 1,
+          "question": "Translate into English: 'वह स्कूल जाता है।'",
+          "hindi_sentence": "वह स्कूल जाता है।",
+          "options": [
+            "goes He to school.",
+            "He goes for school.",
+            "He goes to school."
+          ],
+          "correct_answer": "He goes to school.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He goes to school.' है।"
+        },
+        {
+          "id": 2,
+          "question": "Translate into English: 'हम अंग्रेजी सीखते हैं।'",
+          "hindi_sentence": "हम अंग्रेजी सीखते हैं।",
+          "options": [
+            "learn We English.",
+            "We learn Englwash.",
+            "We learn English."
+          ],
+          "correct_answer": "We learn English.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'We learn English.' है।"
+        },
+        {
+          "id": 3,
+          "question": "Translate into English: 'तुम एक अच्छे विद्यार्थी हो।'",
+          "hindi_sentence": "तुम एक अच्छे विद्यार्थी हो।",
+          "options": [
+            "are You a good student.",
+            "You are a good student."
+          ],
+          "correct_answer": "You are a good student.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'You are a good student.' है।"
+        },
+        {
+          "id": 4,
+          "question": "Translate into English: 'यह एक सुंदर बगीचा है।'",
+          "hindi_sentence": "यह एक सुंदर बगीचा है।",
+          "options": [
+            "It is a beautiful garden.",
+            "is It a beautiful garden.",
+            "It was a beautiful garden."
+          ],
+          "correct_answer": "It is a beautiful garden.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'It is a beautiful garden.' है।"
+        },
+        {
+          "id": 5,
+          "question": "Translate into English: 'वे क्रिकेट खेलते हैं।'",
+          "hindi_sentence": "वे क्रिकेट खेलते हैं।",
+          "options": [
+            "play They cricket.",
+            "They play cricket."
+          ],
+          "correct_answer": "They play cricket.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'They play cricket.' है।"
+        },
+        {
+          "id": 6,
+          "question": "Translate into English: 'राम और रहीम दोस्त हैं।'",
+          "hindi_sentence": "राम और रहीम दोस्त हैं।",
+          "options": [
+            "Ram and Rahim are friends.",
+            "and Ram Rahim are friends."
+          ],
+          "correct_answer": "Ram and Rahim are friends.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Ram and Rahim are friends.' है।"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Greetings",
+      "hindi_title": "अभिवादन के वाक्य (Greetings & Manners)",
+      "category": "Foundation",
+      "level": "beginner",
+      "emoji": "🤝",
+      "page_start": 8,
+      "page_end": 8,
+      "definition": "बोलचाल में अभिवादन (Greetings) सबसे महत्वपूर्ण हिस्सा है। समय और रिश्ते के अनुसार सही अभिवादन शब्द का प्रयोग किया जाता है।",
+      "structures": [
+        {
+          "name": "Morning (सुबह से 12 बजे तक)",
+          "formula": "Good morning [Father/Mother/Sir/Madam]!",
+          "hindi": "सुबह का अभिवादन"
+        },
+        {
+          "name": "Afternoon (12 से शाम 5 बजे तक)",
+          "formula": "Good afternoon [Sir/Brother/Madam]!",
+          "hindi": "दोपहर का अभिवादन"
+        },
+        {
+          "name": "Evening (शाम 5 बजे के बाद)",
+          "formula": "Good evening [Everyone/Sir/Father]!",
+          "hindi": "शाम को मिलने पर"
+        },
+        {
+          "name": "Night Departure (रात को विदा लेते समय)",
+          "formula": "Good night / Sweet dreams!",
+          "hindi": "रात को विदा लेते समय"
+        },
+        {
+          "name": "Informal (दोस्तों के साथ)",
+          "formula": "Hi / Hello / Goodbye guys / Farewell dear!",
+          "hindi": "अनौपचारिक अभिवादन"
+        }
+      ],
+      "golden_rules": [
+        "रात 8 या 9 बजे भी जब किसी से पहली बार मिलते हैं, तो 'Good evening' ही बोलते हैं, 'Good night' केवल विदा लेते समय बोला जाता है!",
+        "दिन में विदा लेते समय 'Good day to you, Sir' या 'Have a nice day' बोलें।"
+      ],
+      "vocabulary": [
+        {
+          "word": "Greeting",
+          "meaning": "अभिवादन",
+          "example": "Always start with a warm greeting."
+        },
+        {
+          "word": "Farewell",
+          "meaning": "विदाई",
+          "example": "Farewell dear friend!"
+        },
+        {
+          "word": "Pleasure",
+          "meaning": "खुशी",
+          "example": "Pleasure meeting you."
+        }
+      ],
+      "manual_examples": [
+        {
+          "hindi": "नमस्ते माताजी!",
+          "english": "Good morning Mother!"
+        },
+        {
+          "hindi": "नमस्ते सर!",
+          "english": "Good afternoon Sir!"
+        },
+        {
+          "hindi": "नमस्ते पिताजी!",
+          "english": "Good evening father!"
+        },
+        {
+          "hindi": "शुभ रात्रि!",
+          "english": "Good night!"
+        },
+        {
+          "hindi": "अच्छा चलते हैं दोस्तों!",
+          "english": "Goodbye guys!"
+        },
+        {
+          "hindi": "अलविदा प्रिय मित्र!",
+          "english": "Farewell dear friend!"
+        },
+        {
+          "hindi": "आपका दिन शुभ हो सर!",
+          "english": "Good day to you Sir!"
+        },
+        {
+          "hindi": "हैलो राहुल, कैसे हो?",
+          "english": "Hello Rahul, how are you?"
+        }
+      ],
+      "examples": [
+        {
+          "hindi": "नमस्ते माताजी!",
+          "english": "Good morning Mother!"
+        },
+        {
+          "hindi": "नमस्ते सर!",
+          "english": "Good afternoon Sir!"
+        },
+        {
+          "hindi": "नमस्ते पिताजी!",
+          "english": "Good evening father!"
+        },
+        {
+          "hindi": "शुभ रात्रि!",
+          "english": "Good night!"
+        },
+        {
+          "hindi": "अच्छा चलते हैं दोस्तों!",
+          "english": "Goodbye guys!"
+        },
+        {
+          "hindi": "अलविदा प्रिय मित्र!",
+          "english": "Farewell dear friend!"
+        },
+        {
+          "hindi": "आपका दिन शुभ हो सर!",
+          "english": "Good day to you Sir!"
+        },
+        {
+          "hindi": "हैलो राहुल, कैसे हो?",
+          "english": "Hello Rahul, how are you?"
+        }
+      ],
+      "sentence_builder_drills": [
+        {
+          "hindi": "नमस्ते माताजी!",
+          "english": "Good morning Mother!",
+          "target_words": [
+            "Good",
+            "morning",
+            "Mother"
+          ],
+          "scrambled_words": [
+            "morning",
+            "Good",
+            "Mother"
+          ]
+        },
+        {
+          "hindi": "नमस्ते सर!",
+          "english": "Good afternoon Sir!",
+          "target_words": [
+            "Good",
+            "afternoon",
+            "Sir"
+          ],
+          "scrambled_words": [
+            "afternoon",
+            "Good",
+            "Sir"
+          ]
+        },
+        {
+          "hindi": "नमस्ते पिताजी!",
+          "english": "Good evening father!",
+          "target_words": [
+            "Good",
+            "evening",
+            "father"
+          ],
+          "scrambled_words": [
+            "evening",
+            "Good",
+            "father"
+          ]
+        },
+        {
+          "hindi": "शुभ रात्रि!",
+          "english": "Good night!",
+          "target_words": [
+            "Good",
+            "night"
+          ],
+          "scrambled_words": [
+            "night",
+            "Good"
+          ]
+        },
+        {
+          "hindi": "अच्छा चलते हैं दोस्तों!",
+          "english": "Goodbye guys!",
+          "target_words": [
+            "Goodbye",
+            "guys"
+          ],
+          "scrambled_words": [
+            "Goodbye",
+            "guys"
+          ]
+        },
+        {
+          "hindi": "अलविदा प्रिय मित्र!",
+          "english": "Farewell dear friend!",
+          "target_words": [
+            "Farewell",
+            "dear",
+            "friend"
+          ],
+          "scrambled_words": [
+            "friend",
+            "Farewell",
+            "dear"
+          ]
+        }
+      ],
+      "worksheet_quiz": [
+        {
+          "id": 1,
+          "question": "Translate into English: 'नमस्ते माताजी!'",
+          "hindi_sentence": "नमस्ते माताजी!",
+          "options": [
+            "morning Good Mother!",
+            "Good morning Mother!"
+          ],
+          "correct_answer": "Good morning Mother!",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Good morning Mother!' है।"
+        },
+        {
+          "id": 2,
+          "question": "Translate into English: 'नमस्ते सर!'",
+          "hindi_sentence": "नमस्ते सर!",
+          "options": [
+            "afternoon Good Sir!",
+            "Good afternoon Sir!"
+          ],
+          "correct_answer": "Good afternoon Sir!",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Good afternoon Sir!' है।"
+        },
+        {
+          "id": 3,
+          "question": "Translate into English: 'नमस्ते पिताजी!'",
+          "hindi_sentence": "नमस्ते पिताजी!",
+          "options": [
+            "Good evening father!",
+            "evening Good father!"
+          ],
+          "correct_answer": "Good evening father!",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Good evening father!' है।"
+        },
+        {
+          "id": 4,
+          "question": "Translate into English: 'शुभ रात्रि!'",
+          "hindi_sentence": "शुभ रात्रि!",
+          "options": [
+            "Good night!"
+          ],
+          "correct_answer": "Good night!",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Good night!' है।"
+        },
+        {
+          "id": 5,
+          "question": "Translate into English: 'अच्छा चलते हैं दोस्तों!'",
+          "hindi_sentence": "अच्छा चलते हैं दोस्तों!",
+          "options": [
+            "Goodbye guys!"
+          ],
+          "correct_answer": "Goodbye guys!",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Goodbye guys!' है।"
+        },
+        {
+          "id": 6,
+          "question": "Translate into English: 'अलविदा प्रिय मित्र!'",
+          "hindi_sentence": "अलविदा प्रिय मित्र!",
+          "options": [
+            "dear Farewell friend!",
+            "Farewell dear friend!"
+          ],
+          "correct_answer": "Farewell dear friend!",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Farewell dear friend!' है।"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Be Verb (is, am, are, was, were, will be)",
+      "hindi_title": "स्थिति या होना (Be Verb)",
+      "category": "Core Grammar",
+      "level": "beginner",
+      "emoji": "✨",
+      "page_start": 9,
+      "page_end": 14,
+      "definition": "जब हमें किसी व्यक्ति, वस्तु या स्थान की स्थिति (State of being), गुण या पहचान बतानी हो (कोई काम नहीं हो रहा हो), तब Be Verb का प्रयोग किया जाता है।",
+      "structures": [
+        {
+          "name": "Present Affirmative",
+          "formula": "Sub + is / am / are + Obj",
+          "hindi": "वर्तमान: है / हूँ / हो"
+        },
+        {
+          "name": "Present Negative",
+          "formula": "Sub + is / am / are + not + Obj",
+          "hindi": "वर्तमान: नहीं है"
+        },
+        {
+          "name": "Present Interrogative",
+          "formula": "Is / Am / Are + Sub + Obj?",
+          "hindi": "वर्तमान: क्या... है?"
+        },
+        {
+          "name": "Past Affirmative",
+          "formula": "Sub + was / were + Obj",
+          "hindi": "भूतकाल: था / थी / थे"
+        },
+        {
+          "name": "Past Negative",
+          "formula": "Sub + was / were + not + Obj",
+          "hindi": "भूतकाल: नहीं था"
+        },
+        {
+          "name": "Future Affirmative",
+          "formula": "Sub + will be + Obj",
+          "hindi": "भविष्य: होगा / बनेगा / रहेगी"
+        }
+      ],
+      "golden_rules": [
+        "He / She / It / Singular Name के साथ Present में 'is' और Past में 'was' लगता है।",
+        "I के साथ Present में 'am' और Past में 'was' लगता है।",
+        "You / We / They / Plural के साथ Present में 'are' और Past में 'were' लगता है।",
+        "भविष्य में सभी Subjects के साथ 'will be' का प्रयोग किया जाता है।"
+      ],
+      "vocabulary": [
+        {
+          "word": "Clever",
+          "meaning": "चालाक / होशियार",
+          "example": "He is very clever."
+        },
+        {
+          "word": "Naughty",
+          "meaning": "शरारती",
+          "example": "The child is naughty."
+        },
+        {
+          "word": "Religious",
+          "meaning": "धार्मिक",
+          "example": "She is very religious."
+        },
+        {
+          "word": "Absent",
+          "meaning": "अनुपस्थित",
+          "example": "She was absent yesterday."
+        }
+      ],
+      "examples": [
+        {
+          "hindi": "वह वहुत चालाक नहीं है",
+          "english": "He is not very clever."
+        },
+        {
+          "hindi": "वह वहुत शरारती है",
+          "english": "He is so naughty."
+        },
+        {
+          "hindi": "वह एक पुलिस ऑफिसर है",
+          "english": "He is a police officer."
+        },
+        {
+          "hindi": "मैं विमान चालक हूँ",
+          "english": "am a pilot."
+        },
+        {
+          "hindi": "मेरा भाई मेहनती लड़का नहींं है",
+          "english": "My brother is not hardworking boy."
+        },
+        {
+          "hindi": "मॉस स्टडी आपके लिए अच्छी है",
+          "english": "Mass Study is good for you."
+        },
+        {
+          "hindi": "i8, परिस्थितियां ज्यादा बुरी नहींं है",
+          "english": "ituation are not worst."
+        },
+        {
+          "hindi": "वह नाराज नहीं था",
+          "english": "He was not angry."
+        },
+        {
+          "hindi": "क्या वह नाराज था ?",
+          "english": "as he angry ?"
+        },
+        {
+          "hindi": "क्या वह नाराज नहीं था ?",
+          "english": "as he not angry ?"
+        },
+        {
+          "hindi": "वह नाराज क्‍यों था ?",
+          "english": "hy was he angry ?"
+        },
+        {
+          "hindi": "वह नाराज क्‍यों नहींं था ?",
+          "english": "hy was he not angry ?"
+        }
+      ],
+      "sentence_builder_drills": [
+        {
+          "hindi": "वह वहुत चालाक नहीं है",
+          "english": "He is not very clever.",
+          "target_words": [
+            "He",
+            "is",
+            "not",
+            "very",
+            "clever"
+          ],
+          "scrambled_words": [
+            "is",
+            "clever",
+            "very",
+            "not",
+            "He"
+          ]
+        },
+        {
+          "hindi": "वह वहुत शरारती है",
+          "english": "He is so naughty.",
+          "target_words": [
+            "He",
+            "is",
+            "so",
+            "naughty"
+          ],
+          "scrambled_words": [
+            "is",
+            "He",
+            "naughty",
+            "so"
+          ]
+        },
+        {
+          "hindi": "वह एक पुलिस ऑफिसर है",
+          "english": "He is a police officer.",
+          "target_words": [
+            "He",
+            "is",
+            "a",
+            "police",
+            "officer"
+          ],
+          "scrambled_words": [
+            "is",
+            "officer",
+            "police",
+            "a",
+            "He"
+          ]
+        },
+        {
+          "hindi": "मैं विमान चालक हूँ",
+          "english": "am a pilot.",
+          "target_words": [
+            "am",
+            "a",
+            "pilot"
+          ],
+          "scrambled_words": [
+            "a",
+            "am",
+            "pilot"
+          ]
+        },
+        {
+          "hindi": "मेरा भाई मेहनती लड़का नहींं है",
+          "english": "My brother is not hardworking boy.",
+          "target_words": [
+            "My",
+            "brother",
+            "is",
+            "not",
+            "hardworking",
+            "boy"
+          ],
+          "scrambled_words": [
+            "brother",
+            "hardworking",
+            "is",
+            "boy",
+            "My",
+            "not"
+          ]
+        },
+        {
+          "hindi": "मॉस स्टडी आपके लिए अच्छी है",
+          "english": "Mass Study is good for you.",
+          "target_words": [
+            "Mass",
+            "Study",
+            "is",
+            "good",
+            "for",
+            "you"
+          ],
+          "scrambled_words": [
+            "Mass",
+            "for",
+            "you",
+            "is",
+            "good",
+            "Study"
+          ]
+        }
+      ],
+      "worksheet_quiz": [
+        {
+          "id": 1,
+          "question": "Translate into English: 'वह वहुत चालाक नहीं है'",
+          "hindi_sentence": "वह वहुत चालाक नहीं है",
+          "options": [
+            "He was not very clever.",
+            "is He not very clever.",
+            "He is not very clever."
+          ],
+          "correct_answer": "He is not very clever.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He is not very clever.' है।"
+        },
+        {
+          "id": 2,
+          "question": "Translate into English: 'वह वहुत शरारती है'",
+          "hindi_sentence": "वह वहुत शरारती है",
+          "options": [
+            "He is so naughty.",
+            "is He so naughty.",
+            "He was so naughty."
+          ],
+          "correct_answer": "He is so naughty.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He is so naughty.' है।"
+        },
+        {
+          "id": 3,
+          "question": "Translate into English: 'वह एक पुलिस ऑफिसर है'",
+          "hindi_sentence": "वह एक पुलिस ऑफिसर है",
+          "options": [
+            "is He a police officer.",
+            "He is a police officer.",
+            "He was a police officer."
+          ],
+          "correct_answer": "He is a police officer.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He is a police officer.' है।"
+        },
+        {
+          "id": 4,
+          "question": "Translate into English: 'मैं विमान चालक हूँ'",
+          "hindi_sentence": "मैं विमान चालक हूँ",
+          "options": [
+            "am a pilot.",
+            "a am pilot."
+          ],
+          "correct_answer": "am a pilot.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'am a pilot.' है।"
+        },
+        {
+          "id": 5,
+          "question": "Translate into English: 'मेरा भाई मेहनती लड़का नहींं है'",
+          "hindi_sentence": "मेरा भाई मेहनती लड़का नहींं है",
+          "options": [
+            "My brother was not hardworking boy.",
+            "brother My is not hardworking boy.",
+            "My brother is not hardworking boy."
+          ],
+          "correct_answer": "My brother is not hardworking boy.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'My brother is not hardworking boy.' है।"
+        },
+        {
+          "id": 6,
+          "question": "Translate into English: 'मॉस स्टडी आपके लिए अच्छी है'",
+          "hindi_sentence": "मॉस स्टडी आपके लिए अच्छी है",
+          "options": [
+            "Mass Study is good for you.",
+            "Mass Study was good for you.",
+            "Study Mass is good for you."
+          ],
+          "correct_answer": "Mass Study is good for you.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Mass Study is good for you.' है।"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Imperative Sentences",
+      "hindi_title": "आदेश, सलाह और निवेदन (Imperative)",
+      "category": "Daily Expressions",
+      "level": "beginner",
+      "emoji": "📢",
+      "page_start": 15,
+      "page_end": 18,
+      "definition": "जब हम किसी को कोई आदेश (Order), सलाह (Advice), निर्देश (Instruction) या निवेदन (Request) करते हैं, तब Imperative Sentences का प्रयोग करते हैं। इनमें Subject (You) छिपा रहता है और वाक्य सीधे Verb से शुरू होता है।",
+      "structures": [
+        {
+          "name": "Order / Advice",
+          "formula": "V1 + Object",
+          "hindi": "ऐसा करो"
+        },
+        {
+          "name": "Prohibition (मना करना)",
+          "formula": "Don't + V1 + Object",
+          "hindi": "ऐसा मत करो"
+        },
+        {
+          "name": "Polite Request",
+          "formula": "Please + V1 + Object / Kindly + V1 + Object",
+          "hindi": "कृपया ऐसा करें"
+        },
+        {
+          "name": "Always / Never",
+          "formula": "Always + V1 + Object / Never + V1 + Object",
+          "hindi": "हमेशा / कभी नहीं"
+        }
+      ],
+      "golden_rules": [
+        "Imperative वाक्यों में क्रिया का पहला रूप (V1) ही प्रयोग होता है।",
+        "मना करने के लिए हमेशा 'Don't' से वाक्य शुरू करें, जैसे: 'Don't shout!'",
+        "विनम्रता के लिए वाक्य के शुरू या अंत में 'Please' जोड़ें।"
+      ],
+      "vocabulary": [
+        {
+          "word": "Peep",
+          "meaning": "झांकना",
+          "example": "Don't peep into his house."
+        },
+        {
+          "word": "Drag",
+          "meaning": "घसीटना",
+          "example": "Don't drag the table."
+        },
+        {
+          "word": "Make fun",
+          "meaning": "मजाक उड़ाना / मस्ती करना",
+          "example": "Don't make fun of others."
+        },
+        {
+          "word": "Quarrel",
+          "meaning": "झगड़ा करना",
+          "example": "Don't quarrel with friends."
+        }
+      ],
+      "examples": [
+        {
+          "hindi": "यहाँ कचरा फेक दो",
+          "english": "Throw away this rubbish."
+        },
+        {
+          "hindi": "दरवाजा बंद कर दो",
+          "english": "Shut the door."
+        },
+        {
+          "hindi": "डॉक्टर के पास जाओ",
+          "english": "Go to the Doctor."
+        },
+        {
+          "hindi": "बड़ा सोचो बड़ा करो",
+          "english": "Think big do big."
+        },
+        {
+          "hindi": "उस पेड़ को अभी हिलाओ",
+          "english": "Move that tree now."
+        },
+        {
+          "hindi": "गेट की चाबी लाओ",
+          "english": "Bring the key of gate."
+        },
+        {
+          "hindi": "उस लड़के के साथ ठहलो",
+          "english": "tay with that boy."
+        },
+        {
+          "hindi": "मोबाइल को साइलेंट मोड़ में रखो",
+          "english": "Keep the mobile in silent mode."
+        },
+        {
+          "hindi": "मेरे साथ मत चलो",
+          "english": "Don't walk with me."
+        },
+        {
+          "hindi": "कक्षा के दौरान यहाँ पर मोबाइल मत चलाओ",
+          "english": "During the class do not operate mobile."
+        },
+        {
+          "hindi": "दादाजी के कमरे में मस्ती मत करो",
+          "english": "Don't make fun in grandpa's room."
+        },
+        {
+          "hindi": "स्कूल में ईधर-उधर मत घुमो",
+          "english": "Don't go here and there in school."
+        }
+      ],
+      "sentence_builder_drills": [
+        {
+          "hindi": "यहाँ कचरा फेक दो",
+          "english": "Throw away this rubbish.",
+          "target_words": [
+            "Throw",
+            "away",
+            "this",
+            "rubbish"
+          ],
+          "scrambled_words": [
+            "away",
+            "Throw",
+            "this",
+            "rubbish"
+          ]
+        },
+        {
+          "hindi": "दरवाजा बंद कर दो",
+          "english": "Shut the door.",
+          "target_words": [
+            "Shut",
+            "the",
+            "door"
+          ],
+          "scrambled_words": [
+            "the",
+            "Shut",
+            "door"
+          ]
+        },
+        {
+          "hindi": "डॉक्टर के पास जाओ",
+          "english": "Go to the Doctor.",
+          "target_words": [
+            "Go",
+            "to",
+            "the",
+            "Doctor"
+          ],
+          "scrambled_words": [
+            "to",
+            "Go",
+            "Doctor",
+            "the"
+          ]
+        },
+        {
+          "hindi": "बड़ा सोचो बड़ा करो",
+          "english": "Think big do big.",
+          "target_words": [
+            "Think",
+            "big",
+            "do",
+            "big"
+          ],
+          "scrambled_words": [
+            "big",
+            "big",
+            "Think",
+            "do"
+          ]
+        },
+        {
+          "hindi": "उस पेड़ को अभी हिलाओ",
+          "english": "Move that tree now.",
+          "target_words": [
+            "Move",
+            "that",
+            "tree",
+            "now"
+          ],
+          "scrambled_words": [
+            "Move",
+            "tree",
+            "now",
+            "that"
+          ]
+        },
+        {
+          "hindi": "गेट की चाबी लाओ",
+          "english": "Bring the key of gate.",
+          "target_words": [
+            "Bring",
+            "the",
+            "key",
+            "of",
+            "gate"
+          ],
+          "scrambled_words": [
+            "the",
+            "of",
+            "key",
+            "Bring",
+            "gate"
+          ]
+        }
+      ],
+      "worksheet_quiz": [
+        {
+          "id": 1,
+          "question": "Translate into English: 'यहाँ कचरा फेक दो'",
+          "hindi_sentence": "यहाँ कचरा फेक दो",
+          "options": [
+            "Throw away this rubbish.",
+            "away Throw this rubbish.",
+            "Throw away thwas rubbwash."
+          ],
+          "correct_answer": "Throw away this rubbish.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Throw away this rubbish.' है।"
+        },
+        {
+          "id": 2,
+          "question": "Translate into English: 'दरवाजा बंद कर दो'",
+          "hindi_sentence": "दरवाजा बंद कर दो",
+          "options": [
+            "the Shut door.",
+            "Shut the door."
+          ],
+          "correct_answer": "Shut the door.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Shut the door.' है।"
+        },
+        {
+          "id": 3,
+          "question": "Translate into English: 'डॉक्टर के पास जाओ'",
+          "hindi_sentence": "डॉक्टर के पास जाओ",
+          "options": [
+            "Go for the Docforr.",
+            "Go to the Doctor.",
+            "to Go the Doctor."
+          ],
+          "correct_answer": "Go to the Doctor.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Go to the Doctor.' है।"
+        },
+        {
+          "id": 4,
+          "question": "Translate into English: 'बड़ा सोचो बड़ा करो'",
+          "hindi_sentence": "बड़ा सोचो बड़ा करो",
+          "options": [
+            "big Think do big.",
+            "Think big do big."
+          ],
+          "correct_answer": "Think big do big.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Think big do big.' है।"
+        },
+        {
+          "id": 5,
+          "question": "Translate into English: 'उस पेड़ को अभी हिलाओ'",
+          "hindi_sentence": "उस पेड़ को अभी हिलाओ",
+          "options": [
+            "Move that tree now.",
+            "that Move tree now."
+          ],
+          "correct_answer": "Move that tree now.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Move that tree now.' है।"
+        },
+        {
+          "id": 6,
+          "question": "Translate into English: 'गेट की चाबी लाओ'",
+          "hindi_sentence": "गेट की चाबी लाओ",
+          "options": [
+            "the Bring key of gate.",
+            "Bring the key of gate."
+          ],
+          "correct_answer": "Bring the key of gate.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Bring the key of gate.' है।"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Has / Have / Had / Will have",
+      "hindi_title": "पास होना (Possession & Relation)",
+      "category": "Core Grammar",
+      "level": "beginner",
+      "emoji": "🔑",
+      "page_start": 19,
+      "page_end": 24,
+      "definition": "जब हमें अंग्रेजी में यह बताना हो कि हमारे पास क्या वस्तु है, रिश्ता है, बीमारी है या विशेषता है, तब Has/Have (वर्तमान), Had (भूतकाल) और Will have (भविष्य) का प्रयोग करते हैं।",
+      "structures": [
+        {
+          "name": "Present Affirmative",
+          "formula": "Sub + has / have + Object",
+          "hindi": "पास है"
+        },
+        {
+          "name": "Present Negative",
+          "formula": "Sub + does not have / do not have + Object",
+          "hindi": "पास नहीं है"
+        },
+        {
+          "name": "Present Interrogative",
+          "formula": "Do / Does + Sub + have + Object?",
+          "hindi": "क्या पास है?"
+        },
+        {
+          "name": "Past Affirmative",
+          "formula": "Sub + had + Object",
+          "hindi": "पास था"
+        },
+        {
+          "name": "Past Negative",
+          "formula": "Sub + did not have + Object",
+          "hindi": "पास नहीं था"
+        },
+        {
+          "name": "Future Affirmative",
+          "formula": "Sub + will have + Object",
+          "hindi": "पास होगा"
+        }
+      ],
+      "golden_rules": [
+        "Present में He, She, It, Singular के साथ 'has' और I, We, You, They के साथ 'have' लगता है।",
+        "Negative वाक्यों में Does not / Do not / Did not लगने के बाद हमेशा 'have' आता है, 'has' या 'had' नहीं आता!",
+        "बीमारी या सिरदर्द बताने के लिए: 'I have a headache / cold'."
+      ],
+      "vocabulary": [
+        {
+          "word": "Possession",
+          "meaning": "अधिकार / पास होना",
+          "example": "He has a new car."
+        },
+        {
+          "word": "Facilities",
+          "meaning": "सुविधाएं",
+          "example": "We have all modern facilities."
+        },
+        {
+          "word": "Satisfaction",
+          "meaning": "संतुष्टि",
+          "example": "Do you have satisfaction?"
+        },
+        {
+          "word": "Nuclear weapons",
+          "meaning": "परमाणु हथियार",
+          "example": "India has nuclear weapons."
+        }
+      ],
+      "examples": [
+        {
+          "hindi": "उसके पास लैपटॉप है",
+          "english": "He has laptop."
+        },
+        {
+          "hindi": "उसके पास अनुभव नहीं है",
+          "english": "He does not have experience."
+        },
+        {
+          "hindi": "उसके पास अनुभव क्‍यों है ?",
+          "english": "hy does he have experience ?"
+        },
+        {
+          "hindi": "उसके पास अनुभव क्‍यों नहीं है ? ‘",
+          "english": "hy does he not have experience ?"
+        },
+        {
+          "hindi": "मेरे पास 2 जोड़ी कपड़े है",
+          "english": "I have two pair of clothes."
+        },
+        {
+          "hindi": "राहुल के पास आईफोन नहीं है",
+          "english": "Rahul does not have I phone."
+        },
+        {
+          "hindi": "मेरे पास एक पुरानी तलवार है",
+          "english": "I have an old sword."
+        },
+        {
+          "hindi": "मुझे आज्ञा देने का कोई अधिकार नहीं है",
+          "english": "You don't have any right to order me."
+        },
+        {
+          "hindi": "पास कान की बाली 2",
+          "english": "I have new earring."
+        },
+        {
+          "hindi": "उसके पास मॉस स्टडी है",
+          "english": "He has Mass Study."
+        },
+        {
+          "hindi": "उसके पास कई स्वेटर है",
+          "english": "He has many sweaters."
+        },
+        {
+          "hindi": "उसके पास कई विकल्प है",
+          "english": "He has many options."
+        }
+      ],
+      "sentence_builder_drills": [
+        {
+          "hindi": "उसके पास लैपटॉप है",
+          "english": "He has laptop.",
+          "target_words": [
+            "He",
+            "has",
+            "laptop"
+          ],
+          "scrambled_words": [
+            "has",
+            "laptop",
+            "He"
+          ]
+        },
+        {
+          "hindi": "उसके पास अनुभव नहीं है",
+          "english": "He does not have experience.",
+          "target_words": [
+            "He",
+            "does",
+            "not",
+            "have",
+            "experience"
+          ],
+          "scrambled_words": [
+            "experience",
+            "He",
+            "does",
+            "not",
+            "have"
+          ]
+        },
+        {
+          "hindi": "उसके पास अनुभव क्‍यों है ?",
+          "english": "hy does he have experience ?",
+          "target_words": [
+            "hy",
+            "does",
+            "he",
+            "have",
+            "experience"
+          ],
+          "scrambled_words": [
+            "hy",
+            "experience",
+            "he",
+            "have",
+            "does"
+          ]
+        },
+        {
+          "hindi": "उसके पास अनुभव क्‍यों नहीं है ? ‘",
+          "english": "hy does he not have experience ?",
+          "target_words": [
+            "hy",
+            "does",
+            "he",
+            "not",
+            "have",
+            "experience"
+          ],
+          "scrambled_words": [
+            "does",
+            "hy",
+            "experience",
+            "have",
+            "he",
+            "not"
+          ]
+        },
+        {
+          "hindi": "मेरे पास 2 जोड़ी कपड़े है",
+          "english": "I have two pair of clothes.",
+          "target_words": [
+            "I",
+            "have",
+            "two",
+            "pair",
+            "of",
+            "clothes"
+          ],
+          "scrambled_words": [
+            "of",
+            "clothes",
+            "have",
+            "pair",
+            "I",
+            "two"
+          ]
+        },
+        {
+          "hindi": "राहुल के पास आईफोन नहीं है",
+          "english": "Rahul does not have I phone.",
+          "target_words": [
+            "Rahul",
+            "does",
+            "not",
+            "have",
+            "I",
+            "phone"
+          ],
+          "scrambled_words": [
+            "Rahul",
+            "I",
+            "phone",
+            "not",
+            "have",
+            "does"
+          ]
+        }
+      ],
+      "worksheet_quiz": [
+        {
+          "id": 1,
+          "question": "Translate into English: 'उसके पास लैपटॉप है'",
+          "hindi_sentence": "उसके पास लैपटॉप है",
+          "options": [
+            "has He laptop.",
+            "He has laptop.",
+            "He has lapforp."
+          ],
+          "correct_answer": "He has laptop.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He has laptop.' है।"
+        },
+        {
+          "id": 2,
+          "question": "Translate into English: 'उसके पास अनुभव नहीं है'",
+          "hindi_sentence": "उसके पास अनुभव नहीं है",
+          "options": [
+            "He does not have experience.",
+            "does He not have experience."
+          ],
+          "correct_answer": "He does not have experience.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He does not have experience.' है।"
+        },
+        {
+          "id": 3,
+          "question": "Translate into English: 'उसके पास अनुभव क्‍यों है ?'",
+          "hindi_sentence": "उसके पास अनुभव क्‍यों है ?",
+          "options": [
+            "does hy he have experience ?",
+            "hy does he have experience ?"
+          ],
+          "correct_answer": "hy does he have experience ?",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'hy does he have experience ?' है।"
+        },
+        {
+          "id": 4,
+          "question": "Translate into English: 'उसके पास अनुभव क्‍यों नहीं है ? ‘'",
+          "hindi_sentence": "उसके पास अनुभव क्‍यों नहीं है ? ‘",
+          "options": [
+            "hy does he not have experience ?",
+            "does hy he not have experience ?"
+          ],
+          "correct_answer": "hy does he not have experience ?",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'hy does he not have experience ?' है।"
+        },
+        {
+          "id": 5,
+          "question": "Translate into English: 'मेरे पास 2 जोड़ी कपड़े है'",
+          "hindi_sentence": "मेरे पास 2 जोड़ी कपड़े है",
+          "options": [
+            "have I two pair of clothes.",
+            "I have two pair of clothes."
+          ],
+          "correct_answer": "I have two pair of clothes.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'I have two pair of clothes.' है।"
+        },
+        {
+          "id": 6,
+          "question": "Translate into English: 'राहुल के पास आईफोन नहीं है'",
+          "hindi_sentence": "राहुल के पास आईफोन नहीं है",
+          "options": [
+            "Rahul does not have I phone.",
+            "does Rahul not have I phone."
+          ],
+          "correct_answer": "Rahul does not have I phone.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Rahul does not have I phone.' है।"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Demonstrative Pronoun (This, That, These, Those)",
+      "hindi_title": "संकेतवाचक सर्वनाम (यह, वह, ये, वो)",
+      "category": "Foundation",
+      "level": "beginner",
+      "emoji": "👉",
+      "page_start": 25,
+      "page_end": 29,
+      "definition": "वे सर्वनाम जो किसी व्यक्ति, वस्तु या स्थान की ओर इशारा (Demonstrate) करने के लिए प्रयुक्त होते हैं। पास और दूर, तथा एकवचन और बहुवचन के अनुसार इनका चुनाव किया जाता है।",
+      "structures": [
+        {
+          "name": "This (यह - पास, एकवचन)",
+          "formula": "This is / was [Object]",
+          "hindi": "यह एक किताब है - This is a book"
+        },
+        {
+          "name": "That (वह - दूर, एकवचन)",
+          "formula": "That is / was [Object]",
+          "hindi": "वह एक कार है - That is a car"
+        },
+        {
+          "name": "These (ये - पास, बहुवचन)",
+          "formula": "These are / were [Objects]",
+          "hindi": "ये मेरी किताबें हैं - These are my books"
+        },
+        {
+          "name": "Those (वे - दूर, बहुवचन)",
+          "formula": "Those are / were [Objects]",
+          "hindi": "वे लड़के हैं - Those are boys"
+        }
+      ],
+      "golden_rules": [
+        "Near (पास) + Singular (एकवचन) = THIS",
+        "Far (दूर) + Singular (एकवचन) = THAT",
+        "Near (पास) + Plural (बहुवचन) = THESE",
+        "Far (दूर) + Plural (बहुवचन) = THOSE"
+      ],
+      "vocabulary": [
+        {
+          "word": "Bangles",
+          "meaning": "चूड़ियाँ",
+          "example": "These are my bangles."
+        },
+        {
+          "word": "Restaurant",
+          "meaning": "भोजनालय / रेस्टोरेंट",
+          "example": "That is a very good restaurant."
+        },
+        {
+          "word": "Evidence",
+          "meaning": "सबूत",
+          "example": "This is important evidence."
+        }
+      ],
+      "examples": [
+        {
+          "hindi": "यह गाय है",
+          "english": "This is cow."
+        },
+        {
+          "hindi": "वह किताब है",
+          "english": "That is book."
+        },
+        {
+          "hindi": "वह सेब है",
+          "english": "That is an apple."
+        },
+        {
+          "hindi": "ये मेरे जूते है",
+          "english": "These are my shoes."
+        },
+        {
+          "hindi": "ये खिलौने",
+          "english": "These are toys."
+        },
+        {
+          "hindi": "वे आम के पेड़ है",
+          "english": "Those are mango trees."
+        },
+        {
+          "hindi": "वे चॉकलेट है",
+          "english": "Those are chocolate."
+        },
+        {
+          "hindi": "यह मेरी पुरानी पुस्तक है",
+          "english": "This is my old book."
+        },
+        {
+          "hindi": "यह मेरा बेग था",
+          "english": "This was my bag."
+        },
+        {
+          "hindi": "ये मेरे कपड़े नहीं है",
+          "english": "These are not my clothe."
+        },
+        {
+          "hindi": "यह मेरा दोस्त था",
+          "english": "This was my friend."
+        },
+        {
+          "hindi": "वो दिन थे",
+          "english": "Those were the days."
+        }
+      ],
+      "sentence_builder_drills": [
+        {
+          "hindi": "यह गाय है",
+          "english": "This is cow.",
+          "target_words": [
+            "This",
+            "is",
+            "cow"
+          ],
+          "scrambled_words": [
+            "cow",
+            "is",
+            "This"
+          ]
+        },
+        {
+          "hindi": "वह किताब है",
+          "english": "That is book.",
+          "target_words": [
+            "That",
+            "is",
+            "book"
+          ],
+          "scrambled_words": [
+            "is",
+            "That",
+            "book"
+          ]
+        },
+        {
+          "hindi": "वह सेब है",
+          "english": "That is an apple.",
+          "target_words": [
+            "That",
+            "is",
+            "an",
+            "apple"
+          ],
+          "scrambled_words": [
+            "apple",
+            "That",
+            "an",
+            "is"
+          ]
+        },
+        {
+          "hindi": "ये मेरे जूते है",
+          "english": "These are my shoes.",
+          "target_words": [
+            "These",
+            "are",
+            "my",
+            "shoes"
+          ],
+          "scrambled_words": [
+            "are",
+            "These",
+            "shoes",
+            "my"
+          ]
+        },
+        {
+          "hindi": "ये खिलौने",
+          "english": "These are toys.",
+          "target_words": [
+            "These",
+            "are",
+            "toys"
+          ],
+          "scrambled_words": [
+            "are",
+            "These",
+            "toys"
+          ]
+        },
+        {
+          "hindi": "वे आम के पेड़ है",
+          "english": "Those are mango trees.",
+          "target_words": [
+            "Those",
+            "are",
+            "mango",
+            "trees"
+          ],
+          "scrambled_words": [
+            "mango",
+            "Those",
+            "are",
+            "trees"
+          ]
+        }
+      ],
+      "worksheet_quiz": [
+        {
+          "id": 1,
+          "question": "Translate into English: 'यह गाय है'",
+          "hindi_sentence": "यह गाय है",
+          "options": [
+            "Thwas was cow.",
+            "This is cow.",
+            "is This cow."
+          ],
+          "correct_answer": "This is cow.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'This is cow.' है।"
+        },
+        {
+          "id": 2,
+          "question": "Translate into English: 'वह किताब है'",
+          "hindi_sentence": "वह किताब है",
+          "options": [
+            "That was book.",
+            "is That book.",
+            "That is book."
+          ],
+          "correct_answer": "That is book.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'That is book.' है।"
+        },
+        {
+          "id": 3,
+          "question": "Translate into English: 'वह सेब है'",
+          "hindi_sentence": "वह सेब है",
+          "options": [
+            "That is an apple.",
+            "That was an apple.",
+            "is That an apple."
+          ],
+          "correct_answer": "That is an apple.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'That is an apple.' है।"
+        },
+        {
+          "id": 4,
+          "question": "Translate into English: 'ये मेरे जूते है'",
+          "hindi_sentence": "ये मेरे जूते है",
+          "options": [
+            "are These my shoes.",
+            "These are my shoes."
+          ],
+          "correct_answer": "These are my shoes.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'These are my shoes.' है।"
+        },
+        {
+          "id": 5,
+          "question": "Translate into English: 'ये खिलौने'",
+          "hindi_sentence": "ये खिलौने",
+          "options": [
+            "These are toys.",
+            "These are forys.",
+            "are These toys."
+          ],
+          "correct_answer": "These are toys.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'These are toys.' है।"
+        },
+        {
+          "id": 6,
+          "question": "Translate into English: 'वे आम के पेड़ है'",
+          "hindi_sentence": "वे आम के पेड़ है",
+          "options": [
+            "Those are mango trees.",
+            "are Those mango trees."
+          ],
+          "correct_answer": "Those are mango trees.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Those are mango trees.' है।"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Use of Want / Wants",
+      "hindi_title": "वस्तु चाहिए / चाहना (Want & Wants)",
+      "category": "Daily Expressions",
+      "level": "beginner",
+      "emoji": "🎯",
+      "page_start": 30,
+      "page_end": 33,
+      "definition": "जब हमें वर्तमान में यह बताना हो कि हमें कोई वस्तु (Object) चाहिए या हम कुछ चाहते हैं, तब Want / Wants का प्रयोग किया जाता है।",
+      "structures": [
+        {
+          "name": "Affirmative",
+          "formula": "Sub + want / wants + Object",
+          "hindi": "मुझे किताब चाहिए - I want a book"
+        },
+        {
+          "name": "Negative",
+          "formula": "Sub + do not / does not + want + Object",
+          "hindi": "उसे पैसे नहीं चाहिए - He does not want money"
+        },
+        {
+          "name": "Interrogative",
+          "formula": "Do / Does + Sub + want + Object?",
+          "hindi": "क्या आपको पानी चाहिए? - Do you want water?"
+        },
+        {
+          "name": "WH Question",
+          "formula": "WH + do / does + Sub + want + Object?",
+          "hindi": "आपको क्या चाहिए? - What do you want?"
+        }
+      ],
+      "golden_rules": [
+        "He, She, It, Singular Name के साथ 'wants' आता है।",
+        "I, We, You, They, Plural के साथ 'want' आता है।",
+        "Does not या Do not आने पर हमेशा मूल रूप 'want' ही रहता है।"
+      ],
+      "vocabulary": [
+        {
+          "word": "Dictionary",
+          "meaning": "शब्दकोश",
+          "example": "I want an English dictionary."
+        },
+        {
+          "word": "Comfort",
+          "meaning": "आराम / सुविधा",
+          "example": "We want comfort."
+        },
+        {
+          "word": "Opportunity",
+          "meaning": "अवसर / मौका",
+          "example": "They want an opportunity."
+        }
+      ],
+      "examples": [
+        {
+          "hindi": "उसे घड़ी नहीं चाहिए",
+          "english": "He does not want watch."
+        },
+        {
+          "hindi": "मुझे तुम्हारे कपड़े नहीं चाहिए",
+          "english": "I don't want your clothes."
+        },
+        {
+          "hindi": "हमें तुम्हारे पैसे नहीं चाहिए",
+          "english": "We don't want your money."
+        },
+        {
+          "hindi": "मुझे पैसे नहीं चाहिए,मुझे आपका समय चाहिए",
+          "english": "I don't want money I want your time."
+        },
+        {
+          "hindi": "उसे एक दिन की छुट्टी चाहिए",
+          "english": "He wants a day off."
+        },
+        {
+          "hindi": "उसे जीवन में शांति चाहिए",
+          "english": "He wants peace in life."
+        },
+        {
+          "hindi": "a जवाब नहीं चाहिए।",
+          "english": "I don't want answer."
+        },
+        {
+          "hindi": "Sa पुरानी स्कूटी चाहिए",
+          "english": "He wants old scooty.."
+        },
+        {
+          "hindi": "अंग्रेजी का ज्ञान चाहिए",
+          "english": "he wants knowledge of English."
+        },
+        {
+          "hindi": "उसे लम्बे नाखून चाहिए",
+          "english": "He wants long nails."
+        },
+        {
+          "hindi": "उसे लाल tr ae चाहिए",
+          "english": "He does not want red color."
+        },
+        {
+          "hindi": "क्या तुम्हें अपना सबसे अच्छा फल वापस चाहिए",
+          "english": "Do you want your best fruit back ?"
+        }
+      ],
+      "sentence_builder_drills": [
+        {
+          "hindi": "उसे घड़ी नहीं चाहिए",
+          "english": "He does not want watch.",
+          "target_words": [
+            "He",
+            "does",
+            "not",
+            "want",
+            "watch"
+          ],
+          "scrambled_words": [
+            "want",
+            "does",
+            "not",
+            "watch",
+            "He"
+          ]
+        },
+        {
+          "hindi": "मुझे तुम्हारे कपड़े नहीं चाहिए",
+          "english": "I don't want your clothes.",
+          "target_words": [
+            "I",
+            "don't",
+            "want",
+            "your",
+            "clothes"
+          ],
+          "scrambled_words": [
+            "your",
+            "want",
+            "don't",
+            "I",
+            "clothes"
+          ]
+        },
+        {
+          "hindi": "हमें तुम्हारे पैसे नहीं चाहिए",
+          "english": "We don't want your money.",
+          "target_words": [
+            "We",
+            "don't",
+            "want",
+            "your",
+            "money"
+          ],
+          "scrambled_words": [
+            "We",
+            "money",
+            "want",
+            "your",
+            "don't"
+          ]
+        },
+        {
+          "hindi": "मुझे पैसे नहीं चाहिए,मुझे आपका समय चाहिए",
+          "english": "I don't want money I want your time.",
+          "target_words": [
+            "I",
+            "don't",
+            "want",
+            "money",
+            "I",
+            "want",
+            "your",
+            "time"
+          ],
+          "scrambled_words": [
+            "time",
+            "I",
+            "I",
+            "want",
+            "don't",
+            "your",
+            "money",
+            "want"
+          ]
+        },
+        {
+          "hindi": "उसे एक दिन की छुट्टी चाहिए",
+          "english": "He wants a day off.",
+          "target_words": [
+            "He",
+            "wants",
+            "a",
+            "day",
+            "off"
+          ],
+          "scrambled_words": [
+            "He",
+            "off",
+            "wants",
+            "day",
+            "a"
+          ]
+        },
+        {
+          "hindi": "उसे जीवन में शांति चाहिए",
+          "english": "He wants peace in life.",
+          "target_words": [
+            "He",
+            "wants",
+            "peace",
+            "in",
+            "life"
+          ],
+          "scrambled_words": [
+            "in",
+            "life",
+            "wants",
+            "He",
+            "peace"
+          ]
+        }
+      ],
+      "worksheet_quiz": [
+        {
+          "id": 1,
+          "question": "Translate into English: 'उसे घड़ी नहीं चाहिए'",
+          "hindi_sentence": "उसे घड़ी नहीं चाहिए",
+          "options": [
+            "He does not wanted watch.",
+            "does He not want watch.",
+            "He does not want watch."
+          ],
+          "correct_answer": "He does not want watch.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He does not want watch.' है।"
+        },
+        {
+          "id": 2,
+          "question": "Translate into English: 'मुझे तुम्हारे कपड़े नहीं चाहिए'",
+          "hindi_sentence": "मुझे तुम्हारे कपड़े नहीं चाहिए",
+          "options": [
+            "I don't want your clothes.",
+            "don't I want your clothes.",
+            "I don't wanted your clothes.",
+            "I not want your clothes."
+          ],
+          "correct_answer": "I don't want your clothes.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'I don't want your clothes.' है।"
+        },
+        {
+          "id": 3,
+          "question": "Translate into English: 'हमें तुम्हारे पैसे नहीं चाहिए'",
+          "hindi_sentence": "हमें तुम्हारे पैसे नहीं चाहिए",
+          "options": [
+            "We not want your money.",
+            "We don't wanted your money.",
+            "don't We want your money.",
+            "We don't want your money."
+          ],
+          "correct_answer": "We don't want your money.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'We don't want your money.' है।"
+        },
+        {
+          "id": 4,
+          "question": "Translate into English: 'मुझे पैसे नहीं चाहिए,मुझे आपका समय चाहिए'",
+          "hindi_sentence": "मुझे पैसे नहीं चाहिए,मुझे आपका समय चाहिए",
+          "options": [
+            "I don't want money I want your time.",
+            "don't I want money I want your time.",
+            "I don't wanted money I wanted your time.",
+            "I not want money I want your time."
+          ],
+          "correct_answer": "I don't want money I want your time.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'I don't want money I want your time.' है।"
+        },
+        {
+          "id": 5,
+          "question": "Translate into English: 'उसे एक दिन की छुट्टी चाहिए'",
+          "hindi_sentence": "उसे एक दिन की छुट्टी चाहिए",
+          "options": [
+            "He wants a day off.",
+            "He wanteds a day off.",
+            "wants He a day off."
+          ],
+          "correct_answer": "He wants a day off.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He wants a day off.' है।"
+        },
+        {
+          "id": 6,
+          "question": "Translate into English: 'उसे जीवन में शांति चाहिए'",
+          "hindi_sentence": "उसे जीवन में शांति चाहिए",
+          "options": [
+            "He wants peace in life.",
+            "He wanteds peace in life.",
+            "wants He peace in life."
+          ],
+          "correct_answer": "He wants peace in life.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He wants peace in life.' है।"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Use of Wanted",
+      "hindi_title": "वस्तु चाहिए थी / चाहता था (Wanted)",
+      "category": "Daily Expressions",
+      "level": "beginner",
+      "emoji": "⏪",
+      "page_start": 34,
+      "page_end": 37,
+      "definition": "जब हमें भूतकाल (Past) में यह बताना हो कि हमें कोई वस्तु चाहिए थी या हम किसी वस्तु की इच्छा रखते थे, तब Wanted का प्रयोग किया जाता है।",
+      "structures": [
+        {
+          "name": "Affirmative",
+          "formula": "Sub + wanted + Object",
+          "hindi": "मुझे नमक चाहिए था - I wanted some salt"
+        },
+        {
+          "name": "Negative",
+          "formula": "Sub + did not want + Object",
+          "hindi": "मुझे मदद नहीं चाहिए थी - I did not want help"
+        },
+        {
+          "name": "Interrogative",
+          "formula": "Did + Sub + want + Object?",
+          "hindi": "क्या उसे कार चाहिए थी? - Did he want a car?"
+        },
+        {
+          "name": "WH Question",
+          "formula": "Why / What + did + Sub + want + Object?",
+          "hindi": "तुम्हें क्या चाहिए था? - What did you want?"
+        }
+      ],
+      "golden_rules": [
+        "भूतकाल के साधारण वाक्य में सभी Subjects (Singular और Plural) के साथ 'wanted' ही लगता है।",
+        "Negative और Interrogative में 'did' आ जाने के बाद 'wanted' का 'want' हो जाता है (Did + want)।"
+      ],
+      "vocabulary": [
+        {
+          "word": "Salt",
+          "meaning": "नमक",
+          "example": "I wanted some salt."
+        },
+        {
+          "word": "Knowledge",
+          "meaning": "ज्ञान",
+          "example": "He wanted knowledge of English."
+        },
+        {
+          "word": "Clue / Evidence",
+          "meaning": "सुराग / सबूत",
+          "example": "The police wanted evidence."
+        }
+      ],
+      "examples": [
+        {
+          "hindi": "हमें पर्स चाहिए था",
+          "english": "We wanted purse."
+        },
+        {
+          "hindi": "उसे छुट्टी चाहिए थी",
+          "english": "She wanted leave."
+        },
+        {
+          "hindi": "मुझे कुछ नमक चाहिए",
+          "english": "I wanted some salt."
+        },
+        {
+          "hindi": "मुझे कुछ कागज चाहिए था",
+          "english": "I wanted some paper."
+        },
+        {
+          "hindi": "उसे रात का खाना नहीं चाहिए था",
+          "english": "He did not want dinner."
+        },
+        {
+          "hindi": "उसे तलाक चाहिए था",
+          "english": "She wanted divorce."
+        },
+        {
+          "hindi": "१. तुम्हें क्या चाहिए था",
+          "english": "What did you want."
+        },
+        {
+          "hindi": "मुझे तुम्हारी हमदर्दी नहीं चाहिए थी",
+          "english": "I did not want you sympathy."
+        },
+        {
+          "hindi": "उसे एक कप चाहिए था",
+          "english": "He wanted a cup of coffee."
+        },
+        {
+          "hindi": "मुझे आपसे कुछ नहीं चाहिए था",
+          "english": "did want anything from you."
+        },
+        {
+          "hindi": "उसे और कुछ भी नहीं चाहिए था",
+          "english": "I did not want anything else."
+        },
+        {
+          "hindi": "उन्हें अंग्रेजी का ज्ञान चाहिए था",
+          "english": "They wanted knowledge of English."
+        }
+      ],
+      "sentence_builder_drills": [
+        {
+          "hindi": "हमें पर्स चाहिए था",
+          "english": "We wanted purse.",
+          "target_words": [
+            "We",
+            "wanted",
+            "purse"
+          ],
+          "scrambled_words": [
+            "wanted",
+            "We",
+            "purse"
+          ]
+        },
+        {
+          "hindi": "उसे छुट्टी चाहिए थी",
+          "english": "She wanted leave.",
+          "target_words": [
+            "She",
+            "wanted",
+            "leave"
+          ],
+          "scrambled_words": [
+            "leave",
+            "She",
+            "wanted"
+          ]
+        },
+        {
+          "hindi": "मुझे कुछ नमक चाहिए",
+          "english": "I wanted some salt.",
+          "target_words": [
+            "I",
+            "wanted",
+            "some",
+            "salt"
+          ],
+          "scrambled_words": [
+            "wanted",
+            "salt",
+            "some",
+            "I"
+          ]
+        },
+        {
+          "hindi": "मुझे कुछ कागज चाहिए था",
+          "english": "I wanted some paper.",
+          "target_words": [
+            "I",
+            "wanted",
+            "some",
+            "paper"
+          ],
+          "scrambled_words": [
+            "some",
+            "wanted",
+            "paper",
+            "I"
+          ]
+        },
+        {
+          "hindi": "उसे रात का खाना नहीं चाहिए था",
+          "english": "He did not want dinner.",
+          "target_words": [
+            "He",
+            "did",
+            "not",
+            "want",
+            "dinner"
+          ],
+          "scrambled_words": [
+            "want",
+            "did",
+            "dinner",
+            "He",
+            "not"
+          ]
+        },
+        {
+          "hindi": "उसे तलाक चाहिए था",
+          "english": "She wanted divorce.",
+          "target_words": [
+            "She",
+            "wanted",
+            "divorce"
+          ],
+          "scrambled_words": [
+            "divorce",
+            "She",
+            "wanted"
+          ]
+        }
+      ],
+      "worksheet_quiz": [
+        {
+          "id": 1,
+          "question": "Translate into English: 'हमें पर्स चाहिए था'",
+          "hindi_sentence": "हमें पर्स चाहिए था",
+          "options": [
+            "We wanted purse.",
+            "We wanteded purse.",
+            "wanted We purse."
+          ],
+          "correct_answer": "We wanted purse.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'We wanted purse.' है।"
+        },
+        {
+          "id": 2,
+          "question": "Translate into English: 'उसे छुट्टी चाहिए थी'",
+          "hindi_sentence": "उसे छुट्टी चाहिए थी",
+          "options": [
+            "wanted She leave.",
+            "She wanted leave.",
+            "She wanteded leave."
+          ],
+          "correct_answer": "She wanted leave.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'She wanted leave.' है।"
+        },
+        {
+          "id": 3,
+          "question": "Translate into English: 'मुझे कुछ नमक चाहिए'",
+          "hindi_sentence": "मुझे कुछ नमक चाहिए",
+          "options": [
+            "I wanted some salt.",
+            "I wanteded some salt.",
+            "wanted I some salt."
+          ],
+          "correct_answer": "I wanted some salt.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'I wanted some salt.' है।"
+        },
+        {
+          "id": 4,
+          "question": "Translate into English: 'मुझे कुछ कागज चाहिए था'",
+          "hindi_sentence": "मुझे कुछ कागज चाहिए था",
+          "options": [
+            "I wanted some paper.",
+            "I wanteded some paper.",
+            "wanted I some paper."
+          ],
+          "correct_answer": "I wanted some paper.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'I wanted some paper.' है।"
+        },
+        {
+          "id": 5,
+          "question": "Translate into English: 'उसे रात का खाना नहीं चाहिए था'",
+          "hindi_sentence": "उसे रात का खाना नहीं चाहिए था",
+          "options": [
+            "He did not want dinner.",
+            "He did not wanted dinner.",
+            "did He not want dinner."
+          ],
+          "correct_answer": "He did not want dinner.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He did not want dinner.' है।"
+        },
+        {
+          "id": 6,
+          "question": "Translate into English: 'उसे तलाक चाहिए था'",
+          "hindi_sentence": "उसे तलाक चाहिए था",
+          "options": [
+            "wanted She divorce.",
+            "She wanteded divorce.",
+            "She wanted divorce."
+          ],
+          "correct_answer": "She wanted divorce.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'She wanted divorce.' है।"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Use of Going to",
+      "hindi_title": "काम करने वाले हैं (Going to - Future Plans)",
+      "category": "Daily Expressions",
+      "level": "intermediate",
+      "emoji": "🚶",
+      "page_start": 38,
+      "page_end": 43,
+      "definition": "'Going to' का मतलब होता है कि कोई काम निकट भविष्य में करने वाले हैं या कोई घटना बस घटने वाली है। इसका प्रयोग Present, Past और Future तीनों में किया जाता है।",
+      "structures": [
+        {
+          "name": "Present (करने वाले हैं)",
+          "formula": "Sub + is / am / are + going to + V1 + Object",
+          "hindi": "मैं चाय पीने वाला हूँ - I am going to take tea"
+        },
+        {
+          "name": "Past (करने वाले थे)",
+          "formula": "Sub + was / were + going to + V1 + Object",
+          "hindi": "वह मुझे कॉल करने वाला था - He was going to call me"
+        },
+        {
+          "name": "Future (करने वाले होंगे)",
+          "formula": "Sub + will be + going to + V1 + Object",
+          "hindi": "वह तैरने वाला होगा - He will be going to swim"
+        },
+        {
+          "name": "WH Question",
+          "formula": "WH + is/am/are/was/were + Sub + going to + V1 + Obj?",
+          "hindi": "तुम कब जाने वाले हो? - When are you going to leave?"
+        }
+      ],
+      "golden_rules": [
+        "'Going to' के बाद हमेशा क्रिया का पहला रूप (V1) आता है।",
+        "बोलचाल में 'going to' को अक्सर 'gonna' भी बोला जाता है (जैसे: I'm gonna call you)।"
+      ],
+      "vocabulary": [
+        {
+          "word": "Stroll / Walk",
+          "meaning": "टहलना",
+          "example": "Grandpa is going to stroll."
+        },
+        {
+          "word": "Plant trees",
+          "meaning": "पेड़ लगाना",
+          "example": "We are going to plant trees."
+        },
+        {
+          "word": "Assist / Help",
+          "meaning": "सहायता करना",
+          "example": "Are they going to assist us?"
+        }
+      ],
+      "examples": [
+        {
+          "hindi": "वह खाना खाने वाला है",
+          "english": "He is going to eat food."
+        },
+        {
+          "hindi": "a. मैं चाय पीने वाला हूँ",
+          "english": "I am going to take tea."
+        },
+        {
+          "hindi": "वह आने वाला नहीं है",
+          "english": "He is not going to come."
+        },
+        {
+          "hindi": "वह हमें पढ़ाने वाला है",
+          "english": "He is going to teach us."
+        },
+        {
+          "hindi": "विराट कोहली क्रिकेट खेलने वाला है",
+          "english": "Virat Kohali is going to play cricket."
+        },
+        {
+          "hindi": "वह स्कूल नहींं छोड़ने वाला है",
+          "english": "He is not going to leave school."
+        },
+        {
+          "hindi": "& तुम्हारे साथ नहींं बैठने वाला हूँ",
+          "english": "Tam not going to sit with you."
+        },
+        {
+          "hindi": "i9. पांच मिनट में बारात इंदौर पहुचने वाली है",
+          "english": "Procession is going to reach Indore within."
+        },
+        {
+          "hindi": "तुम पेड़ लगाने वाले थे",
+          "english": "You were going to plant trees."
+        },
+        {
+          "hindi": "A. मैं किताब लिखने बाला था",
+          "english": "was going to write a book."
+        },
+        {
+          "hindi": "मैं क्रिकेट खेलने वाला था",
+          "english": "was going to play cricket."
+        },
+        {
+          "hindi": "वह चाय बनाने वाला नहीं था",
+          "english": "He was not going to make tea."
+        }
+      ],
+      "sentence_builder_drills": [
+        {
+          "hindi": "वह खाना खाने वाला है",
+          "english": "He is going to eat food.",
+          "target_words": [
+            "He",
+            "is",
+            "going",
+            "to",
+            "eat",
+            "food"
+          ],
+          "scrambled_words": [
+            "going",
+            "is",
+            "food",
+            "He",
+            "eat",
+            "to"
+          ]
+        },
+        {
+          "hindi": "a. मैं चाय पीने वाला हूँ",
+          "english": "I am going to take tea.",
+          "target_words": [
+            "I",
+            "am",
+            "going",
+            "to",
+            "take",
+            "tea"
+          ],
+          "scrambled_words": [
+            "take",
+            "am",
+            "tea",
+            "to",
+            "I",
+            "going"
+          ]
+        },
+        {
+          "hindi": "वह आने वाला नहीं है",
+          "english": "He is not going to come.",
+          "target_words": [
+            "He",
+            "is",
+            "not",
+            "going",
+            "to",
+            "come"
+          ],
+          "scrambled_words": [
+            "come",
+            "to",
+            "going",
+            "is",
+            "not",
+            "He"
+          ]
+        },
+        {
+          "hindi": "वह हमें पढ़ाने वाला है",
+          "english": "He is going to teach us.",
+          "target_words": [
+            "He",
+            "is",
+            "going",
+            "to",
+            "teach",
+            "us"
+          ],
+          "scrambled_words": [
+            "is",
+            "teach",
+            "going",
+            "us",
+            "to",
+            "He"
+          ]
+        },
+        {
+          "hindi": "विराट कोहली क्रिकेट खेलने वाला है",
+          "english": "Virat Kohali is going to play cricket.",
+          "target_words": [
+            "Virat",
+            "Kohali",
+            "is",
+            "going",
+            "to",
+            "play",
+            "cricket"
+          ],
+          "scrambled_words": [
+            "cricket",
+            "going",
+            "Kohali",
+            "Virat",
+            "play",
+            "to",
+            "is"
+          ]
+        },
+        {
+          "hindi": "वह स्कूल नहींं छोड़ने वाला है",
+          "english": "He is not going to leave school.",
+          "target_words": [
+            "He",
+            "is",
+            "not",
+            "going",
+            "to",
+            "leave",
+            "school"
+          ],
+          "scrambled_words": [
+            "He",
+            "not",
+            "school",
+            "leave",
+            "to",
+            "is",
+            "going"
+          ]
+        }
+      ],
+      "worksheet_quiz": [
+        {
+          "id": 1,
+          "question": "Translate into English: 'वह खाना खाने वाला है'",
+          "hindi_sentence": "वह खाना खाने वाला है",
+          "options": [
+            "He is going for eat food.",
+            "He was going to eat food.",
+            "is He going to eat food.",
+            "He is going to eat food."
+          ],
+          "correct_answer": "He is going to eat food.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He is going to eat food.' है।"
+        },
+        {
+          "id": 2,
+          "question": "Translate into English: 'a. मैं चाय पीने वाला हूँ'",
+          "hindi_sentence": "a. मैं चाय पीने वाला हूँ",
+          "options": [
+            "I am going to take tea.",
+            "I am going for take tea.",
+            "am I going to take tea."
+          ],
+          "correct_answer": "I am going to take tea.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'I am going to take tea.' है।"
+        },
+        {
+          "id": 3,
+          "question": "Translate into English: 'वह आने वाला नहीं है'",
+          "hindi_sentence": "वह आने वाला नहीं है",
+          "options": [
+            "He is not going to come.",
+            "He was not going to come.",
+            "is He not going to come.",
+            "He is not going for come."
+          ],
+          "correct_answer": "He is not going to come.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He is not going to come.' है।"
+        },
+        {
+          "id": 4,
+          "question": "Translate into English: 'वह हमें पढ़ाने वाला है'",
+          "hindi_sentence": "वह हमें पढ़ाने वाला है",
+          "options": [
+            "He is going for teach us.",
+            "He is going to teach us.",
+            "is He going to teach us.",
+            "He was going to teach us."
+          ],
+          "correct_answer": "He is going to teach us.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He is going to teach us.' है।"
+        },
+        {
+          "id": 5,
+          "question": "Translate into English: 'विराट कोहली क्रिकेट खेलने वाला है'",
+          "hindi_sentence": "विराट कोहली क्रिकेट खेलने वाला है",
+          "options": [
+            "Kohali Virat is going to play cricket.",
+            "Virat Kohali is going for play cricket.",
+            "Virat Kohali was going to play cricket.",
+            "Virat Kohali is going to play cricket."
+          ],
+          "correct_answer": "Virat Kohali is going to play cricket.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Virat Kohali is going to play cricket.' है।"
+        },
+        {
+          "id": 6,
+          "question": "Translate into English: 'वह स्कूल नहींं छोड़ने वाला है'",
+          "hindi_sentence": "वह स्कूल नहींं छोड़ने वाला है",
+          "options": [
+            "He is not going for leave school.",
+            "He was not going to leave school.",
+            "He is not going to leave school.",
+            "is He not going to leave school."
+          ],
+          "correct_answer": "He is not going to leave school.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He is not going to leave school.' है।"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Use of There (There is / There are / There was / There will be)",
+      "hindi_title": "किसी स्थान पर किसी चीज का होना (Use of There)",
+      "category": "Core Grammar",
+      "level": "intermediate",
+      "emoji": "📍",
+      "page_start": 44,
+      "page_end": 49,
+      "definition": "जब हमें यह बताना हो कि किसी स्थान, कमरे, शहर, थैले या वस्तु के अंदर कोई वस्तु या व्यक्ति मौजूद है (या नहीं है), तब 'There' को Dummy Subject के रूप में प्रयोग किया जाता है।",
+      "structures": [
+        {
+          "name": "Present (एकवचन)",
+          "formula": "There is + Singular Object + in / at [Place]",
+          "hindi": "कमरे में एक पंखा है - There is a fan in the room"
+        },
+        {
+          "name": "Present (बहुवचन)",
+          "formula": "There are + Plural Objects + in / at [Place]",
+          "hindi": "पेड़ पर पक्षी हैं - There are birds on the tree"
+        },
+        {
+          "name": "Past (था/थी/थे)",
+          "formula": "There was / were + Object + [Place]",
+          "hindi": "गाँव में अस्पताल नहीं था - There was no hospital in the village"
+        },
+        {
+          "name": "Future (होगा/होगी)",
+          "formula": "There will be + Object + [Place]",
+          "hindi": "मीटिंग में भीड़ होगी - There will be crowd in the meeting"
+        }
+      ],
+      "golden_rules": [
+        "There के बाद 'is' या 'are' आगे आने वाले Object के अनुसार तय होता है। अगर Object एकवचन है तो 'is', बहुवचन है तो 'are'।",
+        "Negative में अक्सर 'no' या 'not any' का प्रयोग होता है (There is no water / There are no cars)।"
+      ],
+      "vocabulary": [
+        {
+          "word": "Queue / Line",
+          "meaning": "कतार / पंक्ति",
+          "example": "There was a long queue at the bank."
+        },
+        {
+          "word": "Cockroach",
+          "meaning": "तिलचट्टा / कॉकरोच",
+          "example": "There was a cockroach in his pocket."
+        },
+        {
+          "word": "Crowd",
+          "meaning": "भीड़",
+          "example": "There will be a huge crowd."
+        }
+      ],
+      "examples": [
+        {
+          "hindi": "उसके स्कूल के सामने एक नीम का पेड़ है",
+          "english": "There is a neem tree in front of his school."
+        },
+        {
+          "hindi": "Ht घर में चार दरवाजे है",
+          "english": "There are four doors in my home."
+        },
+        {
+          "hindi": "नदी में मछलियों है",
+          "english": "There are fish in the river."
+        },
+        {
+          "hindi": "मेरे गाँव में कुआ है",
+          "english": "There is a well in my village."
+        },
+        {
+          "hindi": "अलमारी में डब्बा है",
+          "english": "There is box in Almirah."
+        },
+        {
+          "hindi": "इस बगीचे में फल है",
+          "english": "There are fruits in the garden."
+        },
+        {
+          "hindi": "अंग्रेजी वर्णमाला में अक्षर है",
+          "english": "There are letters in the English alphabet."
+        },
+        {
+          "hindi": "अख़बार में कितने पन्ने थे ?",
+          "english": "ow many pages were there in the newspaper ?"
+        },
+        {
+          "hindi": "आपके भोजन में वसा थी",
+          "english": "There was fut in your food."
+        },
+        {
+          "hindi": "उस स्थान पर वहुत शोरगुल था",
+          "english": "There was a lot of noise at that place."
+        },
+        {
+          "hindi": "Wee में पानी नहींं था",
+          "english": "There was no water in the pot."
+        },
+        {
+          "hindi": "इसमें कोई बुराई नहीं थी",
+          "english": "There was no evil in it."
+        }
+      ],
+      "sentence_builder_drills": [
+        {
+          "hindi": "उसके स्कूल के सामने एक नीम का पेड़ है",
+          "english": "There is a neem tree in front of his school.",
+          "target_words": [
+            "There",
+            "is",
+            "a",
+            "neem",
+            "tree",
+            "in",
+            "front",
+            "of",
+            "his",
+            "school"
+          ],
+          "scrambled_words": [
+            "is",
+            "a",
+            "There",
+            "school",
+            "neem",
+            "front",
+            "tree",
+            "in",
+            "of",
+            "his"
+          ]
+        },
+        {
+          "hindi": "Ht घर में चार दरवाजे है",
+          "english": "There are four doors in my home.",
+          "target_words": [
+            "There",
+            "are",
+            "four",
+            "doors",
+            "in",
+            "my",
+            "home"
+          ],
+          "scrambled_words": [
+            "in",
+            "doors",
+            "home",
+            "four",
+            "my",
+            "are",
+            "There"
+          ]
+        },
+        {
+          "hindi": "नदी में मछलियों है",
+          "english": "There are fish in the river.",
+          "target_words": [
+            "There",
+            "are",
+            "fish",
+            "in",
+            "the",
+            "river"
+          ],
+          "scrambled_words": [
+            "are",
+            "the",
+            "fish",
+            "river",
+            "in",
+            "There"
+          ]
+        },
+        {
+          "hindi": "मेरे गाँव में कुआ है",
+          "english": "There is a well in my village.",
+          "target_words": [
+            "There",
+            "is",
+            "a",
+            "well",
+            "in",
+            "my",
+            "village"
+          ],
+          "scrambled_words": [
+            "There",
+            "village",
+            "in",
+            "is",
+            "my",
+            "a",
+            "well"
+          ]
+        },
+        {
+          "hindi": "अलमारी में डब्बा है",
+          "english": "There is box in Almirah.",
+          "target_words": [
+            "There",
+            "is",
+            "box",
+            "in",
+            "Almirah"
+          ],
+          "scrambled_words": [
+            "is",
+            "Almirah",
+            "in",
+            "box",
+            "There"
+          ]
+        },
+        {
+          "hindi": "इस बगीचे में फल है",
+          "english": "There are fruits in the garden.",
+          "target_words": [
+            "There",
+            "are",
+            "fruits",
+            "in",
+            "the",
+            "garden"
+          ],
+          "scrambled_words": [
+            "the",
+            "are",
+            "garden",
+            "in",
+            "fruits",
+            "There"
+          ]
+        }
+      ],
+      "worksheet_quiz": [
+        {
+          "id": 1,
+          "question": "Translate into English: 'उसके स्कूल के सामने एक नीम का पेड़ है'",
+          "hindi_sentence": "उसके स्कूल के सामने एक नीम का पेड़ है",
+          "options": [
+            "There is a neem tree in front of his school.",
+            "There was a neem tree in front of hwas school.",
+            "is There a neem tree in front of his school."
+          ],
+          "correct_answer": "There is a neem tree in front of his school.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'There is a neem tree in front of his school.' है।"
+        },
+        {
+          "id": 2,
+          "question": "Translate into English: 'Ht घर में चार दरवाजे है'",
+          "hindi_sentence": "Ht घर में चार दरवाजे है",
+          "options": [
+            "There are four doors in my home.",
+            "are There four doors in my home."
+          ],
+          "correct_answer": "There are four doors in my home.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'There are four doors in my home.' है।"
+        },
+        {
+          "id": 3,
+          "question": "Translate into English: 'नदी में मछलियों है'",
+          "hindi_sentence": "नदी में मछलियों है",
+          "options": [
+            "There are fish in the river.",
+            "There are fwash in the river.",
+            "are There fish in the river."
+          ],
+          "correct_answer": "There are fish in the river.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'There are fish in the river.' है।"
+        },
+        {
+          "id": 4,
+          "question": "Translate into English: 'मेरे गाँव में कुआ है'",
+          "hindi_sentence": "मेरे गाँव में कुआ है",
+          "options": [
+            "is There a well in my village.",
+            "There was a well in my village.",
+            "There is a well in my village."
+          ],
+          "correct_answer": "There is a well in my village.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'There is a well in my village.' है।"
+        },
+        {
+          "id": 5,
+          "question": "Translate into English: 'अलमारी में डब्बा है'",
+          "hindi_sentence": "अलमारी में डब्बा है",
+          "options": [
+            "is There box in Almirah.",
+            "There was box in Almirah.",
+            "There is box in Almirah."
+          ],
+          "correct_answer": "There is box in Almirah.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'There is box in Almirah.' है।"
+        },
+        {
+          "id": 6,
+          "question": "Translate into English: 'इस बगीचे में फल है'",
+          "hindi_sentence": "इस बगीचे में फल है",
+          "options": [
+            "There are fruits in the garden.",
+            "are There fruits in the garden."
+          ],
+          "correct_answer": "There are fruits in the garden.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'There are fruits in the garden.' है।"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Use of Let (Let me, Let him, Let them)",
+      "hindi_title": "करने दो / होने दो (Use of Let)",
+      "category": "Daily Expressions",
+      "level": "intermediate",
+      "emoji": "🤲",
+      "page_start": 50,
+      "page_end": 53,
+      "definition": "ऐसे वाक्य जिनमें किसी को कोई कार्य करने देने की अनुमति या छूट मांगी या दी जाती है (जैसे: मुझे जाने दो, उसे बोलने दो), उनमें 'Let' का प्रयोग किया जाता है।",
+      "structures": [
+        {
+          "name": "Affirmative",
+          "formula": "Let + Objective Pronoun (me/him/her/them/us) + V1 + Object",
+          "hindi": "मुझे सफाई पेश करने दो - Let me explain myself"
+        },
+        {
+          "name": "Negative",
+          "formula": "Don't let + Objective Pronoun + V1 + Object",
+          "hindi": "उन्हें बहस मत करने दो - Don't let them argue"
+        },
+        {
+          "name": "Polite",
+          "formula": "Please let + Objective Pronoun + V1 + Object",
+          "hindi": "कृपया मुझे जाने दें - Please let me go"
+        }
+      ],
+      "golden_rules": [
+        "Let के तुरंत बाद हमेशा Objective Pronoun (me, him, her, them, us) आता है, Subjective (I, he, they) नहीं!",
+        "Let के बाद क्रिया का केवल पहला रूप (V1) आता है, 'to' नहीं लगाया जाता (Let him go, NOT Let him to go)।"
+      ],
+      "vocabulary": [
+        {
+          "word": "Explain myself",
+          "meaning": "अपनी सफाई पेश करना",
+          "example": "Let me explain myself."
+        },
+        {
+          "word": "Truth come out",
+          "meaning": "सच सामने आना",
+          "example": "Let the truth come out."
+        },
+        {
+          "word": "Argue",
+          "meaning": "बहस करना",
+          "example": "Don't let them argue."
+        }
+      ],
+      "examples": [
+        {
+          "hindi": "मैं उसे अंग्रेजी नहीं बोलने देता हूँ",
+          "english": "I don't let him speak English."
+        },
+        {
+          "hindi": "मैंने उसे नहींं जाने दिया",
+          "english": "I did not let him go."
+        },
+        {
+          "hindi": "मैं उसे जाने दूंगा",
+          "english": "will let him go."
+        },
+        {
+          "hindi": "मैं उसे नहींं जाने दूंगा",
+          "english": "will not let him go."
+        },
+        {
+          "hindi": "इसे सुखने दो",
+          "english": "et it dry."
+        },
+        {
+          "hindi": "हमें वहाँ देखने दो",
+          "english": "et us see there."
+        },
+        {
+          "hindi": "मुझे कम से कम बात करने दो",
+          "english": "et me talk at least."
+        },
+        {
+          "hindi": "पहले हमें हालात को समझने दो",
+          "english": "et us understand the situation first."
+        },
+        {
+          "hindi": "उसे घर साफ मत करने दो",
+          "english": "Don't let him clean home:."
+        },
+        {
+          "hindi": "उसे मोबाइल मत खरीदने दो",
+          "english": "Don't let him buy mobile."
+        },
+        {
+          "hindi": "उसे बात मत करने दो",
+          "english": "Don't let him talk."
+        },
+        {
+          "hindi": "उसे खाना मत बनाने दो",
+          "english": "Don't let him cook food."
+        }
+      ],
+      "sentence_builder_drills": [
+        {
+          "hindi": "मैं उसे अंग्रेजी नहीं बोलने देता हूँ",
+          "english": "I don't let him speak English.",
+          "target_words": [
+            "I",
+            "don't",
+            "let",
+            "him",
+            "speak",
+            "English"
+          ],
+          "scrambled_words": [
+            "speak",
+            "don't",
+            "English",
+            "him",
+            "let",
+            "I"
+          ]
+        },
+        {
+          "hindi": "मैंने उसे नहींं जाने दिया",
+          "english": "I did not let him go.",
+          "target_words": [
+            "I",
+            "did",
+            "not",
+            "let",
+            "him",
+            "go"
+          ],
+          "scrambled_words": [
+            "did",
+            "him",
+            "not",
+            "go",
+            "let",
+            "I"
+          ]
+        },
+        {
+          "hindi": "मैं उसे जाने दूंगा",
+          "english": "will let him go.",
+          "target_words": [
+            "will",
+            "let",
+            "him",
+            "go"
+          ],
+          "scrambled_words": [
+            "let",
+            "will",
+            "go",
+            "him"
+          ]
+        },
+        {
+          "hindi": "मैं उसे नहींं जाने दूंगा",
+          "english": "will not let him go.",
+          "target_words": [
+            "will",
+            "not",
+            "let",
+            "him",
+            "go"
+          ],
+          "scrambled_words": [
+            "let",
+            "not",
+            "go",
+            "will",
+            "him"
+          ]
+        },
+        {
+          "hindi": "इसे सुखने दो",
+          "english": "et it dry.",
+          "target_words": [
+            "et",
+            "it",
+            "dry"
+          ],
+          "scrambled_words": [
+            "it",
+            "dry",
+            "et"
+          ]
+        },
+        {
+          "hindi": "हमें वहाँ देखने दो",
+          "english": "et us see there.",
+          "target_words": [
+            "et",
+            "us",
+            "see",
+            "there"
+          ],
+          "scrambled_words": [
+            "us",
+            "et",
+            "there",
+            "see"
+          ]
+        }
+      ],
+      "worksheet_quiz": [
+        {
+          "id": 1,
+          "question": "Translate into English: 'मैं उसे अंग्रेजी नहीं बोलने देता हूँ'",
+          "hindi_sentence": "मैं उसे अंग्रेजी नहीं बोलने देता हूँ",
+          "options": [
+            "I don't let him speak English.",
+            "I don't let him speak Englwash.",
+            "don't I let him speak English.",
+            "I not let him speak English."
+          ],
+          "correct_answer": "I don't let him speak English.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'I don't let him speak English.' है।"
+        },
+        {
+          "id": 2,
+          "question": "Translate into English: 'मैंने उसे नहींं जाने दिया'",
+          "hindi_sentence": "मैंने उसे नहींं जाने दिया",
+          "options": [
+            "I did not let him go.",
+            "did I not let him go."
+          ],
+          "correct_answer": "I did not let him go.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'I did not let him go.' है।"
+        },
+        {
+          "id": 3,
+          "question": "Translate into English: 'मैं उसे जाने दूंगा'",
+          "hindi_sentence": "मैं उसे जाने दूंगा",
+          "options": [
+            "let will him go.",
+            "will let him go."
+          ],
+          "correct_answer": "will let him go.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'will let him go.' है।"
+        },
+        {
+          "id": 4,
+          "question": "Translate into English: 'मैं उसे नहींं जाने दूंगा'",
+          "hindi_sentence": "मैं उसे नहींं जाने दूंगा",
+          "options": [
+            "not will let him go.",
+            "will not let him go."
+          ],
+          "correct_answer": "will not let him go.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'will not let him go.' है।"
+        },
+        {
+          "id": 5,
+          "question": "Translate into English: 'इसे सुखने दो'",
+          "hindi_sentence": "इसे सुखने दो",
+          "options": [
+            "et it dry.",
+            "it et dry."
+          ],
+          "correct_answer": "et it dry.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'et it dry.' है।"
+        },
+        {
+          "id": 6,
+          "question": "Translate into English: 'हमें वहाँ देखने दो'",
+          "hindi_sentence": "हमें वहाँ देखने दो",
+          "options": [
+            "et us see there.",
+            "us et see there."
+          ],
+          "correct_answer": "et us see there.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'et us see there.' है।"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Use of Let's",
+      "hindi_title": "चलो / आओ मिलकर करें (Use of Let's)",
+      "category": "Daily Expressions",
+      "level": "intermediate",
+      "emoji": "🤝",
+      "page_start": 54,
+      "page_end": 56,
+      "definition": "'Let's' (Let us का संकुचित रूप) का प्रयोग तब किया जाता है जब हम किसी प्रस्ताव (Proposal) या सुझाव (Suggestion) के साथ किसी काम को मिलकर करने की बात करते हैं (चलो ऐसा करते हैं)।",
+      "structures": [
+        {
+          "name": "Affirmative",
+          "formula": "Let's + V1 + Object",
+          "hindi": "चलो एक तस्वीर लेते हैं - Let's take a picture"
+        },
+        {
+          "name": "Negative",
+          "formula": "Let's not + V1 + Object",
+          "hindi": "चलो झगड़ा नहीं करते हैं - Let's not quarrel"
+        },
+        {
+          "name": "Question Tag",
+          "formula": "Let's + V1 + Object, shall we?",
+          "hindi": "चलो चलते हैं, चलें क्या? - Let's go, shall we?"
+        }
+      ],
+      "golden_rules": [
+        "Negative बनाते समय 'Don't let's' के बजाय 'Let's not' बोलना अधिक मानक और स्वाभाविक है।",
+        "हमेशा क्रिया का पहला रूप (V1) ही प्रयोग करें।"
+      ],
+      "vocabulary": [
+        {
+          "word": "Surprise",
+          "meaning": "आश्चर्यचकित करना / सरप्राइज देना",
+          "example": "Let's surprise Neha."
+        },
+        {
+          "word": "Attack",
+          "meaning": "हमला करना",
+          "example": "Let's not attack."
+        },
+        {
+          "word": "Celebrate",
+          "meaning": "जश्न मनाना",
+          "example": "Let's celebrate together."
+        }
+      ],
+      "examples": [
+        {
+          "hindi": "चलो बाजार चलते है",
+          "english": "Let's go to the market."
+        },
+        {
+          "hindi": "चलो उसका पिछा करते 8",
+          "english": "Let's follow him."
+        },
+        {
+          "hindi": "चलो भगवान की पूजा करते है",
+          "english": "Let's worship of God."
+        },
+        {
+          "hindi": "चलो गाने गाते है",
+          "english": "Let's sing a song."
+        },
+        {
+          "hindi": "चलो किताबे पड़ते है",
+          "english": "Let's read books."
+        },
+        {
+          "hindi": "चलो घुमने चले",
+          "english": "Let's go for walk."
+        },
+        {
+          "hindi": "चलो सामाजिक बुराइयों को दूर करे",
+          "english": "Let's shoot out social evil."
+        },
+        {
+          "hindi": "चलो कुछ खाने चलते है",
+          "english": "Let's go to eat something."
+        },
+        {
+          "hindi": "चलो कार चलाते है",
+          "english": "Let's drive a car."
+        },
+        {
+          "hindi": "आओ इस बारे में बात करते है",
+          "english": "Let's talk to about it."
+        },
+        {
+          "hindi": "चलो क्रिकेट की बजाय हॉकी खेलतें है",
+          "english": "Let's play hockey instead of cricket."
+        },
+        {
+          "hindi": "चलो देश को बदलने के लिए कुछ नए प्रयास करते है",
+          "english": "Let's make some few new efforts to change the."
+        }
+      ],
+      "sentence_builder_drills": [
+        {
+          "hindi": "चलो बाजार चलते है",
+          "english": "Let's go to the market.",
+          "target_words": [
+            "Let's",
+            "go",
+            "to",
+            "the",
+            "market"
+          ],
+          "scrambled_words": [
+            "to",
+            "go",
+            "market",
+            "Let's",
+            "the"
+          ]
+        },
+        {
+          "hindi": "चलो उसका पिछा करते 8",
+          "english": "Let's follow him.",
+          "target_words": [
+            "Let's",
+            "follow",
+            "him"
+          ],
+          "scrambled_words": [
+            "follow",
+            "Let's",
+            "him"
+          ]
+        },
+        {
+          "hindi": "चलो भगवान की पूजा करते है",
+          "english": "Let's worship of God.",
+          "target_words": [
+            "Let's",
+            "worship",
+            "of",
+            "God"
+          ],
+          "scrambled_words": [
+            "of",
+            "God",
+            "worship",
+            "Let's"
+          ]
+        },
+        {
+          "hindi": "चलो गाने गाते है",
+          "english": "Let's sing a song.",
+          "target_words": [
+            "Let's",
+            "sing",
+            "a",
+            "song"
+          ],
+          "scrambled_words": [
+            "sing",
+            "Let's",
+            "song",
+            "a"
+          ]
+        },
+        {
+          "hindi": "चलो किताबे पड़ते है",
+          "english": "Let's read books.",
+          "target_words": [
+            "Let's",
+            "read",
+            "books"
+          ],
+          "scrambled_words": [
+            "books",
+            "Let's",
+            "read"
+          ]
+        },
+        {
+          "hindi": "चलो घुमने चले",
+          "english": "Let's go for walk.",
+          "target_words": [
+            "Let's",
+            "go",
+            "for",
+            "walk"
+          ],
+          "scrambled_words": [
+            "for",
+            "walk",
+            "go",
+            "Let's"
+          ]
+        }
+      ],
+      "worksheet_quiz": [
+        {
+          "id": 1,
+          "question": "Translate into English: 'चलो बाजार चलते है'",
+          "hindi_sentence": "चलो बाजार चलते है",
+          "options": [
+            "Let's go to the market.",
+            "Let's go for the market.",
+            "go Let's to the market."
+          ],
+          "correct_answer": "Let's go to the market.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Let's go to the market.' है।"
+        },
+        {
+          "id": 2,
+          "question": "Translate into English: 'चलो उसका पिछा करते 8'",
+          "hindi_sentence": "चलो उसका पिछा करते 8",
+          "options": [
+            "follow Let's him.",
+            "Let's follow him."
+          ],
+          "correct_answer": "Let's follow him.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Let's follow him.' है।"
+        },
+        {
+          "id": 3,
+          "question": "Translate into English: 'चलो भगवान की पूजा करते है'",
+          "hindi_sentence": "चलो भगवान की पूजा करते है",
+          "options": [
+            "worship Let's of God.",
+            "Let's worship of God."
+          ],
+          "correct_answer": "Let's worship of God.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Let's worship of God.' है।"
+        },
+        {
+          "id": 4,
+          "question": "Translate into English: 'चलो गाने गाते है'",
+          "hindi_sentence": "चलो गाने गाते है",
+          "options": [
+            "Let's sing a song.",
+            "sing Let's a song."
+          ],
+          "correct_answer": "Let's sing a song.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Let's sing a song.' है।"
+        },
+        {
+          "id": 5,
+          "question": "Translate into English: 'चलो किताबे पड़ते है'",
+          "hindi_sentence": "चलो किताबे पड़ते है",
+          "options": [
+            "Let's read books.",
+            "read Let's books."
+          ],
+          "correct_answer": "Let's read books.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Let's read books.' है।"
+        },
+        {
+          "id": 6,
+          "question": "Translate into English: 'चलो घुमने चले'",
+          "hindi_sentence": "चलो घुमने चले",
+          "options": [
+            "go Let's for walk.",
+            "Let's go for walk."
+          ],
+          "correct_answer": "Let's go for walk.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Let's go for walk.' है।"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Use of Would like to",
+      "hindi_title": "पसंद करूँगा / चाहूँगा (Polite Desires)",
+      "category": "Polite Expressions",
+      "level": "intermediate",
+      "emoji": "💭",
+      "page_start": 57,
+      "page_end": 60,
+      "definition": "जब कोई व्यक्ति अपनी इच्छा (Wish), पसंद या निवेदन को बेहद विनम्र और शिष्ट (Polite) तरीके से व्यक्त करना चाहता है, तब 'Would like to' का प्रयोग किया जाता है।",
+      "structures": [
+        {
+          "name": "Affirmative",
+          "formula": "Sub + would like to + V1 + Object",
+          "hindi": "मैं एक गाना सुनना चाहूँगा - I would like to listen to a song"
+        },
+        {
+          "name": "Negative",
+          "formula": "Sub + would not like to + V1 + Object",
+          "hindi": "तुम अपना भेद नहीं खोलना चाहोगे - You would not like to reveal your secret"
+        },
+        {
+          "name": "Interrogative",
+          "formula": "Would + Sub + like to + V1 + Object?",
+          "hindi": "क्या आप बाहर चलना चाहोगे? - Would you like to go out?"
+        },
+        {
+          "name": "WH Question",
+          "formula": "What / Where + would + Sub + like to + V1 + Obj?",
+          "hindi": "आप क्या लेना पसंद करेंगे? - What would you like to take?"
+        }
+      ],
+      "golden_rules": [
+        "रेस्टोरेंट, ऑफिस और फॉर्मल बातचीत में 'I want' के स्थान पर 'I would like to' बोलना बहुत सभ्य माना जाता है।",
+        "संक्षेप में 'I would' को \"I'd\" लिखा और बोला जाता है (I'd like to order tea)."
+      ],
+      "vocabulary": [
+        {
+          "word": "Reveal secret",
+          "meaning": "भेद / राज़ खोलना",
+          "example": "He would not like to reveal the secret."
+        },
+        {
+          "word": "Go out",
+          "meaning": "बाहर जाना",
+          "example": "Would you like to go out?"
+        },
+        {
+          "word": "Participate",
+          "meaning": "भाग लेना",
+          "example": "I'd like to participate."
+        }
+      ],
+      "examples": [
+        {
+          "hindi": "हम खेलना चाहेंगे",
+          "english": "We would like to play."
+        },
+        {
+          "hindi": "वह चाय पीना चाहेगा",
+          "english": "He would like to drink tea."
+        },
+        {
+          "hindi": "मैं अंग्रेजी बोलना चाहूँगा",
+          "english": "would like to speak English."
+        },
+        {
+          "hindi": "मैं आपके घर आना चाहूँगा",
+          "english": "would like to come your home."
+        },
+        {
+          "hindi": "_ हम खेलता चाहेंगे",
+          "english": "We would like to play."
+        },
+        {
+          "hindi": "वह बकवास नहींं सुनना चाहेगा",
+          "english": "He would not like to listen to your nonsense."
+        },
+        {
+          "hindi": "oar करना चाहूँगा",
+          "english": "would like to deposit money."
+        },
+        {
+          "hindi": "वह पतंग नहींं उड़ाना चाहेंगे",
+          "english": "He would not like to fly kite."
+        },
+        {
+          "hindi": "मैं आपसे एक बार मिलना चाहूँगा",
+          "english": "would like to meet you once."
+        },
+        {
+          "hindi": "मैं झूठ नहीं कहना चाहूँगा",
+          "english": "would not like to tell a lie."
+        },
+        {
+          "hindi": "वह कुर्सी खरीदना चाहेगा",
+          "english": "He would like to buy chair."
+        },
+        {
+          "hindi": "मैरा भाई व्यायाम करना नहींं चाहेगा",
+          "english": "My brother would not like to take exercise."
+        }
+      ],
+      "sentence_builder_drills": [
+        {
+          "hindi": "हम खेलना चाहेंगे",
+          "english": "We would like to play.",
+          "target_words": [
+            "We",
+            "would",
+            "like",
+            "to",
+            "play"
+          ],
+          "scrambled_words": [
+            "would",
+            "We",
+            "like",
+            "play",
+            "to"
+          ]
+        },
+        {
+          "hindi": "वह चाय पीना चाहेगा",
+          "english": "He would like to drink tea.",
+          "target_words": [
+            "He",
+            "would",
+            "like",
+            "to",
+            "drink",
+            "tea"
+          ],
+          "scrambled_words": [
+            "tea",
+            "He",
+            "would",
+            "drink",
+            "to",
+            "like"
+          ]
+        },
+        {
+          "hindi": "मैं अंग्रेजी बोलना चाहूँगा",
+          "english": "would like to speak English.",
+          "target_words": [
+            "would",
+            "like",
+            "to",
+            "speak",
+            "English"
+          ],
+          "scrambled_words": [
+            "would",
+            "English",
+            "to",
+            "speak",
+            "like"
+          ]
+        },
+        {
+          "hindi": "मैं आपके घर आना चाहूँगा",
+          "english": "would like to come your home.",
+          "target_words": [
+            "would",
+            "like",
+            "to",
+            "come",
+            "your",
+            "home"
+          ],
+          "scrambled_words": [
+            "your",
+            "home",
+            "like",
+            "come",
+            "would",
+            "to"
+          ]
+        },
+        {
+          "hindi": "_ हम खेलता चाहेंगे",
+          "english": "We would like to play.",
+          "target_words": [
+            "We",
+            "would",
+            "like",
+            "to",
+            "play"
+          ],
+          "scrambled_words": [
+            "like",
+            "would",
+            "play",
+            "We",
+            "to"
+          ]
+        },
+        {
+          "hindi": "वह बकवास नहींं सुनना चाहेगा",
+          "english": "He would not like to listen to your nonsense.",
+          "target_words": [
+            "He",
+            "would",
+            "not",
+            "like",
+            "to",
+            "listen",
+            "to",
+            "your",
+            "nonsense"
+          ],
+          "scrambled_words": [
+            "like",
+            "He",
+            "nonsense",
+            "to",
+            "to",
+            "listen",
+            "your",
+            "not",
+            "would"
+          ]
+        }
+      ],
+      "worksheet_quiz": [
+        {
+          "id": 1,
+          "question": "Translate into English: 'हम खेलना चाहेंगे'",
+          "hindi_sentence": "हम खेलना चाहेंगे",
+          "options": [
+            "would We like to play.",
+            "We would like for play.",
+            "We would like to play."
+          ],
+          "correct_answer": "We would like to play.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'We would like to play.' है।"
+        },
+        {
+          "id": 2,
+          "question": "Translate into English: 'वह चाय पीना चाहेगा'",
+          "hindi_sentence": "वह चाय पीना चाहेगा",
+          "options": [
+            "would He like to drink tea.",
+            "He would like for drink tea.",
+            "He would like to drink tea."
+          ],
+          "correct_answer": "He would like to drink tea.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He would like to drink tea.' है।"
+        },
+        {
+          "id": 3,
+          "question": "Translate into English: 'मैं अंग्रेजी बोलना चाहूँगा'",
+          "hindi_sentence": "मैं अंग्रेजी बोलना चाहूँगा",
+          "options": [
+            "would like to speak English.",
+            "would like for speak English.",
+            "like would to speak English.",
+            "would like to speak Englwash."
+          ],
+          "correct_answer": "would like to speak English.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'would like to speak English.' है।"
+        },
+        {
+          "id": 4,
+          "question": "Translate into English: 'मैं आपके घर आना चाहूँगा'",
+          "hindi_sentence": "मैं आपके घर आना चाहूँगा",
+          "options": [
+            "would like to come your home.",
+            "like would to come your home.",
+            "would like for come your home."
+          ],
+          "correct_answer": "would like to come your home.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'would like to come your home.' है।"
+        },
+        {
+          "id": 5,
+          "question": "Translate into English: '_ हम खेलता चाहेंगे'",
+          "hindi_sentence": "_ हम खेलता चाहेंगे",
+          "options": [
+            "would We like to play.",
+            "We would like for play.",
+            "We would like to play."
+          ],
+          "correct_answer": "We would like to play.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'We would like to play.' है।"
+        },
+        {
+          "id": 6,
+          "question": "Translate into English: 'वह बकवास नहींं सुनना चाहेगा'",
+          "hindi_sentence": "वह बकवास नहींं सुनना चाहेगा",
+          "options": [
+            "would He not like to listen to your nonsense.",
+            "He would not like for listen for your nonsense.",
+            "He would not like to lwasten to your nonsense.",
+            "He would not like to listen to your nonsense."
+          ],
+          "correct_answer": "He would not like to listen to your nonsense.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He would not like to listen to your nonsense.' है।"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Use of Need to",
+      "hindi_title": "करने की आवश्यकता / ज़रूरत है (Need to)",
+      "category": "Daily Expressions",
+      "level": "intermediate",
+      "emoji": "⚡",
+      "page_start": 61,
+      "page_end": 62,
+      "definition": "जब वर्तमान में किसी कार्य को करने की अनिवार्यता, ज़रूरत या आवश्यकता व्यक्त करनी हो, तब 'Need to' का प्रयोग किया जाता है।",
+      "structures": [
+        {
+          "name": "Affirmative (I/We/You/They)",
+          "formula": "Sub + need to + V1 + Object",
+          "hindi": "मुझे अंग्रेजी सीखने की ज़रूरत है - I need to learn English"
+        },
+        {
+          "name": "Affirmative (He/She/It)",
+          "formula": "Sub + needs to + V1 + Object",
+          "hindi": "उसे आराम करने की ज़रूरत है - He needs to take rest"
+        },
+        {
+          "name": "Negative",
+          "formula": "Sub + do not / does not + need to + V1 + Object",
+          "hindi": "तुम्हें चिंता करने की ज़रूरत नहीं है - You don't need to worry"
+        },
+        {
+          "name": "Interrogative",
+          "formula": "Do / Does + Sub + need to + V1 + Object?",
+          "hindi": "क्या मुझे जाने की आवश्यकता है? - Do I need to go?"
+        }
+      ],
+      "golden_rules": [
+        "Singular subject (He/She/It) के साथ 'needs to' और Plural (I/We/You/They) के साथ 'need to' आता है।",
+        "Do not / Does not आने पर हमेशा 'need to' ही रहेगा।"
+      ],
+      "vocabulary": [
+        {
+          "word": "Necessity",
+          "meaning": "आवश्यकता",
+          "example": "It is a daily necessity."
+        },
+        {
+          "word": "Improve",
+          "meaning": "सुधारना",
+          "example": "You need to improve your handwriting."
+        },
+        {
+          "word": "Concentrate",
+          "meaning": "ध्यान लगाना",
+          "example": "He needs to concentrate on studies."
+        }
+      ],
+      "examples": [
+        {
+          "hindi": "उसे अंग्रेजी सिखने की जरूरत है",
+          "english": "He needs to learn English."
+        },
+        {
+          "hindi": "तुम्हें आराम करने की जरूरत है",
+          "english": "You need to take rest."
+        },
+        {
+          "hindi": "उसे सावधान रहने की जरूरत नहीं है",
+          "english": "He does not need to be careful."
+        },
+        {
+          "hindi": "उसे पैसे कमाने की जरूरत है",
+          "english": "He needs to earn money."
+        },
+        {
+          "hindi": "मुझे पैसे बचाने की जरूरत है",
+          "english": "need to save the money."
+        },
+        {
+          "hindi": "हमें गरीबों के बारे में सोचने की जरूरत है",
+          "english": "e need to think about the poors."
+        },
+        {
+          "hindi": "e एग्जाम में ब्लैक पेन से लिखने की क्‍यों जरूरत है ?",
+          "english": "hy do you need to write with black pen in?"
+        },
+        {
+          "hindi": "तुम्हें अपने दोस्त के साथ रहने की जरूरत है",
+          "english": "You need to be with your friend."
+        },
+        {
+          "hindi": "तुम्हें उसकी शादी में धुम्रपान करने की जरूरत नहीं है",
+          "english": "You don't neet to smoke at his wedding."
+        },
+        {
+          "hindi": "उसे सुन्दर फुल तोड़ने की जरूरत नहीं है",
+          "english": "he doesn't need to pluck beautiful flowers."
+        },
+        {
+          "hindi": "उसे रोजाना अख़बार पढ़ने की जरूरत है",
+          "english": "He needs to read newspaper daily."
+        },
+        {
+          "hindi": "A. हमें अपने बड़ो के साथ समय बितात्ते की जरूरत है",
+          "english": "We need to spend time with our elders."
+        }
+      ],
+      "sentence_builder_drills": [
+        {
+          "hindi": "उसे अंग्रेजी सिखने की जरूरत है",
+          "english": "He needs to learn English.",
+          "target_words": [
+            "He",
+            "needs",
+            "to",
+            "learn",
+            "English"
+          ],
+          "scrambled_words": [
+            "learn",
+            "to",
+            "needs",
+            "He",
+            "English"
+          ]
+        },
+        {
+          "hindi": "तुम्हें आराम करने की जरूरत है",
+          "english": "You need to take rest.",
+          "target_words": [
+            "You",
+            "need",
+            "to",
+            "take",
+            "rest"
+          ],
+          "scrambled_words": [
+            "take",
+            "to",
+            "You",
+            "rest",
+            "need"
+          ]
+        },
+        {
+          "hindi": "उसे सावधान रहने की जरूरत नहीं है",
+          "english": "He does not need to be careful.",
+          "target_words": [
+            "He",
+            "does",
+            "not",
+            "need",
+            "to",
+            "be",
+            "careful"
+          ],
+          "scrambled_words": [
+            "be",
+            "He",
+            "does",
+            "to",
+            "not",
+            "careful",
+            "need"
+          ]
+        },
+        {
+          "hindi": "उसे पैसे कमाने की जरूरत है",
+          "english": "He needs to earn money.",
+          "target_words": [
+            "He",
+            "needs",
+            "to",
+            "earn",
+            "money"
+          ],
+          "scrambled_words": [
+            "earn",
+            "money",
+            "needs",
+            "to",
+            "He"
+          ]
+        },
+        {
+          "hindi": "मुझे पैसे बचाने की जरूरत है",
+          "english": "need to save the money.",
+          "target_words": [
+            "need",
+            "to",
+            "save",
+            "the",
+            "money"
+          ],
+          "scrambled_words": [
+            "money",
+            "need",
+            "to",
+            "save",
+            "the"
+          ]
+        },
+        {
+          "hindi": "हमें गरीबों के बारे में सोचने की जरूरत है",
+          "english": "e need to think about the poors.",
+          "target_words": [
+            "e",
+            "need",
+            "to",
+            "think",
+            "about",
+            "the",
+            "poors"
+          ],
+          "scrambled_words": [
+            "need",
+            "the",
+            "poors",
+            "think",
+            "about",
+            "e",
+            "to"
+          ]
+        }
+      ],
+      "worksheet_quiz": [
+        {
+          "id": 1,
+          "question": "Translate into English: 'उसे अंग्रेजी सिखने की जरूरत है'",
+          "hindi_sentence": "उसे अंग्रेजी सिखने की जरूरत है",
+          "options": [
+            "He needs for learn English.",
+            "He needs to learn Englwash.",
+            "He needs to learn English.",
+            "needs He to learn English."
+          ],
+          "correct_answer": "He needs to learn English.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He needs to learn English.' है।"
+        },
+        {
+          "id": 2,
+          "question": "Translate into English: 'तुम्हें आराम करने की जरूरत है'",
+          "hindi_sentence": "तुम्हें आराम करने की जरूरत है",
+          "options": [
+            "You need to take rest.",
+            "You need for take rest.",
+            "need You to take rest."
+          ],
+          "correct_answer": "You need to take rest.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'You need to take rest.' है।"
+        },
+        {
+          "id": 3,
+          "question": "Translate into English: 'उसे सावधान रहने की जरूरत नहीं है'",
+          "hindi_sentence": "उसे सावधान रहने की जरूरत नहीं है",
+          "options": [
+            "He does not need to be careful.",
+            "does He not need to be careful.",
+            "He does not need for be careful."
+          ],
+          "correct_answer": "He does not need to be careful.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He does not need to be careful.' है।"
+        },
+        {
+          "id": 4,
+          "question": "Translate into English: 'उसे पैसे कमाने की जरूरत है'",
+          "hindi_sentence": "उसे पैसे कमाने की जरूरत है",
+          "options": [
+            "needs He to earn money.",
+            "He needs for earn money.",
+            "He needs to earn money."
+          ],
+          "correct_answer": "He needs to earn money.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He needs to earn money.' है।"
+        },
+        {
+          "id": 5,
+          "question": "Translate into English: 'मुझे पैसे बचाने की जरूरत है'",
+          "hindi_sentence": "मुझे पैसे बचाने की जरूरत है",
+          "options": [
+            "to need save the money.",
+            "need to save the money.",
+            "need for save the money."
+          ],
+          "correct_answer": "need to save the money.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'need to save the money.' है।"
+        },
+        {
+          "id": 6,
+          "question": "Translate into English: 'हमें गरीबों के बारे में सोचने की जरूरत है'",
+          "hindi_sentence": "हमें गरीबों के बारे में सोचने की जरूरत है",
+          "options": [
+            "need e to think about the poors.",
+            "e need to think about the poors.",
+            "e need for think about the poors."
+          ],
+          "correct_answer": "e need to think about the poors.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'e need to think about the poors.' है।"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Use of Needed to",
+      "hindi_title": "करने की ज़रूरत थी (Needed to - Past Necessity)",
+      "category": "Daily Expressions",
+      "level": "intermediate",
+      "emoji": "📋",
+      "page_start": 63,
+      "page_end": 66,
+      "definition": "जब भूतकाल (Past) में किसी कार्य को करने की ज़रूरत या आवश्यकता थी, तब 'Needed to' का प्रयोग किया जाता है।",
+      "structures": [
+        {
+          "name": "Affirmative",
+          "formula": "Sub + needed to + V1 + Object",
+          "hindi": "उसे घर की सफाई करने की ज़रूरत थी - She needed to clean the house"
+        },
+        {
+          "name": "Negative",
+          "formula": "Sub + did not need to + V1 + Object",
+          "hindi": "तुम्हें बच्चों को डांटने की ज़रूरत नहीं थी - You didn't need to scold children"
+        },
+        {
+          "name": "Interrogative",
+          "formula": "Did + Sub + need to + V1 + Object?",
+          "hindi": "क्या उसे बर्तन मांजने की ज़रूरत थी? - Did she need to wash the dishes?"
+        }
+      ],
+      "golden_rules": [
+        "साधारण भूतकाल में सभी Subjects के साथ 'needed to' लगता है।",
+        "Negative में 'did not' के बाद 'needed to' बदलकर 'need to' हो जाता है (Did not need to + V1)।"
+      ],
+      "vocabulary": [
+        {
+          "word": "Scold",
+          "meaning": "डांटना",
+          "example": "You didn't need to scold children."
+        },
+        {
+          "word": "Wash dishes",
+          "meaning": "बर्तन मांजना",
+          "example": "Did she need to wash dishes?"
+        },
+        {
+          "word": "Worry",
+          "meaning": "चिंता करना",
+          "example": "You didn't need to worry about me."
+        }
+      ],
+      "examples": [
+        {
+          "hindi": "तुम्हें दबाई लेते की जरूरत थी",
+          "english": "You needed to take medicine."
+        },
+        {
+          "hindi": "A. हमें और शब्द याद करने की जरूरत थी",
+          "english": "We need to memorize more words."
+        },
+        {
+          "hindi": "तुम्हें फ़िक्र करने की जरूरत नहीं थी",
+          "english": "You did not need to worry."
+        },
+        {
+          "hindi": "उसे सही समय पर सोने की जरूरत थी",
+          "english": "He needed to sleep at the right time."
+        },
+        {
+          "hindi": "आपको अपने सपने का पालन करने की आवश्यकता थी",
+          "english": "You needed to follow your dream."
+        },
+        {
+          "hindi": "आपको अपना ग्रहकार्य पूरा करने की आवश्यकता थी",
+          "english": "You needed to complete your home work."
+        },
+        {
+          "hindi": "उसे अपनी गलतियाँ छिपाने की जरूरत नहीं थी",
+          "english": "He didn't need to hide his mistakes."
+        },
+        {
+          "hindi": "तुम्हें बच्चों को डांटने की जरूरत नहीं थी",
+          "english": "You didn't need to scold children."
+        },
+        {
+          "hindi": "किसानों को बीज बोने की आवश्यकता थी",
+          "english": "Farmers needed to sow the seeds."
+        },
+        {
+          "hindi": "उसे बालो का कलर करने की आवश्यकता नहीं थी",
+          "english": "He didn't need to colour his hair."
+        },
+        {
+          "hindi": "तुम्हें एक अच्छे डॉक्टर की सलाह की जरूरत थी",
+          "english": "You needed to consult a good Doctor."
+        }
+      ],
+      "sentence_builder_drills": [
+        {
+          "hindi": "तुम्हें दबाई लेते की जरूरत थी",
+          "english": "You needed to take medicine.",
+          "target_words": [
+            "You",
+            "needed",
+            "to",
+            "take",
+            "medicine"
+          ],
+          "scrambled_words": [
+            "needed",
+            "medicine",
+            "take",
+            "to",
+            "You"
+          ]
+        },
+        {
+          "hindi": "A. हमें और शब्द याद करने की जरूरत थी",
+          "english": "We need to memorize more words.",
+          "target_words": [
+            "We",
+            "need",
+            "to",
+            "memorize",
+            "more",
+            "words"
+          ],
+          "scrambled_words": [
+            "more",
+            "to",
+            "need",
+            "memorize",
+            "words",
+            "We"
+          ]
+        },
+        {
+          "hindi": "तुम्हें फ़िक्र करने की जरूरत नहीं थी",
+          "english": "You did not need to worry.",
+          "target_words": [
+            "You",
+            "did",
+            "not",
+            "need",
+            "to",
+            "worry"
+          ],
+          "scrambled_words": [
+            "not",
+            "worry",
+            "need",
+            "You",
+            "did",
+            "to"
+          ]
+        },
+        {
+          "hindi": "उसे सही समय पर सोने की जरूरत थी",
+          "english": "He needed to sleep at the right time.",
+          "target_words": [
+            "He",
+            "needed",
+            "to",
+            "sleep",
+            "at",
+            "the",
+            "right",
+            "time"
+          ],
+          "scrambled_words": [
+            "needed",
+            "sleep",
+            "to",
+            "He",
+            "at",
+            "right",
+            "the",
+            "time"
+          ]
+        },
+        {
+          "hindi": "आपको अपने सपने का पालन करने की आवश्यकता थी",
+          "english": "You needed to follow your dream.",
+          "target_words": [
+            "You",
+            "needed",
+            "to",
+            "follow",
+            "your",
+            "dream"
+          ],
+          "scrambled_words": [
+            "to",
+            "follow",
+            "needed",
+            "You",
+            "dream",
+            "your"
+          ]
+        },
+        {
+          "hindi": "आपको अपना ग्रहकार्य पूरा करने की आवश्यकता थी",
+          "english": "You needed to complete your home work.",
+          "target_words": [
+            "You",
+            "needed",
+            "to",
+            "complete",
+            "your",
+            "home",
+            "work"
+          ],
+          "scrambled_words": [
+            "work",
+            "home",
+            "You",
+            "to",
+            "your",
+            "complete",
+            "needed"
+          ]
+        }
+      ],
+      "worksheet_quiz": [
+        {
+          "id": 1,
+          "question": "Translate into English: 'तुम्हें दबाई लेते की जरूरत थी'",
+          "hindi_sentence": "तुम्हें दबाई लेते की जरूरत थी",
+          "options": [
+            "You needed to take medicine.",
+            "You needed for take medicine.",
+            "needed You to take medicine."
+          ],
+          "correct_answer": "You needed to take medicine.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'You needed to take medicine.' है।"
+        },
+        {
+          "id": 2,
+          "question": "Translate into English: 'A. हमें और शब्द याद करने की जरूरत थी'",
+          "hindi_sentence": "A. हमें और शब्द याद करने की जरूरत थी",
+          "options": [
+            "We need to memorize more words.",
+            "need We to memorize more words.",
+            "We need for memorize more words."
+          ],
+          "correct_answer": "We need to memorize more words.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'We need to memorize more words.' है।"
+        },
+        {
+          "id": 3,
+          "question": "Translate into English: 'तुम्हें फ़िक्र करने की जरूरत नहीं थी'",
+          "hindi_sentence": "तुम्हें फ़िक्र करने की जरूरत नहीं थी",
+          "options": [
+            "did You not need to worry.",
+            "You did not need for worry.",
+            "You did not need to worry."
+          ],
+          "correct_answer": "You did not need to worry.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'You did not need to worry.' है।"
+        },
+        {
+          "id": 4,
+          "question": "Translate into English: 'उसे सही समय पर सोने की जरूरत थी'",
+          "hindi_sentence": "उसे सही समय पर सोने की जरूरत थी",
+          "options": [
+            "needed He to sleep at the right time.",
+            "He needed to sleep at the right time.",
+            "He needed for sleep at the right time."
+          ],
+          "correct_answer": "He needed to sleep at the right time.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He needed to sleep at the right time.' है।"
+        },
+        {
+          "id": 5,
+          "question": "Translate into English: 'आपको अपने सपने का पालन करने की आवश्यकता थी'",
+          "hindi_sentence": "आपको अपने सपने का पालन करने की आवश्यकता थी",
+          "options": [
+            "needed You to follow your dream.",
+            "You needed to follow your dream.",
+            "You needed for follow your dream."
+          ],
+          "correct_answer": "You needed to follow your dream.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'You needed to follow your dream.' है।"
+        },
+        {
+          "id": 6,
+          "question": "Translate into English: 'आपको अपना ग्रहकार्य पूरा करने की आवश्यकता थी'",
+          "hindi_sentence": "आपको अपना ग्रहकार्य पूरा करने की आवश्यकता थी",
+          "options": [
+            "You needed for complete your home work.",
+            "needed You to complete your home work.",
+            "You needed to complete your home work."
+          ],
+          "correct_answer": "You needed to complete your home work.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'You needed to complete your home work.' है।"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Use of Fond of",
+      "hindi_title": "शौकीन होना (Fond of - Passions & Hobbies)",
+      "category": "Daily Expressions",
+      "level": "intermediate",
+      "emoji": "❤️",
+      "page_start": 67,
+      "page_end": 72,
+      "definition": "जब हमें यह बताना हो कि हमें किसी चीज़ का शौक है, या हम किसी काम को करने के शौकीन हैं (जैसे: क्रिकेट खेलने का शौक, संगीत सुनने का शौक), तब 'Fond of' का प्रयोग करते हैं।",
+      "structures": [
+        {
+          "name": "Present",
+          "formula": "Sub + is / am / are + fond of + V1-ing / Noun",
+          "hindi": "उसे संगीत सुनने का शौक है - She is fond of listening to music"
+        },
+        {
+          "name": "Past",
+          "formula": "Sub + was / were + fond of + V1-ing / Noun",
+          "hindi": "वह क्रिकेट खेलने का शौकीन था - He was fond of playing cricket"
+        },
+        {
+          "name": "Future",
+          "formula": "Sub + will be + fond of + V1-ing / Noun",
+          "hindi": "वह किताबें पढ़ने का शौकीन होगा - He will be fond of reading books"
+        },
+        {
+          "name": "Negative",
+          "formula": "Sub + is/am/are/was/were + not + fond of + V1-ing",
+          "hindi": "मुझे मीठा खाने का शौक नहीं है - I am not fond of eating sweets"
+        }
+      ],
+      "golden_rules": [
+        "'Fond of' में Preposition 'of' होने के कारण इसके बाद आने वाली क्रिया में हमेशा 'ing' (Gerund / V4) लगता है (fond of playing, fond of dancing)।",
+        "यदि कोई संज्ञा (Noun) हो तो सीधे Noun आ जाता है: 'fond of tea / chocolates'."
+      ],
+      "vocabulary": [
+        {
+          "word": "Biography",
+          "meaning": "आत्मकथा / जीवनी",
+          "example": "I am fond of reading biographies."
+        },
+        {
+          "word": "Festivals",
+          "meaning": "त्योहार",
+          "example": "She is fond of celebrating festivals."
+        },
+        {
+          "word": "Passionate",
+          "meaning": "उत्साही / शौकीन",
+          "example": "He is fond of photography."
+        }
+      ],
+      "examples": [
+        {
+          "hindi": "वह खाना पकाने की शौकीन है",
+          "english": "She is fond of cooking food."
+        },
+        {
+          "hindi": "वह खेलने का शौकीन है",
+          "english": "He is fond of playing."
+        },
+        {
+          "hindi": "हम पिज्जा खाने के शौकीन है",
+          "english": "e are fond of eating pizza."
+        },
+        {
+          "hindi": "वह न्यूज़पेपर पढ़ने का शौकीन है",
+          "english": "He is fond of reading the newspaper."
+        },
+        {
+          "hindi": "वह स्कूल जाने का शौकीन नहीं है",
+          "english": "He is not fond of going to school."
+        },
+        {
+          "hindi": "हमें मसालेदार खाना खाने का शौक है",
+          "english": "We are fond of eating spicy food."
+        },
+        {
+          "hindi": "बच्चों को बारिश में नहाने का शौक होता है",
+          "english": "Children are fond of taking a bath in the rain."
+        },
+        {
+          "hindi": "ay arate रंग के शौकीन होते है",
+          "english": "Children are fond of brigh colors."
+        },
+        {
+          "hindi": "Hat वहाने बनाने का शौक है",
+          "english": "am fond of making excuses."
+        },
+        {
+          "hindi": "गाय चारा खाने की शौकीन है",
+          "english": "Cow is fond of ealing grass."
+        },
+        {
+          "hindi": "(7. कुत्ता भौकने का शौकीन क्‍यों है",
+          "english": "hy is the dog fond of barking?"
+        },
+        {
+          "hindi": "महिलाओं को सोने का हार पहनने का शौक होता है",
+          "english": "Women are fond of wearing golden necklace."
+        }
+      ],
+      "sentence_builder_drills": [
+        {
+          "hindi": "वह खाना पकाने की शौकीन है",
+          "english": "She is fond of cooking food.",
+          "target_words": [
+            "She",
+            "is",
+            "fond",
+            "of",
+            "cooking",
+            "food"
+          ],
+          "scrambled_words": [
+            "She",
+            "food",
+            "fond",
+            "of",
+            "is",
+            "cooking"
+          ]
+        },
+        {
+          "hindi": "वह खेलने का शौकीन है",
+          "english": "He is fond of playing.",
+          "target_words": [
+            "He",
+            "is",
+            "fond",
+            "of",
+            "playing"
+          ],
+          "scrambled_words": [
+            "of",
+            "is",
+            "fond",
+            "playing",
+            "He"
+          ]
+        },
+        {
+          "hindi": "हम पिज्जा खाने के शौकीन है",
+          "english": "e are fond of eating pizza.",
+          "target_words": [
+            "e",
+            "are",
+            "fond",
+            "of",
+            "eating",
+            "pizza"
+          ],
+          "scrambled_words": [
+            "e",
+            "pizza",
+            "fond",
+            "of",
+            "are",
+            "eating"
+          ]
+        },
+        {
+          "hindi": "वह न्यूज़पेपर पढ़ने का शौकीन है",
+          "english": "He is fond of reading the newspaper.",
+          "target_words": [
+            "He",
+            "is",
+            "fond",
+            "of",
+            "reading",
+            "the",
+            "newspaper"
+          ],
+          "scrambled_words": [
+            "the",
+            "fond",
+            "is",
+            "reading",
+            "of",
+            "newspaper",
+            "He"
+          ]
+        },
+        {
+          "hindi": "वह स्कूल जाने का शौकीन नहीं है",
+          "english": "He is not fond of going to school.",
+          "target_words": [
+            "He",
+            "is",
+            "not",
+            "fond",
+            "of",
+            "going",
+            "to",
+            "school"
+          ],
+          "scrambled_words": [
+            "is",
+            "to",
+            "not",
+            "fond",
+            "of",
+            "going",
+            "He",
+            "school"
+          ]
+        },
+        {
+          "hindi": "हमें मसालेदार खाना खाने का शौक है",
+          "english": "We are fond of eating spicy food.",
+          "target_words": [
+            "We",
+            "are",
+            "fond",
+            "of",
+            "eating",
+            "spicy",
+            "food"
+          ],
+          "scrambled_words": [
+            "food",
+            "spicy",
+            "eating",
+            "are",
+            "of",
+            "fond",
+            "We"
+          ]
+        }
+      ],
+      "worksheet_quiz": [
+        {
+          "id": 1,
+          "question": "Translate into English: 'वह खाना पकाने की शौकीन है'",
+          "hindi_sentence": "वह खाना पकाने की शौकीन है",
+          "options": [
+            "She is fond of cooking food.",
+            "is She fond of cooking food.",
+            "She was fond of cooking food."
+          ],
+          "correct_answer": "She is fond of cooking food.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'She is fond of cooking food.' है।"
+        },
+        {
+          "id": 2,
+          "question": "Translate into English: 'वह खेलने का शौकीन है'",
+          "hindi_sentence": "वह खेलने का शौकीन है",
+          "options": [
+            "is He fond of playing.",
+            "He was fond of playing.",
+            "He is fond of playing."
+          ],
+          "correct_answer": "He is fond of playing.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He is fond of playing.' है।"
+        },
+        {
+          "id": 3,
+          "question": "Translate into English: 'हम पिज्जा खाने के शौकीन है'",
+          "hindi_sentence": "हम पिज्जा खाने के शौकीन है",
+          "options": [
+            "are e fond of eating pizza.",
+            "e are fond of eating pizza."
+          ],
+          "correct_answer": "e are fond of eating pizza.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'e are fond of eating pizza.' है।"
+        },
+        {
+          "id": 4,
+          "question": "Translate into English: 'वह न्यूज़पेपर पढ़ने का शौकीन है'",
+          "hindi_sentence": "वह न्यूज़पेपर पढ़ने का शौकीन है",
+          "options": [
+            "is He fond of reading the newspaper.",
+            "He is fond of reading the newspaper.",
+            "He was fond of reading the newspaper."
+          ],
+          "correct_answer": "He is fond of reading the newspaper.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He is fond of reading the newspaper.' है।"
+        },
+        {
+          "id": 5,
+          "question": "Translate into English: 'वह स्कूल जाने का शौकीन नहीं है'",
+          "hindi_sentence": "वह स्कूल जाने का शौकीन नहीं है",
+          "options": [
+            "He is not fond of going to school.",
+            "He was not fond of going to school.",
+            "He is not fond of going for school.",
+            "is He not fond of going to school."
+          ],
+          "correct_answer": "He is not fond of going to school.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He is not fond of going to school.' है।"
+        },
+        {
+          "id": 6,
+          "question": "Translate into English: 'हमें मसालेदार खाना खाने का शौक है'",
+          "hindi_sentence": "हमें मसालेदार खाना खाने का शौक है",
+          "options": [
+            "are We fond of eating spicy food.",
+            "We are fond of eating spicy food."
+          ],
+          "correct_answer": "We are fond of eating spicy food.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'We are fond of eating spicy food.' है।"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Use of About to",
+      "hindi_title": "बस होने ही वाला है (About to - Imminent Action)",
+      "category": "Daily Expressions",
+      "level": "intermediate",
+      "emoji": "⏰",
+      "page_start": 73,
+      "page_end": 77,
+      "definition": "जब हमें यह बताना हो कि कोई काम बस तुरंत होने ही वाला है या कोई व्यक्ति कोई काम बस करने ही वाला था/होगा, तब 'About to' का प्रयोग किया जाता है।",
+      "structures": [
+        {
+          "name": "Present (होने ही वाला है)",
+          "formula": "Sub + is / am / are + about to + V1 + Object",
+          "hindi": "ट्रेन छूटने ही वाली है - The train is about to leave"
+        },
+        {
+          "name": "Past (होने ही वाला था)",
+          "formula": "Sub + was / were + about to + V1 + Object",
+          "hindi": "मैं तुम्हें आमंत्रित करने वाला था - I was about to invite you"
+        },
+        {
+          "name": "Future (होने ही वाला होगा)",
+          "formula": "Sub + will be + about to + V1 + Object",
+          "hindi": "वह खाना पकाने वाली होगी - She will be about to cook food"
+        },
+        {
+          "name": "Interrogative",
+          "formula": "Are / Is / Was + Sub + about to + V1 + Object?",
+          "hindi": "क्या आप सोने जाने वाले हैं? - Are you about to go to bed?"
+        }
+      ],
+      "golden_rules": [
+        "'About to' के बाद हमेशा Verb का मूल रूप (V1) आता है।",
+        "इसका उपयोग तब होता है जब कार्य अगले कुछ ही सेकंड या मिनट में शुरू होने वाला हो।"
+      ],
+      "vocabulary": [
+        {
+          "word": "Invite",
+          "meaning": "आमंत्रित करना",
+          "example": "I was about to invite you."
+        },
+        {
+          "word": "Shake / Rustle",
+          "meaning": "हिलना",
+          "example": "Leaves are about to shake in the wind."
+        },
+        {
+          "word": "Go to bed",
+          "meaning": "सोने जाना",
+          "example": "Are you about to go to bed?"
+        }
+      ],
+      "examples": [
+        {
+          "hindi": "वह इस समस्या को हल करने वाला है",
+          "english": "He is about to solve this problem."
+        },
+        {
+          "hindi": "\\. Haga जाने वाला हूँ",
+          "english": "I am about to go to school."
+        },
+        {
+          "hindi": "वह पतंग उड़ाने वाला है",
+          "english": "He is about to fly kite."
+        },
+        {
+          "hindi": "पापा आने वाले है",
+          "english": "Papa is about to come."
+        },
+        {
+          "hindi": "हम उसकी पतंग काटने वाले",
+          "english": "e are about to cut his kite."
+        },
+        {
+          "hindi": "खेल ख़त्म होने वाला है",
+          "english": "The game is about to be over."
+        },
+        {
+          "hindi": "वह गाजर खाने वाला है",
+          "english": "He is about to eat carrot."
+        },
+        {
+          "hindi": "हवा वहने वाली है",
+          "english": "The wind is about to blow."
+        },
+        {
+          "hindi": "हम सूर्य को जल चढ़ाने वाले है",
+          "english": "e are about to offer water to the sun."
+        },
+        {
+          "hindi": "हम बिस्तर से उठने वाले है",
+          "english": "e are about to get up of bed."
+        },
+        {
+          "hindi": "वह दिल्ली निकलने वाला है",
+          "english": "He is about to leave for Delhi."
+        },
+        {
+          "hindi": "वह पार्क जाने वाला था",
+          "english": "He was about to go to the park."
+        }
+      ],
+      "sentence_builder_drills": [
+        {
+          "hindi": "वह इस समस्या को हल करने वाला है",
+          "english": "He is about to solve this problem.",
+          "target_words": [
+            "He",
+            "is",
+            "about",
+            "to",
+            "solve",
+            "this",
+            "problem"
+          ],
+          "scrambled_words": [
+            "He",
+            "solve",
+            "problem",
+            "is",
+            "this",
+            "about",
+            "to"
+          ]
+        },
+        {
+          "hindi": "\\. Haga जाने वाला हूँ",
+          "english": "I am about to go to school.",
+          "target_words": [
+            "I",
+            "am",
+            "about",
+            "to",
+            "go",
+            "to",
+            "school"
+          ],
+          "scrambled_words": [
+            "school",
+            "I",
+            "to",
+            "to",
+            "am",
+            "about",
+            "go"
+          ]
+        },
+        {
+          "hindi": "वह पतंग उड़ाने वाला है",
+          "english": "He is about to fly kite.",
+          "target_words": [
+            "He",
+            "is",
+            "about",
+            "to",
+            "fly",
+            "kite"
+          ],
+          "scrambled_words": [
+            "is",
+            "fly",
+            "about",
+            "kite",
+            "to",
+            "He"
+          ]
+        },
+        {
+          "hindi": "पापा आने वाले है",
+          "english": "Papa is about to come.",
+          "target_words": [
+            "Papa",
+            "is",
+            "about",
+            "to",
+            "come"
+          ],
+          "scrambled_words": [
+            "is",
+            "Papa",
+            "about",
+            "come",
+            "to"
+          ]
+        },
+        {
+          "hindi": "हम उसकी पतंग काटने वाले",
+          "english": "e are about to cut his kite.",
+          "target_words": [
+            "e",
+            "are",
+            "about",
+            "to",
+            "cut",
+            "his",
+            "kite"
+          ],
+          "scrambled_words": [
+            "to",
+            "about",
+            "e",
+            "kite",
+            "his",
+            "cut",
+            "are"
+          ]
+        },
+        {
+          "hindi": "खेल ख़त्म होने वाला है",
+          "english": "The game is about to be over.",
+          "target_words": [
+            "The",
+            "game",
+            "is",
+            "about",
+            "to",
+            "be",
+            "over"
+          ],
+          "scrambled_words": [
+            "about",
+            "is",
+            "The",
+            "over",
+            "be",
+            "to",
+            "game"
+          ]
+        }
+      ],
+      "worksheet_quiz": [
+        {
+          "id": 1,
+          "question": "Translate into English: 'वह इस समस्या को हल करने वाला है'",
+          "hindi_sentence": "वह इस समस्या को हल करने वाला है",
+          "options": [
+            "He was about to solve thwas problem.",
+            "He is about for solve this problem.",
+            "He is about to solve this problem.",
+            "is He about to solve this problem."
+          ],
+          "correct_answer": "He is about to solve this problem.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He is about to solve this problem.' है।"
+        },
+        {
+          "id": 2,
+          "question": "Translate into English: '\\. Haga जाने वाला हूँ'",
+          "hindi_sentence": "\\. Haga जाने वाला हूँ",
+          "options": [
+            "am I about to go to school.",
+            "I am about to go to school.",
+            "I am about for go for school."
+          ],
+          "correct_answer": "I am about to go to school.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'I am about to go to school.' है।"
+        },
+        {
+          "id": 3,
+          "question": "Translate into English: 'वह पतंग उड़ाने वाला है'",
+          "hindi_sentence": "वह पतंग उड़ाने वाला है",
+          "options": [
+            "He was about to fly kite.",
+            "He is about to fly kite.",
+            "He is about for fly kite.",
+            "is He about to fly kite."
+          ],
+          "correct_answer": "He is about to fly kite.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He is about to fly kite.' है।"
+        },
+        {
+          "id": 4,
+          "question": "Translate into English: 'पापा आने वाले है'",
+          "hindi_sentence": "पापा आने वाले है",
+          "options": [
+            "Papa is about to come.",
+            "Papa was about to come.",
+            "Papa is about for come.",
+            "is Papa about to come."
+          ],
+          "correct_answer": "Papa is about to come.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Papa is about to come.' है।"
+        },
+        {
+          "id": 5,
+          "question": "Translate into English: 'हम उसकी पतंग काटने वाले'",
+          "hindi_sentence": "हम उसकी पतंग काटने वाले",
+          "options": [
+            "e are about for cut his kite.",
+            "e are about to cut hwas kite.",
+            "e are about to cut his kite.",
+            "are e about to cut his kite."
+          ],
+          "correct_answer": "e are about to cut his kite.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'e are about to cut his kite.' है।"
+        },
+        {
+          "id": 6,
+          "question": "Translate into English: 'खेल ख़त्म होने वाला है'",
+          "hindi_sentence": "खेल ख़त्म होने वाला है",
+          "options": [
+            "game The is about to be over.",
+            "The game is about for be over.",
+            "The game is about to be over.",
+            "The game was about to be over."
+          ],
+          "correct_answer": "The game is about to be over.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'The game is about to be over.' है।"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Use of Make / Get (Causative Verbs)",
+      "hindi_title": "काम करवाना (Causative Verbs - Make & Get)",
+      "category": "Advanced Grammar",
+      "level": "advanced",
+      "emoji": "🔨",
+      "page_start": 78,
+      "page_end": 83,
+      "definition": "जब Subject खुद काम न करके किसी अन्य व्यक्ति से काम करवाता है (प्रेरणार्थक क्रिया), तब Make या Get का प्रयोग Causative Verbs के रूप में किया जाता है।",
+      "structures": [
+        {
+          "name": "Make (दबाव या निर्देश देकर करवाना - Present)",
+          "formula": "Sub + make / makes + Objective Pronoun + V1 + Object",
+          "hindi": "वह मुझसे कपड़े धुलवाती है - She makes me wash clothes"
+        },
+        {
+          "name": "Make (Past)",
+          "formula": "Sub + made + Objective Pronoun + V1 + Object",
+          "hindi": "उसने मुझसे पत्र लिखवाया - He made me write a letter"
+        },
+        {
+          "name": "Get (राजी करके या भुगतान करके करवाना)",
+          "formula": "Sub + get / gets + Object + V3 (Past Participle)",
+          "hindi": "मैंने बाल कटवाए - I got my hair cut"
+        },
+        {
+          "name": "Future Causative",
+          "formula": "Sub + will make + Obj Pro + V1",
+          "hindi": "वह मुझसे अंग्रेजी बुलवाएगा - He will make me speak English"
+        }
+      ],
+      "golden_rules": [
+        "Make के बाद Person (Objective pronoun) आता है और क्रिया का पहला रूप (V1) लगता है (He made me laugh)।",
+        "Get के बाद Thing (Object) आने पर क्रिया का तीसरा रूप (V3) लगता है (I got my car washed)।"
+      ],
+      "vocabulary": [
+        {
+          "word": "Wash clothes",
+          "meaning": "कपड़े धोना",
+          "example": "She makes me wash clothes."
+        },
+        {
+          "word": "Paint the house",
+          "meaning": "घर पेंट करवाना",
+          "example": "Did you get the house painted?"
+        },
+        {
+          "word": "Speak English",
+          "meaning": "अंग्रेजी बुलवाना",
+          "example": "He makes me speak English."
+        }
+      ],
+      "examples": [
+        {
+          "hindi": "मैं पत्र लिखवाता हूँ",
+          "english": "He gets the letter written."
+        },
+        {
+          "hindi": "मैं तुमसे लिखवाता हूँ",
+          "english": "I make you write."
+        },
+        {
+          "hindi": "वह मुझसे कपड़े धुलवाती है",
+          "english": "he makes me wash clothes."
+        },
+        {
+          "hindi": "वह मुझसे पढ़ाई करवाती है",
+          "english": "She makes me study."
+        },
+        {
+          "hindi": "वह उससे घर साफ करवाती है",
+          "english": "She makes him clean the house."
+        },
+        {
+          "hindi": "वह मुझसे दरवाजा खुलवाती है",
+          "english": "She makes me open the door."
+        },
+        {
+          "hindi": "मैं उससे मेज तैयार करवाता हूँ",
+          "english": "make him prepare the table."
+        },
+        {
+          "hindi": "वह मुझे नहीं नचवाती है",
+          "english": "he does not make me dance."
+        },
+        {
+          "hindi": "रानी मुझसे ग्रहकार्य करवाती है",
+          "english": "Rani makes me do homework."
+        },
+        {
+          "hindi": "वह मुझसे पेड़ कटवाती है",
+          "english": "She makes me cut the tree."
+        },
+        {
+          "hindi": "वह मुझसे नाश्ता करवाती है",
+          "english": "he makes me take breakfast."
+        },
+        {
+          "hindi": "वह मुझसे aaa उठबाती है",
+          "english": "She makes me lift the box."
+        }
+      ],
+      "sentence_builder_drills": [
+        {
+          "hindi": "मैं पत्र लिखवाता हूँ",
+          "english": "He gets the letter written.",
+          "target_words": [
+            "He",
+            "gets",
+            "the",
+            "letter",
+            "written"
+          ],
+          "scrambled_words": [
+            "letter",
+            "written",
+            "gets",
+            "He",
+            "the"
+          ]
+        },
+        {
+          "hindi": "मैं तुमसे लिखवाता हूँ",
+          "english": "I make you write.",
+          "target_words": [
+            "I",
+            "make",
+            "you",
+            "write"
+          ],
+          "scrambled_words": [
+            "you",
+            "I",
+            "make",
+            "write"
+          ]
+        },
+        {
+          "hindi": "वह मुझसे कपड़े धुलवाती है",
+          "english": "he makes me wash clothes.",
+          "target_words": [
+            "he",
+            "makes",
+            "me",
+            "wash",
+            "clothes"
+          ],
+          "scrambled_words": [
+            "clothes",
+            "he",
+            "makes",
+            "me",
+            "wash"
+          ]
+        },
+        {
+          "hindi": "वह मुझसे पढ़ाई करवाती है",
+          "english": "She makes me study.",
+          "target_words": [
+            "She",
+            "makes",
+            "me",
+            "study"
+          ],
+          "scrambled_words": [
+            "me",
+            "study",
+            "makes",
+            "She"
+          ]
+        },
+        {
+          "hindi": "वह उससे घर साफ करवाती है",
+          "english": "She makes him clean the house.",
+          "target_words": [
+            "She",
+            "makes",
+            "him",
+            "clean",
+            "the",
+            "house"
+          ],
+          "scrambled_words": [
+            "She",
+            "the",
+            "house",
+            "him",
+            "clean",
+            "makes"
+          ]
+        },
+        {
+          "hindi": "वह मुझसे दरवाजा खुलवाती है",
+          "english": "She makes me open the door.",
+          "target_words": [
+            "She",
+            "makes",
+            "me",
+            "open",
+            "the",
+            "door"
+          ],
+          "scrambled_words": [
+            "She",
+            "door",
+            "me",
+            "open",
+            "makes",
+            "the"
+          ]
+        }
+      ],
+      "worksheet_quiz": [
+        {
+          "id": 1,
+          "question": "Translate into English: 'मैं पत्र लिखवाता हूँ'",
+          "hindi_sentence": "मैं पत्र लिखवाता हूँ",
+          "options": [
+            "gets He the letter written.",
+            "He gets the letter written."
+          ],
+          "correct_answer": "He gets the letter written.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He gets the letter written.' है।"
+        },
+        {
+          "id": 2,
+          "question": "Translate into English: 'मैं तुमसे लिखवाता हूँ'",
+          "hindi_sentence": "मैं तुमसे लिखवाता हूँ",
+          "options": [
+            "make I you write.",
+            "I make you write."
+          ],
+          "correct_answer": "I make you write.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'I make you write.' है।"
+        },
+        {
+          "id": 3,
+          "question": "Translate into English: 'वह मुझसे कपड़े धुलवाती है'",
+          "hindi_sentence": "वह मुझसे कपड़े धुलवाती है",
+          "options": [
+            "makes he me wash clothes.",
+            "he makes me wash clothes."
+          ],
+          "correct_answer": "he makes me wash clothes.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'he makes me wash clothes.' है।"
+        },
+        {
+          "id": 4,
+          "question": "Translate into English: 'वह मुझसे पढ़ाई करवाती है'",
+          "hindi_sentence": "वह मुझसे पढ़ाई करवाती है",
+          "options": [
+            "makes She me study.",
+            "She makes me study."
+          ],
+          "correct_answer": "She makes me study.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'She makes me study.' है।"
+        },
+        {
+          "id": 5,
+          "question": "Translate into English: 'वह उससे घर साफ करवाती है'",
+          "hindi_sentence": "वह उससे घर साफ करवाती है",
+          "options": [
+            "She makes him clean the house.",
+            "makes She him clean the house."
+          ],
+          "correct_answer": "She makes him clean the house.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'She makes him clean the house.' है।"
+        },
+        {
+          "id": 6,
+          "question": "Translate into English: 'वह मुझसे दरवाजा खुलवाती है'",
+          "hindi_sentence": "वह मुझसे दरवाजा खुलवाती है",
+          "options": [
+            "She makes me open the door.",
+            "makes She me open the door."
+          ],
+          "correct_answer": "She makes me open the door.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'She makes me open the door.' है।"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "All Modals (Can, Should, May, Must, Used to, Could, etc.)",
+      "hindi_title": "सभी मोडाल्स (Can, Should, May, Must, Could...)",
+      "category": "Modals Master",
+      "level": "intermediate",
+      "emoji": "🎛️",
+      "page_start": 84,
+      "page_end": 123,
+      "definition": "Modals सहायक क्रियाएं (Auxiliary Verbs) होती हैं जो क्षमता, अनुमति, सलाह, संभावना, अनिवार्यता या भूतकाल की आदतों को व्यक्त करती हैं।",
+      "structures": [
+        {
+          "name": "Can (सकता है - क्षमता/योग्यता)",
+          "formula": "Sub + can + V1 + Object",
+          "hindi": "मैं यह सवाल हल कर सकता हूँ - I can solve this question"
+        },
+        {
+          "name": "Should (चाहिए - सलाह/सुझाव)",
+          "formula": "Sub + should + V1 + Object",
+          "hindi": "तुम्हें फल खाने चाहिए - You should eat fruits"
+        },
+        {
+          "name": "May (सकता है - औपचारिक अनुमति/संभावना)",
+          "formula": "May + I + V1 + Object?",
+          "hindi": "क्या मैं अंदर आ सकता हूँ? - May I come in?"
+        },
+        {
+          "name": "Must (चाहिए ही - अनिवार्यता/कर्तव्य)",
+          "formula": "Sub + must + V1 + Object",
+          "hindi": "हमें ट्रैफिक नियमों का पालन करना ही चाहिए - We must obey traffic rules"
+        },
+        {
+          "name": "Used to (करता था - पुरानी आदत)",
+          "formula": "Sub + used to + V1 + Object",
+          "hindi": "मैं शिक्षकों की नकल किया करता था - I used to mimic teachers"
+        },
+        {
+          "name": "Could (कर सका / कर पाया)",
+          "formula": "Sub + could + V1 + Object",
+          "hindi": "वह समय पर पहुँच सका - He could reach on time"
+        },
+        {
+          "name": "Should have (करना चाहिए था)",
+          "formula": "Sub + should have + V3 + Object",
+          "hindi": "हमें झगड़ा नहीं करना चाहिए था - We should not have fought"
+        },
+        {
+          "name": "Could have (कर सकता था)",
+          "formula": "Sub + could have + V3 + Object",
+          "hindi": "मैं जल्दी आ सकता था - I could have come early"
+        },
+        {
+          "name": "Must have (अवश्य किया होगा)",
+          "formula": "Sub + must have + V3 + Object",
+          "hindi": "उसने दवा ली होगी - He must have taken medicine"
+        }
+      ],
+      "golden_rules": [
+        "साधारण Modals (Can, Could, Should, May, Might, Must, Used to) के बाद हमेशा क्रिया का पहला रूप (V1) आता है।",
+        "Past Modals (Should have, Could have, Must have, Would have) के बाद हमेशा क्रिया का तीसरा रूप (V3) आता है!"
+      ],
+      "vocabulary": [
+        {
+          "word": "Traffic rules",
+          "meaning": "यातायात के नियम",
+          "example": "We must obey traffic rules."
+        },
+        {
+          "word": "Solve",
+          "meaning": "हल करना",
+          "example": "I can solve this question."
+        },
+        {
+          "word": "Mimic",
+          "meaning": "नकल उतारना",
+          "example": "He used to mimic teachers."
+        },
+        {
+          "word": "Fight / Quarrel",
+          "meaning": "झगड़ा करना",
+          "example": "We should not have fought."
+        }
+      ],
+      "examples": [
+        {
+          "hindi": "राज 00 किलो वजन उठा सकता है",
+          "english": "Raj can lift 00 kg."
+        },
+        {
+          "hindi": "वह नाच नहीं सकती है",
+          "english": "She can not dance."
+        },
+        {
+          "hindi": "क्या वह नाच नहींं सकती है ?",
+          "english": "Can she not dance ?"
+        },
+        {
+          "hindi": "मैं यह सवाल हल कर सकता हूँ",
+          "english": "I can solve this question."
+        },
+        {
+          "hindi": "वह कार चला सकता है",
+          "english": "He can drive the car."
+        },
+        {
+          "hindi": "मैं यह खुद कर सकता हूँ",
+          "english": "I can do this myself."
+        },
+        {
+          "hindi": "वह पत्र लिख सकता है",
+          "english": "He can write a letter."
+        },
+        {
+          "hindi": "वह तुम्हारा मकान बना सकता है",
+          "english": "He can build your house."
+        },
+        {
+          "hindi": "कंप्यूटर का प्रयोग कर सकता हूँ",
+          "english": "T can use a computer."
+        },
+        {
+          "hindi": "मैं आप पर भरोसा नहीं कर सकता हूँ",
+          "english": "Tean not belive you."
+        },
+        {
+          "hindi": "मैं रेल से यात्रा कर सकता हूँ",
+          "english": "can travel by train."
+        },
+        {
+          "hindi": "वह यह सिद्ध कर सकता है",
+          "english": "He can prove this."
+        }
+      ],
+      "sentence_builder_drills": [
+        {
+          "hindi": "राज 00 किलो वजन उठा सकता है",
+          "english": "Raj can lift 00 kg.",
+          "target_words": [
+            "Raj",
+            "can",
+            "lift",
+            "00",
+            "kg"
+          ],
+          "scrambled_words": [
+            "can",
+            "lift",
+            "kg",
+            "00",
+            "Raj"
+          ]
+        },
+        {
+          "hindi": "वह नाच नहीं सकती है",
+          "english": "She can not dance.",
+          "target_words": [
+            "She",
+            "can",
+            "not",
+            "dance"
+          ],
+          "scrambled_words": [
+            "can",
+            "dance",
+            "not",
+            "She"
+          ]
+        },
+        {
+          "hindi": "क्या वह नाच नहींं सकती है ?",
+          "english": "Can she not dance ?",
+          "target_words": [
+            "Can",
+            "she",
+            "not",
+            "dance"
+          ],
+          "scrambled_words": [
+            "not",
+            "dance",
+            "she",
+            "Can"
+          ]
+        },
+        {
+          "hindi": "मैं यह सवाल हल कर सकता हूँ",
+          "english": "I can solve this question.",
+          "target_words": [
+            "I",
+            "can",
+            "solve",
+            "this",
+            "question"
+          ],
+          "scrambled_words": [
+            "this",
+            "can",
+            "question",
+            "I",
+            "solve"
+          ]
+        },
+        {
+          "hindi": "वह कार चला सकता है",
+          "english": "He can drive the car.",
+          "target_words": [
+            "He",
+            "can",
+            "drive",
+            "the",
+            "car"
+          ],
+          "scrambled_words": [
+            "the",
+            "He",
+            "car",
+            "drive",
+            "can"
+          ]
+        },
+        {
+          "hindi": "मैं यह खुद कर सकता हूँ",
+          "english": "I can do this myself.",
+          "target_words": [
+            "I",
+            "can",
+            "do",
+            "this",
+            "myself"
+          ],
+          "scrambled_words": [
+            "can",
+            "myself",
+            "this",
+            "do",
+            "I"
+          ]
+        }
+      ],
+      "worksheet_quiz": [
+        {
+          "id": 1,
+          "question": "Translate into English: 'राज 00 किलो वजन उठा सकता है'",
+          "hindi_sentence": "राज 00 किलो वजन उठा सकता है",
+          "options": [
+            "can Raj lift 00 kg.",
+            "Raj can lift 00 kg.",
+            "Raj should lift 00 kg."
+          ],
+          "correct_answer": "Raj can lift 00 kg.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Raj can lift 00 kg.' है।"
+        },
+        {
+          "id": 2,
+          "question": "Translate into English: 'वह नाच नहीं सकती है'",
+          "hindi_sentence": "वह नाच नहीं सकती है",
+          "options": [
+            "She should not dance.",
+            "can She not dance.",
+            "She can not dance."
+          ],
+          "correct_answer": "She can not dance.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'She can not dance.' है।"
+        },
+        {
+          "id": 3,
+          "question": "Translate into English: 'क्या वह नाच नहींं सकती है ?'",
+          "hindi_sentence": "क्या वह नाच नहींं सकती है ?",
+          "options": [
+            "she Can not dance ?",
+            "Can she not dance ?"
+          ],
+          "correct_answer": "Can she not dance ?",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Can she not dance ?' है।"
+        },
+        {
+          "id": 4,
+          "question": "Translate into English: 'मैं यह सवाल हल कर सकता हूँ'",
+          "hindi_sentence": "मैं यह सवाल हल कर सकता हूँ",
+          "options": [
+            "I should solve thwas question.",
+            "I can solve this question.",
+            "can I solve this question."
+          ],
+          "correct_answer": "I can solve this question.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'I can solve this question.' है।"
+        },
+        {
+          "id": 5,
+          "question": "Translate into English: 'वह कार चला सकता है'",
+          "hindi_sentence": "वह कार चला सकता है",
+          "options": [
+            "He can drive the car.",
+            "can He drive the car.",
+            "He should drive the car."
+          ],
+          "correct_answer": "He can drive the car.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He can drive the car.' है।"
+        },
+        {
+          "id": 6,
+          "question": "Translate into English: 'मैं यह खुद कर सकता हूँ'",
+          "hindi_sentence": "मैं यह खुद कर सकता हूँ",
+          "options": [
+            "I should do thwas myself.",
+            "I can do this myself.",
+            "can I do this myself."
+          ],
+          "correct_answer": "I can do this myself.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'I can do this myself.' है।"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "title": "All Tenses (Present, Past, Future - Complete Guide)",
+      "hindi_title": "सभी काल (Present, Past, Future - 12 Tenses)",
+      "category": "Tenses Master",
+      "level": "intermediate",
+      "emoji": "⏳",
+      "page_start": 124,
+      "page_end": 150,
+      "definition": "Tense क्रिया का वह रूप है जिसके द्वारा हमें समय (Time of action) और कार्य की स्थिति (State of action) का पता चलता है। कुल 3 मुख्य काल होते हैं और प्रत्येक के 4 प्रकार होते हैं, कुल 12 Tenses होते हैं।",
+      "structures": [
+        {
+          "name": "Present Simple (ता है, ती है, ते हैं)",
+          "formula": "Sub + V1/V5 (s/es) + Object",
+          "hindi": "वह चाय पीता है - He takes tea"
+        },
+        {
+          "name": "Present Continuous (रहा है, रही है)",
+          "formula": "Sub + is/am/are + V1-ing + Object",
+          "hindi": "वह क्रिकेट खेल रहा है - He is playing cricket"
+        },
+        {
+          "name": "Present Perfect (चुका है, लिया है)",
+          "formula": "Sub + has/have + V3 + Object",
+          "hindi": "वह काम कर चुकी है - She has worked"
+        },
+        {
+          "name": "Present Perfect Continuous (से रहा है)",
+          "formula": "Sub + has/have been + V1-ing + since/for + time",
+          "hindi": "वह 7 बजे से पढ़ रहा है - He has been reading since 7 o'clock"
+        },
+        {
+          "name": "Past Simple (आ, ई, ए, ता था)",
+          "formula": "Sub + V2 + Object",
+          "hindi": "उसने चाय बनाई - She prepared tea"
+        },
+        {
+          "name": "Past Continuous (रहा था, रहे थे)",
+          "formula": "Sub + was/were + V1-ing + Object",
+          "hindi": "वह मेरा इंतज़ार कर रहा था - He was waiting for me"
+        },
+        {
+          "name": "Past Perfect (चुका था, दिया था)",
+          "formula": "Sub + had + V3 + Object",
+          "hindi": "ट्रेन जा चुकी थी - The train had left"
+        },
+        {
+          "name": "Future Simple (गा, गी, गे)",
+          "formula": "Sub + will + V1 + Object",
+          "hindi": "वह पार्टी में नाचेगा - He will dance at the party"
+        },
+        {
+          "name": "Future Continuous (रहा होगा)",
+          "formula": "Sub + will be + V1-ing + Object",
+          "hindi": "मैं क्रिकेट खेल रहा हूँगा - I will be playing cricket"
+        },
+        {
+          "name": "Future Perfect (चुका होगा)",
+          "formula": "Sub + will have + V3 + Object",
+          "hindi": "वे क्रिकेट खेल चुके होंगे - They will have played cricket"
+        }
+      ],
+      "golden_rules": [
+        "Present Simple में He, She, It, Singular के साथ क्रिया में s/es लगता है (takes, plays, goes)।",
+        "Past Simple के सकारात्मक वाक्य में क्रिया का दूसरा रूप (V2) आता है (prepared, went, saw)। Negative में Did not + V1 आता है।",
+        "निश्चित समय (Exact time: 7 o'clock, Monday, 2020) के लिए 'since', और अवधि (Duration: 2 hours, 5 days) के लिए 'for' का प्रयोग होता है।"
+      ],
+      "vocabulary": [
+        {
+          "word": "Routine",
+          "meaning": "दैनिक दिनचर्या",
+          "example": "He follows a strict routine."
+        },
+        {
+          "word": "Prepare",
+          "meaning": "तैयार करना / बनाना",
+          "example": "She prepared tea for guests."
+        },
+        {
+          "word": "Steal",
+          "meaning": "चुराना",
+          "example": "He has been stealing money."
+        }
+      ],
+      "examples": [
+        {
+          "hindi": "ag क्रिकेट खेलता है",
+          "english": "He plays cricket."
+        },
+        {
+          "hindi": "Mic ४ ,वह सिगरेट हल",
+          "english": "He smokes."
+        },
+        {
+          "hindi": "वह स्कूल नहीं जाता है",
+          "english": "He does not go to school."
+        },
+        {
+          "hindi": "क्या वह स्कूल नहीं जाता है ?",
+          "english": "Does he not go to school ?"
+        },
+        {
+          "hindi": "वह खाना खाता है",
+          "english": "He eats food."
+        },
+        {
+          "hindi": "क्‍या तुम अमेरिका में पढ़ते हो",
+          "english": "Do you study in America."
+        },
+        {
+          "hindi": "वह आठ बजे उठता है",
+          "english": "He wakes up at 8 o'clock."
+        },
+        {
+          "hindi": "aa Prat कक्षा में शोर नहीं मचाते है",
+          "english": "tudents do not make a noise in the."
+        },
+        {
+          "hindi": "हम मरीजो को रक्तदान नहीं करते है",
+          "english": "e do not donate blood to the patients."
+        },
+        {
+          "hindi": "मैं उसे नहीं मारता हूँ",
+          "english": "I don't beat him."
+        },
+        {
+          "hindi": "वह अभी सो रहा है",
+          "english": "He is sleeping now."
+        },
+        {
+          "hindi": "वह दौड़ रहा है।",
+          "english": "e is running."
+        }
+      ],
+      "sentence_builder_drills": [
+        {
+          "hindi": "ag क्रिकेट खेलता है",
+          "english": "He plays cricket.",
+          "target_words": [
+            "He",
+            "plays",
+            "cricket"
+          ],
+          "scrambled_words": [
+            "cricket",
+            "He",
+            "plays"
+          ]
+        },
+        {
+          "hindi": "Mic ४ ,वह सिगरेट हल",
+          "english": "He smokes.",
+          "target_words": [
+            "He",
+            "smokes"
+          ],
+          "scrambled_words": [
+            "smokes",
+            "He"
+          ]
+        },
+        {
+          "hindi": "वह स्कूल नहीं जाता है",
+          "english": "He does not go to school.",
+          "target_words": [
+            "He",
+            "does",
+            "not",
+            "go",
+            "to",
+            "school"
+          ],
+          "scrambled_words": [
+            "does",
+            "to",
+            "not",
+            "school",
+            "go",
+            "He"
+          ]
+        },
+        {
+          "hindi": "क्या वह स्कूल नहीं जाता है ?",
+          "english": "Does he not go to school ?",
+          "target_words": [
+            "Does",
+            "he",
+            "not",
+            "go",
+            "to",
+            "school"
+          ],
+          "scrambled_words": [
+            "Does",
+            "to",
+            "school",
+            "not",
+            "go",
+            "he"
+          ]
+        },
+        {
+          "hindi": "वह खाना खाता है",
+          "english": "He eats food.",
+          "target_words": [
+            "He",
+            "eats",
+            "food"
+          ],
+          "scrambled_words": [
+            "eats",
+            "food",
+            "He"
+          ]
+        },
+        {
+          "hindi": "क्‍या तुम अमेरिका में पढ़ते हो",
+          "english": "Do you study in America.",
+          "target_words": [
+            "Do",
+            "you",
+            "study",
+            "in",
+            "America"
+          ],
+          "scrambled_words": [
+            "Do",
+            "America",
+            "study",
+            "in",
+            "you"
+          ]
+        }
+      ],
+      "worksheet_quiz": [
+        {
+          "id": 1,
+          "question": "Translate into English: 'ag क्रिकेट खेलता है'",
+          "hindi_sentence": "ag क्रिकेट खेलता है",
+          "options": [
+            "plays He cricket.",
+            "He plays cricket."
+          ],
+          "correct_answer": "He plays cricket.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He plays cricket.' है।"
+        },
+        {
+          "id": 2,
+          "question": "Translate into English: 'Mic ४ ,वह सिगरेट हल'",
+          "hindi_sentence": "Mic ४ ,वह सिगरेट हल",
+          "options": [
+            "He smokes."
+          ],
+          "correct_answer": "He smokes.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He smokes.' है।"
+        },
+        {
+          "id": 3,
+          "question": "Translate into English: 'वह स्कूल नहीं जाता है'",
+          "hindi_sentence": "वह स्कूल नहीं जाता है",
+          "options": [
+            "He does not go for school.",
+            "He does not go to school.",
+            "does He not go to school."
+          ],
+          "correct_answer": "He does not go to school.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He does not go to school.' है।"
+        },
+        {
+          "id": 4,
+          "question": "Translate into English: 'क्या वह स्कूल नहीं जाता है ?'",
+          "hindi_sentence": "क्या वह स्कूल नहीं जाता है ?",
+          "options": [
+            "Does he not go to school ?",
+            "he Does not go to school ?",
+            "Does he not go for school ?"
+          ],
+          "correct_answer": "Does he not go to school ?",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Does he not go to school ?' है।"
+        },
+        {
+          "id": 5,
+          "question": "Translate into English: 'वह खाना खाता है'",
+          "hindi_sentence": "वह खाना खाता है",
+          "options": [
+            "He eats food.",
+            "eats He food."
+          ],
+          "correct_answer": "He eats food.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'He eats food.' है।"
+        },
+        {
+          "id": 6,
+          "question": "Translate into English: 'क्‍या तुम अमेरिका में पढ़ते हो'",
+          "hindi_sentence": "क्‍या तुम अमेरिका में पढ़ते हो",
+          "options": [
+            "you Do study in America.",
+            "Do you study in America."
+          ],
+          "correct_answer": "Do you study in America.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Do you study in America.' है।"
+        }
+      ]
+    }
+  ]
+}
