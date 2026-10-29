@@ -529,7 +529,17 @@ async def live_voice_chat(
                 f"{m.role.capitalize()}: {m.text}" for m in recent
             )
 
-        user_input_prompt = f"{history_str}\nUser just said: \"{req.message}\"\n\nReply as Priya in 1-3 spoken sentences. Ask ONE follow-up question."
+        user_input_prompt = f"""{history_str}
+The Indian beginner student just said: "{req.message}"
+
+TASK FOR PRIYA:
+1. MISTAKE CHECK: Check if the student made any grammar mistake, wrong tense, unnatural phrasing, or spoke in Hindi.
+   - If there IS a mistake: Acknowledge what they meant, briefly explain the mistake in simple Hinglish (e.g., "Past tense mein 'went' use karte hai"), give the correct English sentence, and encourage them.
+   - If they spoke in Hindi: Help them say it in natural English ("Arre, English mein aise bolo: ...").
+   - If there is NO mistake: Praise them warmly ("Nice!", "Spot on!").
+2. CONVERSATION & FOLLOW-UP: Continue the chat naturally like a close friend and ask ONE easy follow-up question.
+
+Keep your spoken reply under 3 short sentences. No asterisks, emojis or markdown formatting."""
 
         # Conversational response generation
         reply_text = await groq.chat(
