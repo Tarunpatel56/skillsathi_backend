@@ -228,6 +228,7 @@ class GroqService:
         system_prompt: str,
         user_message: str,
         temperature: float | None = None,
+        max_tokens: int | None = None,
         max_retries: int = 3,
     ) -> dict | list:
         """
@@ -258,11 +259,12 @@ class GroqService:
         temp = temperature if temperature is not None else self.temperature
 
         # ── Phase 1: native JSON mode ─────────────────────────────────────────
+        token_limit = max_tokens or self.max_tokens
         try:
             raw = self._call_api(
                 messages=msgs,
                 temperature=temp,
-                max_tokens=self.max_tokens,
+                max_tokens=token_limit,
                 response_format={"type": "json_object"},
             )
             if raw and raw.strip():
@@ -283,7 +285,7 @@ class GroqService:
                 raw = self._call_api(
                     messages=msgs,
                     temperature=temp,
-                    max_tokens=self.max_tokens,
+                    max_tokens=token_limit,
                 )
                 result = self._extract_json(raw)
                 return result
