@@ -99,9 +99,10 @@ class LiveVoiceRequest(BaseModel):
 
 
 class LiveVoiceResponse(BaseModel):
-    """Response containing Priya's spoken response and synthesized audio."""
+    """Response containing Priya's spoken response, Hindi translation, and synthesized audio."""
     success: bool = True
     reply_text: str = Field(..., description="Priya's spoken response text")
+    hindi_translation: Optional[str] = Field(None, description="Accurate Hindi translation of Priya's spoken response")
     audio_base64: str = Field(..., description="Base64 encoded MP3 audio data")
     audio_format: str = Field("audio/mp3", description="Audio MIME type")
     voice_used: str = Field("en-IN-NeerjaExpressiveNeural", description="Voice ID used for synthesis")

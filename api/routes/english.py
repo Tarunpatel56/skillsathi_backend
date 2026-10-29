@@ -488,18 +488,24 @@ async def get_live_voice_greeting(
 ):
     """
     Get Priya's initial warm spoken greeting to start a live voice conversation immediately.
-    Pre-synthesized and cached for sub-second start.
+    Pre-synthesized and cached for sub-second start. Includes Hindi translation.
     """
     greeting_text = (
         "Hey there! I'm Priya. So good to meet you! "
         "Don't worry about making mistakes at all, okay? We'll practice speaking just like close friends. "
         "So tell me, how was your day today?"
     )
+    hindi_trans = (
+        "नमस्ते! मैं प्रिया हूँ। आपसे मिलकर बहुत अच्छा लगा! "
+        "गलतियों की बिल्कुल चिंता मत कीजिए। हम पक्के दोस्तों की तरह बात करेंगे। "
+        "तो बताइए, आज आपका दिन कैसा रहा?"
+    )
     try:
         audio_b64 = await tts.synthesize_base64(greeting_text, voice=voice, rate="-4%", pitch="+1Hz")
         return LiveVoiceResponse(
             success=True,
             reply_text=greeting_text,
+            hindi_translation=hindi_trans,
             audio_base64=audio_b64,
             audio_format="audio/mp3",
             voice_used=voice,
@@ -516,18 +522,27 @@ async def live_voice_chat(
 ):
     """
     Live conversational turn with Priya (AI English Speaking Partner):
-    1. Evaluates user utterance and context.
-    2. Generates conversational reply with 1 question & gentle Hinglish correction if needed.
+    1. Evaluates user utterance and context for any grammar/pronunciation mistakes.
+    2. Generates conversational spoken reply + Hindi subtitle translation in JSON.
     3. Synthesizes realistic Indian English female voice audio (en-IN-NeerjaExpressiveNeural).
     """
     try:
         history_str = ""
         if req.history:
-            # Keep last 6 exchanges to stay fast and focused
             recent = req.history[-6:]
             history_str = "\nRecent Conversation:\n" + "\n".join(
                 f"{m.role.capitalize()}: {m.text}" for m in recent
             )
+
+        system_prompt = LIVE_VOICE_PARTNER_SYSTEM + """
+
+CRITICAL OUTPUT FORMAT:
+You MUST return a JSON object with exactly two keys:
+{
+  "spoken_reply": "Your 1-3 spoken English/Hinglish sentences that will be spoken aloud to the student",
+  "hindi_translation": "Natural Hindi translation of your spoken_reply so the student can understand its exact meaning in Hindi"
+}
+"""
 
         user_input_prompt = f"""{history_str}
 The Indian beginner student just said: "{req.message}"
@@ -539,22 +554,34 @@ TASK FOR PRIYA:
    - If there is NO mistake: Praise them warmly ("Nice!", "Spot on!").
 2. CONVERSATION & FOLLOW-UP: Continue the chat naturally like a close friend and ask ONE easy follow-up question.
 
-Keep your spoken reply under 3 short sentences. No asterisks, emojis or markdown formatting."""
+Keep your spoken reply under 3 short sentences. No asterisks, emojis or markdown formatting.
+Return JSON with 'spoken_reply' and 'hindi_translation'."""
 
-        # Conversational response generation
-        reply_text = await groq.chat(
-            LIVE_VOICE_PARTNER_SYSTEM,
+        # Conversational response generation with JSON format
+        result = await groq.chat_json(
+            system_prompt,
             user_input_prompt,
             temperature=0.7,
             max_tokens=800,
         )
 
+        spoken_reply = ""
+        hindi_translation = ""
+        if isinstance(result, dict):
+            spoken_reply = result.get("spoken_reply", "")
+            hindi_translation = result.get("hindi_translation", "")
+        elif isinstance(result, str):
+            spoken_reply = result
+
+        if not spoken_reply:
+            spoken_reply = "Nice try! Keep speaking in English, you're doing great!"
+
         selected_voice = req.voice or DEFAULT_FEMALE_VOICE
         speech_rate = req.speech_rate or "-4%"
 
-        # Synthesize audio with natural female voice
+        # Synthesize audio for the spoken reply
         audio_b64 = await tts.synthesize_base64(
-            reply_text,
+            spoken_reply,
             voice=selected_voice,
             rate=speech_rate,
             pitch="+1Hz",
@@ -562,7 +589,8 @@ Keep your spoken reply under 3 short sentences. No asterisks, emojis or markdown
 
         return LiveVoiceResponse(
             success=True,
-            reply_text=reply_text,
+            reply_text=spoken_reply,
+            hindi_translation=hindi_translation or None,
             audio_base64=audio_b64,
             audio_format="audio/mp3",
             voice_used=selected_voice,
