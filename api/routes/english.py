@@ -9,6 +9,7 @@ from models.english_models import (
     VocabularyRequest, TranslationRequest,
     SentenceCheckRequest, LessonTestRequest, TestSubmitRequest,
     MassSpokenEvaluateRequest, MassSpokenChatRequest,
+    MassSpokenGenerateDrillsRequest,
 )
 from core.prompts import (
     ENGLISH_TEACHER_SYSTEM,
@@ -373,13 +374,25 @@ async def get_mass_spoken_chapter(
 @router.get("/mass-spoken/practice/{chapter_id}")
 async def get_mass_spoken_practice(
     chapter_id: int,
+    count: int = 10,
     mass_service: MassSpokenService = Depends(get_mass_spoken_service),
 ):
-    """Get interactive practice pack: Sentence Builder drills, MCQs, Flashcards."""
-    pack = mass_service.get_practice_pack(chapter_id)
+    """Get interactive practice pack: Sentence Builder drills, MCQs, Flashcards with customizable count."""
+    pack = mass_service.get_practice_pack(chapter_id, count=count)
     if not pack:
         raise HTTPException(status_code=404, detail="Chapter not found")
     return {"success": True, "practice": pack}
+
+
+@router.post("/mass-spoken/generate-drills")
+async def generate_more_mass_spoken_drills(
+    req: MassSpokenGenerateDrillsRequest,
+    groq: GroqService = Depends(get_groq_service),
+    mass_service: MassSpokenService = Depends(get_mass_spoken_service),
+):
+    """Generate extra practice questions dynamically using AI."""
+    extra = await mass_service.generate_dynamic_drills(req.chapter_id, req.count, groq)
+    return {"success": True, "data": extra}
 
 
 @router.post("/mass-spoken/evaluate-sentence")

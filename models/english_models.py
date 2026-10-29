@@ -67,7 +67,7 @@ class GrammarCheckResponse(BaseModel):
 
 class MassSpokenEvaluateRequest(BaseModel):
     """Request to evaluate a user's translation for a Mass Spoken chapter."""
-    chapter_id: int = Field(..., ge=1, le=25)
+    chapter_id: int = Field(..., ge=1, le=60)
     hindi_sentence: str = Field(..., min_length=1)
     user_translation: str = Field(..., min_length=1)
 
@@ -76,4 +76,10 @@ class MassSpokenChatRequest(BaseModel):
     """Chat with the Mass Spoken English AI Guru."""
     message: str = Field(..., min_length=1)
     chapter_id: Optional[int] = Field(None, description="Optional chapter ID context")
+
+
+class MassSpokenGenerateDrillsRequest(BaseModel):
+    """Request to dynamically generate extra practice drills using AI."""
+    chapter_id: int = Field(..., ge=1, le=60)
+    count: int = Field(10, ge=3, le=30, description="Number of drills to generate")
 
