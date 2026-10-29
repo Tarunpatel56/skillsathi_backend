@@ -83,3 +83,42 @@ class MassSpokenGenerateDrillsRequest(BaseModel):
     chapter_id: int = Field(..., ge=1, le=60)
     count: int = Field(10, ge=3, le=30, description="Number of drills to generate")
 
+
+class ChatMessageItem(BaseModel):
+    """A single message in conversational history."""
+    role: str = Field(..., description="'user' or 'ai'")
+    text: str = Field(..., description="Message text")
+
+
+class LiveVoiceRequest(BaseModel):
+    """Request for Priya live voice conversation."""
+    message: str = Field(..., min_length=1, description="What the user said (speech transcript or typed)")
+    history: List[ChatMessageItem] = Field(default_factory=list, description="Recent conversation turns")
+    voice: Optional[str] = Field("en-IN-NeerjaExpressiveNeural", description="Neural female voice name")
+    speech_rate: Optional[str] = Field("-4%", description="Speaking speed rate (-4% for natural beginner learner)")
+
+
+class LiveVoiceResponse(BaseModel):
+    """Response containing Priya's spoken response and synthesized audio."""
+    success: bool = True
+    reply_text: str = Field(..., description="Priya's spoken response text")
+    audio_base64: str = Field(..., description="Base64 encoded MP3 audio data")
+    audio_format: str = Field("audio/mp3", description="Audio MIME type")
+    voice_used: str = Field("en-IN-NeerjaExpressiveNeural", description="Voice ID used for synthesis")
+
+
+class TTSRequest(BaseModel):
+    """Direct Text-to-Speech synthesis request."""
+    text: str = Field(..., min_length=1, description="Text to synthesize")
+    voice: Optional[str] = Field("en-IN-NeerjaExpressiveNeural", description="Voice name")
+    speech_rate: Optional[str] = Field("-4%", description="Rate adjustment")
+
+
+class TTSResponse(BaseModel):
+    """Direct TTS response."""
+    success: bool = True
+    audio_base64: str
+    audio_format: str = "audio/mp3"
+    voice_used: str = "en-IN-NeerjaExpressiveNeural"
+
+

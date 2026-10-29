@@ -81,6 +81,28 @@ async def evaluate_answer(
         raise HTTPException(status_code=500, detail=str(e))
 
 
+@router.get("/common-questions")
+async def get_common_questions_get(
+    role: str = "Software Developer",
+    interview_type: str = "HR",
+    count: int = 5,
+    groq: GroqService = Depends(get_groq_service),
+):
+    """Get common interview questions via GET query parameters."""
+    try:
+        prompt = (
+            f"Generate {count} common {interview_type} interview questions "
+            f"for the role of {role}. Return as a JSON object with a 'questions' list: {{\"questions\": [\"question 1\", \"question 2\"]}}"
+        )
+        result = await groq.chat_json(INTERVIEW_COACH_SYSTEM, prompt)
+        questions = result.get("questions", result) if isinstance(result, dict) else result
+        return {"success": True, "data": questions}
+    except GroqServiceError as e:
+        raise HTTPException(status_code=e.status_code, detail=e.message)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
 @router.post("/common-questions")
 async def get_common_questions(
     req: CommonQuestionsRequest,
@@ -90,10 +112,11 @@ async def get_common_questions(
     try:
         prompt = (
             f"Generate {req.count} common {req.interview_type} interview questions "
-            f"for the role of {req.role}. Return as a JSON array of strings."
+            f"for the role of {req.role}. Return as a JSON object with a 'questions' list: {{\"questions\": [\"question 1\", \"question 2\"]}}"
         )
         result = await groq.chat_json(INTERVIEW_COACH_SYSTEM, prompt)
-        return {"success": True, "data": result}
+        questions = result.get("questions", result) if isinstance(result, dict) else result
+        return {"success": True, "data": questions}
     except GroqServiceError as e:
         raise HTTPException(status_code=e.status_code, detail=e.message)
     except Exception as e:

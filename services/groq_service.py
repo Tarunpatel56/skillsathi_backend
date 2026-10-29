@@ -97,7 +97,16 @@ class GroqService:
         if response_format:
             kwargs["response_format"] = response_format
         response = self.client.chat.completions.create(**kwargs)
-        return response.choices[0].message.content or ""
+        choice = response.choices[0]
+        content = choice.message.content or ""
+        if not content and hasattr(choice.message, "reasoning") and choice.message.reasoning:
+            reasoning = choice.message.reasoning.strip()
+            quotes = re.findall(r'"([^"\\]*(?:\\.[^"\\]*)*)"', reasoning)
+            if quotes:
+                content = quotes[-1]
+            else:
+                content = reasoning.split("\n")[-1]
+        return content
 
     # ── JSON sanitiser ────────────────────────────────────────────────────────
 

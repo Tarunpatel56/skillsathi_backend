@@ -1,5 +1,8 @@
 import os
+from pathlib import Path
 from dotenv import load_dotenv
+
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 class Settings:
@@ -9,8 +12,20 @@ class Settings:
         self.reload()
 
     def reload(self):
-        # Let the project `.env` override any stale shell/IDE values.
-        load_dotenv(override=True)
+        # Look for .env in the backend folder first, then parent folders
+        env_candidates = [
+            BASE_DIR / ".env",
+            BASE_DIR.parent / ".env",
+            Path.cwd() / ".env",
+        ]
+        loaded = False
+        for env_path in env_candidates:
+            if env_path.is_file():
+                load_dotenv(dotenv_path=env_path, override=True)
+                loaded = True
+                break
+        if not loaded:
+            load_dotenv(override=True)
 
         self.APP_NAME = os.getenv("APP_NAME", "EduSarthi")
         self.DEBUG = os.getenv("DEBUG", "False").lower() == "true"

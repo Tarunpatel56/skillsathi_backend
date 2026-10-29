@@ -10,6 +10,8 @@ from models.english_models import (
     SentenceCheckRequest, LessonTestRequest, TestSubmitRequest,
     MassSpokenEvaluateRequest, MassSpokenChatRequest,
     MassSpokenGenerateDrillsRequest,
+    LiveVoiceRequest, LiveVoiceResponse,
+    TTSRequest, TTSResponse,
 )
 from core.prompts import (
     ENGLISH_TEACHER_SYSTEM,
@@ -20,10 +22,12 @@ from core.prompts import (
     LESSON_TEST_PROMPT,
     MASS_SPOKEN_TEACHER_SYSTEM,
     MASS_SPOKEN_EVALUATE_PROMPT,
+    LIVE_VOICE_PARTNER_SYSTEM,
 )
 from api.deps import get_groq_service
 from services.groq_service import GroqService, GroqServiceError
 from services.mass_spoken_service import get_mass_spoken_service, MassSpokenService
+from services.tts_service import get_tts_service, TTSService, DEFAULT_FEMALE_VOICE
 import json
 
 router = APIRouter(prefix="/english", tags=["English Learning"])
@@ -313,6 +317,24 @@ async def get_levels():
     }
 
 
+@router.get("/lessons")
+async def get_lessons_by_level(level: str = "beginner"):
+    """Get all lesson topics for a given difficulty level."""
+    normalized_level = level.lower().strip()
+    if normalized_level not in ("beginner", "intermediate", "advanced"):
+        raise HTTPException(
+            status_code=400,
+            detail="Level must be beginner, intermediate, or advanced",
+        )
+    topics = get_level_topics(normalized_level)
+    return {
+        "success": True,
+        "level": normalized_level,
+        "total_lessons": len(topics),
+        "lessons": topics,
+    }
+
+
 @router.post("/lesson/{level}/{day}")
 async def generate_lesson(
     level: str,
@@ -453,4 +475,117 @@ async def mass_spoken_chat(
         raise HTTPException(status_code=e.status_code, detail=e.message)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+
+# ──────────────────────────────────────────────
+# 🎙️  PRIYA LIVE VOICE SPOKEN ENGLISH ENDPOINTS
+# ──────────────────────────────────────────────
+
+@router.get("/live-voice/initial-greeting", response_model=LiveVoiceResponse)
+async def get_live_voice_greeting(
+    voice: str = DEFAULT_FEMALE_VOICE,
+    tts: TTSService = Depends(get_tts_service),
+):
+    """
+    Get Priya's initial warm spoken greeting to start a live voice conversation immediately.
+    Pre-synthesized and cached for sub-second start.
+    """
+    greeting_text = (
+        "Hey there! I'm Priya. So good to meet you! "
+        "Don't worry about making mistakes at all, okay? We'll practice speaking just like close friends. "
+        "So tell me, how was your day today?"
+    )
+    try:
+        audio_b64 = await tts.synthesize_base64(greeting_text, voice=voice, rate="-4%", pitch="+1Hz")
+        return LiveVoiceResponse(
+            success=True,
+            reply_text=greeting_text,
+            audio_base64=audio_b64,
+            audio_format="audio/mp3",
+            voice_used=voice,
+        )
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"TTS error: {str(e)}")
+
+
+@router.post("/live-voice/chat", response_model=LiveVoiceResponse)
+async def live_voice_chat(
+    req: LiveVoiceRequest,
+    groq: GroqService = Depends(get_groq_service),
+    tts: TTSService = Depends(get_tts_service),
+):
+    """
+    Live conversational turn with Priya (AI English Speaking Partner):
+    1. Evaluates user utterance and context.
+    2. Generates conversational reply with 1 question & gentle Hinglish correction if needed.
+    3. Synthesizes realistic Indian English female voice audio (en-IN-NeerjaExpressiveNeural).
+    """
+    try:
+        history_str = ""
+        if req.history:
+            # Keep last 6 exchanges to stay fast and focused
+            recent = req.history[-6:]
+            history_str = "\nRecent Conversation:\n" + "\n".join(
+                f"{m.role.capitalize()}: {m.text}" for m in recent
+            )
+
+        user_input_prompt = f"{history_str}\nUser just said: \"{req.message}\"\n\nReply as Priya in 1-3 spoken sentences. Ask ONE follow-up question."
+
+        # Conversational response generation
+        reply_text = await groq.chat(
+            LIVE_VOICE_PARTNER_SYSTEM,
+            user_input_prompt,
+            temperature=0.7,
+            max_tokens=800,
+        )
+
+        selected_voice = req.voice or DEFAULT_FEMALE_VOICE
+        speech_rate = req.speech_rate or "-4%"
+
+        # Synthesize audio with natural female voice
+        audio_b64 = await tts.synthesize_base64(
+            reply_text,
+            voice=selected_voice,
+            rate=speech_rate,
+            pitch="+1Hz",
+        )
+
+        return LiveVoiceResponse(
+            success=True,
+            reply_text=reply_text,
+            audio_base64=audio_b64,
+            audio_format="audio/mp3",
+            voice_used=selected_voice,
+        )
+
+    except GroqServiceError as e:
+        raise HTTPException(status_code=e.status_code, detail=e.message)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@router.post("/tts", response_model=TTSResponse)
+async def text_to_speech(
+    req: TTSRequest,
+    tts: TTSService = Depends(get_tts_service),
+):
+    """
+    Direct endpoint to generate neural female voice audio from arbitrary text.
+    """
+    try:
+        selected_voice = req.voice or DEFAULT_FEMALE_VOICE
+        audio_b64 = await tts.synthesize_base64(
+            req.text,
+            voice=selected_voice,
+            rate=req.speech_rate or "-4%",
+        )
+        return TTSResponse(
+            success=True,
+            audio_base64=audio_b64,
+            audio_format="audio/mp3",
+            voice_used=selected_voice,
+        )
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
 
