@@ -972,19 +972,19 @@
         },
         {
           "hindi": "क्या वह नाराज था ?",
-          "english": "as he angry ?"
+          "english": "Was he angry ?"
         },
         {
           "hindi": "क्या वह नाराज नहीं था ?",
-          "english": "as he not angry ?"
+          "english": "Was he not angry ?"
         },
         {
           "hindi": "वह नाराज क्‍यों था ?",
-          "english": "hy was he angry ?"
+          "english": "Why was he angry ?"
         },
         {
           "hindi": "वह नाराज क्‍यों नहींं था ?",
-          "english": "hy was he not angry ?"
+          "english": "Why was he not angry ?"
         }
       ],
       "sentence_builder_drills": [
@@ -1527,11 +1527,11 @@
         },
         {
           "hindi": "उसके पास अनुभव क्‍यों है ?",
-          "english": "hy does he have experience ?"
+          "english": "Why does he have experience ?"
         },
         {
           "hindi": "उसके पास अनुभव क्‍यों नहीं है ? ‘",
-          "english": "hy does he not have experience ?"
+          "english": "Why does he not have experience ?"
         },
         {
           "hindi": "मेरे पास 2 जोड़ी कपड़े है",
@@ -1601,27 +1601,27 @@
         },
         {
           "hindi": "उसके पास अनुभव क्‍यों है ?",
-          "english": "hy does he have experience ?",
+          "english": "Why does he have experience ?",
           "target_words": [
-            "hy",
+            "Why",
             "does",
             "he",
             "have",
             "experience"
           ],
           "scrambled_words": [
-            "hy",
-            "experience",
-            "he",
+            "Why",
             "have",
-            "does"
+            "does",
+            "he",
+            "experience"
           ]
         },
         {
           "hindi": "उसके पास अनुभव क्‍यों नहीं है ? ‘",
-          "english": "hy does he not have experience ?",
+          "english": "Why does he not have experience ?",
           "target_words": [
-            "hy",
+            "Why",
             "does",
             "he",
             "not",
@@ -1630,11 +1630,11 @@
           ],
           "scrambled_words": [
             "does",
-            "hy",
-            "experience",
-            "have",
             "he",
-            "not"
+            "have",
+            "Why",
+            "not",
+            "experience"
           ]
         },
         {
@@ -1707,22 +1707,22 @@
           "question": "Translate into English: 'उसके पास अनुभव क्‍यों है ?'",
           "hindi_sentence": "उसके पास अनुभव क्‍यों है ?",
           "options": [
-            "does hy he have experience ?",
-            "hy does he have experience ?"
+            "does Why he have experience ?",
+            "Why does he have experience ?"
           ],
-          "correct_answer": "hy does he have experience ?",
-          "explanation": "Mass Spoken Rule: सही अनुवाद 'hy does he have experience ?' है।"
+          "correct_answer": "Why does he have experience ?",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Why does he have experience ?' है।"
         },
         {
           "id": 4,
           "question": "Translate into English: 'उसके पास अनुभव क्‍यों नहीं है ? ‘'",
           "hindi_sentence": "उसके पास अनुभव क्‍यों नहीं है ? ‘",
           "options": [
-            "hy does he not have experience ?",
-            "does hy he not have experience ?"
+            "Why does he not have experience ?",
+            "does Why he not have experience ?"
           ],
-          "correct_answer": "hy does he not have experience ?",
-          "explanation": "Mass Spoken Rule: सही अनुवाद 'hy does he not have experience ?' है।"
+          "correct_answer": "Why does he not have experience ?",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Why does he not have experience ?' है।"
         },
         {
           "id": 5,
@@ -2981,7 +2981,7 @@
         },
         {
           "hindi": "अख़बार में कितने पन्ने थे ?",
-          "english": "ow many pages were there in the newspaper ?"
+          "english": "How many pages were there in the newspaper ?"
         },
         {
           "hindi": "आपके भोजन में वसा थी",
@@ -3272,19 +3272,19 @@
         },
         {
           "hindi": "इसे सुखने दो",
-          "english": "et it dry."
+          "english": "Let it dry."
         },
         {
           "hindi": "हमें वहाँ देखने दो",
-          "english": "et us see there."
+          "english": "Let us see there."
         },
         {
           "hindi": "मुझे कम से कम बात करने दो",
-          "english": "et me talk at least."
+          "english": "Let me talk at least."
         },
         {
           "hindi": "पहले हमें हालात को समझने दो",
-          "english": "et us understand the situation first."
+          "english": "Let us understand the situation first."
         },
         {
           "hindi": "उसे घर साफ मत करने दो",
@@ -3380,32 +3380,32 @@
         },
         {
           "hindi": "इसे सुखने दो",
-          "english": "et it dry.",
+          "english": "Let it dry.",
           "target_words": [
-            "et",
+            "Let",
             "it",
             "dry"
           ],
           "scrambled_words": [
-            "it",
             "dry",
-            "et"
+            "Let",
+            "it"
           ]
         },
         {
           "hindi": "हमें वहाँ देखने दो",
-          "english": "et us see there.",
+          "english": "Let us see there.",
           "target_words": [
-            "et",
+            "Let",
             "us",
             "see",
             "there"
           ],
           "scrambled_words": [
+            "Let",
+            "see",
             "us",
-            "et",
-            "there",
-            "see"
+            "there"
           ]
         }
       ],
@@ -3461,22 +3461,22 @@
           "question": "Translate into English: 'इसे सुखने दो'",
           "hindi_sentence": "इसे सुखने दो",
           "options": [
-            "et it dry.",
+            "Let it dry.",
             "it et dry."
           ],
-          "correct_answer": "et it dry.",
-          "explanation": "Mass Spoken Rule: सही अनुवाद 'et it dry.' है।"
+          "correct_answer": "Let it dry.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Let it dry.' है।"
         },
         {
           "id": 6,
           "question": "Translate into English: 'हमें वहाँ देखने दो'",
           "hindi_sentence": "हमें वहाँ देखने दो",
           "options": [
-            "et us see there.",
+            "Let us see there.",
             "us et see there."
           ],
-          "correct_answer": "et us see there.",
-          "explanation": "Mass Spoken Rule: सही अनुवाद 'et us see there.' है।"
+          "correct_answer": "Let us see there.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'Let us see there.' है।"
         }
       ]
     },
@@ -4122,11 +4122,11 @@
         },
         {
           "hindi": "हमें गरीबों के बारे में सोचने की जरूरत है",
-          "english": "e need to think about the poors."
+          "english": "We need to think about the poors."
         },
         {
           "hindi": "e एग्जाम में ब्लैक पेन से लिखने की क्‍यों जरूरत है ?",
-          "english": "hy do you need to write with black pen in?"
+          "english": "Why do you need to write with black pen in?"
         },
         {
           "hindi": "तुम्हें अपने दोस्त के साथ रहने की जरूरत है",
@@ -4246,9 +4246,9 @@
         },
         {
           "hindi": "हमें गरीबों के बारे में सोचने की जरूरत है",
-          "english": "e need to think about the poors.",
+          "english": "We need to think about the poors.",
           "target_words": [
-            "e",
+            "We",
             "need",
             "to",
             "think",
@@ -4257,13 +4257,13 @@
             "poors"
           ],
           "scrambled_words": [
+            "to",
             "need",
-            "the",
-            "poors",
             "think",
             "about",
-            "e",
-            "to"
+            "the",
+            "poors",
+            "We"
           ]
         }
       ],
@@ -4335,11 +4335,11 @@
           "hindi_sentence": "हमें गरीबों के बारे में सोचने की जरूरत है",
           "options": [
             "need e to think about the poors.",
-            "e need to think about the poors.",
-            "e need for think about the poors."
+            "We need to think about the poors.",
+            "We need for think about the poors."
           ],
-          "correct_answer": "e need to think about the poors.",
-          "explanation": "Mass Spoken Rule: सही अनुवाद 'e need to think about the poors.' है।"
+          "correct_answer": "We need to think about the poors.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'We need to think about the poors.' है।"
         }
       ]
     },
@@ -4702,7 +4702,7 @@
         },
         {
           "hindi": "हम पिज्जा खाने के शौकीन है",
-          "english": "e are fond of eating pizza."
+          "english": "We are fond of eating pizza."
         },
         {
           "hindi": "वह न्यूज़पेपर पढ़ने का शौकीन है",
@@ -4734,7 +4734,7 @@
         },
         {
           "hindi": "(7. कुत्ता भौकने का शौकीन क्‍यों है",
-          "english": "hy is the dog fond of barking?"
+          "english": "Why is the dog fond of barking?"
         },
         {
           "hindi": "महिलाओं को सोने का हार पहनने का शौक होता है",
@@ -4782,9 +4782,9 @@
         },
         {
           "hindi": "हम पिज्जा खाने के शौकीन है",
-          "english": "e are fond of eating pizza.",
+          "english": "We are fond of eating pizza.",
           "target_words": [
-            "e",
+            "We",
             "are",
             "fond",
             "of",
@@ -4792,12 +4792,12 @@
             "pizza"
           ],
           "scrambled_words": [
-            "e",
-            "pizza",
             "fond",
+            "We",
             "of",
+            "eating",
             "are",
-            "eating"
+            "pizza"
           ]
         },
         {
@@ -4900,10 +4900,10 @@
           "hindi_sentence": "हम पिज्जा खाने के शौकीन है",
           "options": [
             "are e fond of eating pizza.",
-            "e are fond of eating pizza."
+            "We are fond of eating pizza."
           ],
-          "correct_answer": "e are fond of eating pizza.",
-          "explanation": "Mass Spoken Rule: सही अनुवाद 'e are fond of eating pizza.' है।"
+          "correct_answer": "We are fond of eating pizza.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'We are fond of eating pizza.' है।"
         },
         {
           "id": 4,
@@ -5015,7 +5015,7 @@
         },
         {
           "hindi": "हम उसकी पतंग काटने वाले",
-          "english": "e are about to cut his kite."
+          "english": "We are about to cut his kite."
         },
         {
           "hindi": "खेल ख़त्म होने वाला है",
@@ -5031,11 +5031,11 @@
         },
         {
           "hindi": "हम सूर्य को जल चढ़ाने वाले है",
-          "english": "e are about to offer water to the sun."
+          "english": "We are about to offer water to the sun."
         },
         {
           "hindi": "हम बिस्तर से उठने वाले है",
-          "english": "e are about to get up of bed."
+          "english": "We are about to get up of bed."
         },
         {
           "hindi": "वह दिल्ली निकलने वाला है",
@@ -5131,9 +5131,9 @@
         },
         {
           "hindi": "हम उसकी पतंग काटने वाले",
-          "english": "e are about to cut his kite.",
+          "english": "We are about to cut his kite.",
           "target_words": [
-            "e",
+            "We",
             "are",
             "about",
             "to",
@@ -5142,13 +5142,13 @@
             "kite"
           ],
           "scrambled_words": [
+            "are",
             "to",
-            "about",
-            "e",
+            "We",
             "kite",
+            "about",
             "his",
-            "cut",
-            "are"
+            "cut"
           ]
         },
         {
@@ -5231,13 +5231,13 @@
           "question": "Translate into English: 'हम उसकी पतंग काटने वाले'",
           "hindi_sentence": "हम उसकी पतंग काटने वाले",
           "options": [
-            "e are about for cut his kite.",
-            "e are about to cut hwas kite.",
-            "e are about to cut his kite.",
+            "We are about for cut his kite.",
+            "We are about to cut hwas kite.",
+            "We are about to cut his kite.",
             "are e about to cut his kite."
           ],
-          "correct_answer": "e are about to cut his kite.",
-          "explanation": "Mass Spoken Rule: सही अनुवाद 'e are about to cut his kite.' है।"
+          "correct_answer": "We are about to cut his kite.",
+          "explanation": "Mass Spoken Rule: सही अनुवाद 'We are about to cut his kite.' है।"
         },
         {
           "id": 6,
@@ -5968,7 +5968,7 @@
         },
         {
           "hindi": "हम मरीजो को रक्तदान नहीं करते है",
-          "english": "e do not donate blood to the patients."
+          "english": "We do not donate blood to the patients."
         },
         {
           "hindi": "मैं उसे नहीं मारता हूँ",
@@ -5980,7 +5980,7 @@
         },
         {
           "hindi": "वह दौड़ रहा है।",
-          "english": "e is running."
+          "english": "He is running."
         }
       ],
       "sentence_builder_drills": [
