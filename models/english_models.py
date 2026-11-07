@@ -123,3 +123,27 @@ class TTSResponse(BaseModel):
     voice_used: str = "en-IN-NeerjaExpressiveNeural"
 
 
+class SpellingCheckRequest(BaseModel):
+    """Request to check spelling of a word."""
+    word: str = Field(..., min_length=1, description="The word to check spelling for")
+    sentence: Optional[str] = Field("", description="Optional context sentence")
+
+
+class SpellingCheckResponse(BaseModel):
+    """Spelling check result with Hindi explanation."""
+    success: bool = True
+    is_correct: bool
+    input_word: str
+    correct_spelling: str
+    explanation: str
+    explanation_hindi: str
+    similar_words: List[str] = []
+    mnemonic: Optional[str] = None
+
+
+class MassSpokenAIPracticeRequest(BaseModel):
+    """Request to generate AI-powered fresh practice sentences."""
+    chapter_id: int = Field(..., ge=1, le=60)
+    count: int = Field(10, ge=3, le=50, description="Number of practice sentences to generate (3-50)")
+
+

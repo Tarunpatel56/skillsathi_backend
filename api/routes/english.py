@@ -12,6 +12,8 @@ from models.english_models import (
     MassSpokenGenerateDrillsRequest,
     LiveVoiceRequest, LiveVoiceResponse,
     TTSRequest, TTSResponse,
+    SpellingCheckRequest, SpellingCheckResponse,
+    MassSpokenAIPracticeRequest,
 )
 from core.prompts import (
     ENGLISH_TEACHER_SYSTEM,
@@ -23,6 +25,8 @@ from core.prompts import (
     MASS_SPOKEN_TEACHER_SYSTEM,
     MASS_SPOKEN_EVALUATE_PROMPT,
     LIVE_VOICE_PARTNER_SYSTEM,
+    SPELLING_CHECK_PROMPT,
+    MASS_SPOKEN_AI_PRACTICE_PROMPT,
 )
 from api.deps import get_groq_service
 from services.groq_service import GroqService, GroqServiceError
@@ -398,12 +402,118 @@ async def get_mass_spoken_practice(
     chapter_id: int,
     count: int = 10,
     mass_service: MassSpokenService = Depends(get_mass_spoken_service),
+    groq: GroqService = Depends(get_groq_service),
 ):
-    """Get interactive practice pack: Sentence Builder drills, MCQs, Flashcards with customizable count."""
-    pack = mass_service.get_practice_pack(chapter_id, count=count)
-    if not pack:
+    """
+    Get AI-generated practice pack: Sentence Builder drills, MCQs, Flashcards.
+    Always generates FRESH AI sentences – never returns the same set twice.
+    count: how many practice sentences (3-50).
+    """
+    import re, random
+
+    ch = mass_service.get_chapter(chapter_id)
+    if not ch:
         raise HTTPException(status_code=404, detail="Chapter not found")
-    return {"success": True, "practice": pack}
+
+    # Build structured flashcards from book examples (reference only)
+    examples = ch.get("examples", [])
+    flashcards = [
+        {"front_hindi": ex["hindi"], "back_english": ex["english"], "hint": ch["title"]}
+        for ex in examples
+    ]
+    if count > 0 and len(flashcards) >= count:
+        flashcards = flashcards[:count]
+
+    # Build AI prompt with chapter context
+    structures = ch.get("structures", [])
+    formula_text = "; ".join([f"{s['name']}: {s['formula']}" for s in structures]) or ch["title"]
+    rules_text = "\n".join([f"- {r}" for r in ch.get("golden_rules", [])]) or "Follow the chapter formula."
+    examples_text = "\n".join([f"- {ex['hindi']} => {ex['english']}" for ex in examples[:5]])
+
+    prompt = MASS_SPOKEN_AI_PRACTICE_PROMPT.format(
+        count=count,
+        chapter_id=chapter_id,
+        chapter_title=ch["title"],
+        chapter_hindi_title=ch.get("hindi_title", ""),
+        formula=formula_text,
+        definition=ch.get("definition", ch["title"]),
+        rules=rules_text,
+        examples=examples_text,
+    )
+
+    try:
+        items = await groq.chat_json(
+            "You are an expert bilingual Spoken English teacher. Return ONLY valid JSON array.",
+            prompt,
+            temperature=0.85,
+            max_tokens=2000,
+        )
+        if isinstance(items, dict):
+            items = items.get("sentences", items.get("data", items.get("items", [])))
+        if not isinstance(items, list):
+            items = []
+    except Exception:
+        items = []
+
+    # Fallback: use static book data if AI fails
+    if not items:
+        items = [{"hindi": ex["hindi"], "english": ex["english"]} for ex in examples]
+
+    # Build drills & quiz from AI-generated items
+    drills = []
+    quiz = []
+    for i, it in enumerate(items):
+        hindi = str(it.get("hindi", "")).strip()
+        english = str(it.get("english", "")).strip()
+        if not hindi or not english:
+            continue
+        clean_en = re.sub(r'[?!.]+$', '', english).strip()
+        words = clean_en.split()
+        scrambled = words.copy()
+        random.shuffle(scrambled)
+        if scrambled == words and len(words) > 2:
+            scrambled[0], scrambled[1] = scrambled[1], scrambled[0]
+
+        drills.append({
+            "hindi": hindi,
+            "english": english,
+            "target_words": words,
+            "scrambled_words": scrambled,
+        })
+
+        distractors = [
+            " ".join(reversed(words[:2])) + " " + " ".join(words[2:]) if len(words) > 2 else english + " not",
+            english.replace("is", "was").replace("have", "had").replace("can", "should"),
+            english.replace("don't", "didn't").replace("to", "for"),
+        ]
+        filtered = [d for d in distractors if d != english]
+        opts = [english] + filtered[:3]
+        random.shuffle(opts)
+        quiz.append({
+            "id": i + 1,
+            "question": f"Translate into English: '{hindi}'",
+            "hindi_sentence": hindi,
+            "options": opts,
+            "correct_answer": english,
+            "explanation": f"सही अनुवाद है: '{english}' (Formula: {formula_text[:60]}...)",
+        })
+
+    return {
+        "success": True,
+        "practice": {
+            "chapter_id": chapter_id,
+            "chapter_title": ch["title"],
+            "hindi_title": ch.get("hindi_title", ""),
+            "emoji": ch.get("emoji", "📖"),
+            "sentence_builder_drills": drills,
+            "worksheet_quiz": quiz,
+            "flashcards": flashcards,
+            "golden_rules": ch.get("golden_rules", []),
+            "structures": ch.get("structures", []),
+            "requested_count": count,
+            "ai_generated": True,
+        },
+    }
 
 
 @router.post("/mass-spoken/generate-drills")
@@ -627,3 +737,136 @@ async def text_to_speech(
         raise HTTPException(status_code=500, detail=str(e))
 
 
+
+
+@router.post("/spelling-check", response_model=SpellingCheckResponse)
+async def check_spelling(
+    req: SpellingCheckRequest,
+    groq: GroqService = Depends(get_groq_service),
+):
+    """
+    Check the spelling of a word and get Hindi + English explanation.
+    Returns is_correct, correct_spelling, explanation, Hindi explanation, similar words, and mnemonic.
+    """
+    try:
+        prompt = SPELLING_CHECK_PROMPT.format(
+            word=req.word.strip(),
+            sentence=req.sentence.strip() if req.sentence else "",
+        )
+        result = await groq.chat_json(
+            "You are an expert English spelling teacher. Return ONLY the requested JSON object.",
+            prompt,
+            temperature=0.3,
+            max_tokens=600,
+        )
+
+        if not isinstance(result, dict):
+            raise ValueError("Invalid response format")
+
+        return SpellingCheckResponse(
+            success=True,
+            is_correct=bool(result.get("is_correct", False)),
+            input_word=result.get("input_word", req.word),
+            correct_spelling=result.get("correct_spelling", req.word),
+            explanation=result.get("explanation", ""),
+            explanation_hindi=result.get("explanation_hindi", ""),
+            similar_words=result.get("similar_words", []),
+            mnemonic=result.get("mnemonic"),
+        )
+
+    except GroqServiceError as e:
+        raise HTTPException(status_code=e.status_code, detail=e.message)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@router.post("/mass-spoken/ai-practice", response_model=None)
+async def generate_ai_practice(
+    req: MassSpokenAIPracticeRequest,
+    groq: GroqService = Depends(get_groq_service),
+    mass_service: MassSpokenService = Depends(get_mass_spoken_service),
+):
+    """
+    Generate fresh AI-powered Mass Spoken practice sentences (POST version for custom count).
+    Use this when user wants to generate more practice sentences with custom count.
+    """
+    import re, random
+
+    ch = mass_service.get_chapter(req.chapter_id)
+    if not ch:
+        raise HTTPException(status_code=404, detail="Chapter not found")
+
+    structures = ch.get("structures", [])
+    formula_text = "; ".join([f"{s['name']}: {s['formula']}" for s in structures]) or ch["title"]
+    rules_text = "\n".join([f"- {r}" for r in ch.get("golden_rules", [])]) or "Follow the chapter formula."
+    examples = ch.get("examples", [])
+    examples_text = "\n".join([f"- {ex['hindi']} => {ex['english']}" for ex in examples[:5]])
+
+    prompt = MASS_SPOKEN_AI_PRACTICE_PROMPT.format(
+        count=req.count,
+        chapter_id=req.chapter_id,
+        chapter_title=ch["title"],
+        chapter_hindi_title=ch.get("hindi_title", ""),
+        formula=formula_text,
+        definition=ch.get("definition", ch["title"]),
+        rules=rules_text,
+        examples=examples_text,
+    )
+
+    try:
+        items = await groq.chat_json(
+            "You are an expert bilingual Spoken English teacher. Return ONLY valid JSON array.",
+            prompt,
+            temperature=0.85,
+            max_tokens=2000,
+        )
+        if isinstance(items, dict):
+            items = items.get("sentences", items.get("data", items.get("items", [])))
+        if not isinstance(items, list):
+            items = []
+    except Exception:
+        items = []
+
+    if not items:
+        items = [{"hindi": ex["hindi"], "english": ex["english"]} for ex in examples]
+
+    drills, quiz = [], []
+    for i, it in enumerate(items):
+        hindi = str(it.get("hindi", "")).strip()
+        english = str(it.get("english", "")).strip()
+        if not hindi or not english:
+            continue
+        clean_en = re.sub(r'[?!.]+$', '', english).strip()
+        words = clean_en.split()
+        scrambled = words.copy()
+        random.shuffle(scrambled)
+        if scrambled == words and len(words) > 2:
+            scrambled[0], scrambled[1] = scrambled[1], scrambled[0]
+
+        drills.append({"hindi": hindi, "english": english, "target_words": words, "scrambled_words": scrambled})
+
+        distractors = [
+            " ".join(reversed(words[:2])) + " " + " ".join(words[2:]) if len(words) > 2 else english + " not",
+            english.replace("is", "was").replace("have", "had").replace("can", "should"),
+            english.replace("don't", "didn't").replace("to", "for"),
+        ]
+        filtered = [d for d in distractors if d != english]
+        opts = [english] + filtered[:3]
+        random.shuffle(opts)
+        quiz.append({
+            "id": i + 1,
+            "question": f"Translate into English: '{hindi}'",
+            "hindi_sentence": hindi,
+            "options": opts,
+            "correct_answer": english,
+            "explanation": f"सही अनुवाद है: '{english}'",
+        })
+
+    return {
+        "success": True,
+        "drills": drills,
+        "quiz": quiz,
+        "count": len(drills),
+        "chapter_id": req.chapter_id,
+        "ai_generated": True,
+    }

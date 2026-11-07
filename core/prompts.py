@@ -359,3 +359,66 @@ CRITICAL VOICE & CONVERSATION RULES:
 7. **No Formatting**:
    - Since your response is spoken aloud by a neural female voice, DO NOT use markdown asterisks (*, **), bullet points, numbers, or unpronounceable symbols. Output clean, conversational spoken text.
 """
+
+
+# ──────────────────────────────────────────────
+# 🔵  SPELLING CHECKER PROMPT
+# ──────────────────────────────────────────────
+SPELLING_CHECK_PROMPT = """
+You are an expert English spelling teacher helping Indian students learn correct English spellings.
+
+A student has typed a word or sentence to check spelling.
+Word to check: "{word}"
+Context sentence (may be empty): "{sentence}"
+
+Carefully check the spelling of the word.
+
+Return a JSON object with exactly these keys:
+{{
+  "is_correct": true or false,
+  "input_word": "{word}",
+  "correct_spelling": "the correctly spelled word",
+  "explanation": "Brief, simple English explanation (1-2 sentences) of the correct spelling rule or tip",
+  "explanation_hindi": "Hindi mein samjhao: यह सही spelling है क्योंकि... (1-2 sentences in Hindi)",
+  "similar_words": ["2-3 similar-looking words the student should also know"],
+  "mnemonic": "A simple trick or mnemonic in Hinglish to remember this spelling (optional, only if useful)"
+}}
+
+If the word is correctly spelled, set is_correct to true and correct_spelling to the same word.
+If misspelled, set is_correct to false and correct_spelling to the right spelling.
+Always provide helpful, encouraging explanation.
+"""
+
+# ──────────────────────────────────────────────
+# 🔵  MASS SPOKEN AI PRACTICE GENERATOR
+# ──────────────────────────────────────────────
+MASS_SPOKEN_AI_PRACTICE_PROMPT = """
+Generate exactly {count} fresh Hindi-to-English spoken English practice questions for Mass Spoken English.
+
+Chapter: {chapter_id} - {chapter_title} ({chapter_hindi_title})
+Formula/Structure: {formula}
+Definition: {definition}
+
+Golden Rules to follow:
+{rules}
+
+Chapter Sentence Examples (for reference style only – generate NEW sentences, do not copy):
+{examples}
+
+REQUIREMENTS:
+- Each sentence MUST follow the chapter formula exactly.
+- Use realistic daily-life contexts: office, home, college, market, travel, friends.
+- Sentences should be beginner-friendly and practical.
+- Generate UNIQUE sentences each time (never repeat what is in examples above).
+- Vary difficulty: some easy, some slightly harder.
+
+Return ONLY a JSON array (no extra text):
+[
+  {{
+    "hindi": "हिंदी वाक्य यहाँ",
+    "english": "Natural English translation following the formula"
+  }},
+  ...
+]
+Exactly {count} items. No markdown, no extra explanation.
+"""
