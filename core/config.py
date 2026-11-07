@@ -34,7 +34,7 @@ class Settings:
 
         # Groq AI Configuration
         self.GROQ_API_KEY = os.getenv("GROQ_API_KEY", "").strip()
-        self.GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile").strip()
+        self.GROQ_MODEL = os.getenv("GROQ_MODEL", "qwen/qwen3.8-27b").strip()
         self.GROQ_MAX_TOKENS = int(os.getenv("GROQ_MAX_TOKENS", "4096"))
         self.GROQ_TEMPERATURE = float(os.getenv("GROQ_TEMPERATURE", "0.7"))
 

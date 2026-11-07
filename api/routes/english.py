@@ -401,12 +401,25 @@ async def get_mass_spoken_chapter(
 async def get_mass_spoken_practice(
     chapter_id: int,
     count: int = 10,
+    fresh: bool = False,
+    groq: GroqService = Depends(get_groq_service),
     mass_service: MassSpokenService = Depends(get_mass_spoken_service),
 ):
     """
     Get interactive practice pack: Sentence Builder drills, MCQs, Flashcards.
-    Returns INSTANTLY (sub-millisecond) from the curated curriculum!
+    If fresh=True: Generates 100% fresh AI sentences!
+    If fresh=False: Returns randomized unique sentences from curriculum (15-20+ pool)!
     """
+    if fresh:
+        ai_res = await mass_service.generate_dynamic_drills(chapter_id, count, groq)
+        if ai_res.get("drills"):
+            pack = mass_service.get_practice_pack(chapter_id, count=count)
+            if pack:
+                pack["sentence_builder_drills"] = ai_res["drills"]
+                pack["worksheet_quiz"] = ai_res["quiz"]
+                pack["ai_generated"] = True
+                return {"success": True, "practice": pack}
+
     pack = mass_service.get_practice_pack(chapter_id, count=count)
     if not pack:
         raise HTTPException(status_code=404, detail="Chapter not found")
@@ -684,83 +697,15 @@ async def generate_ai_practice(
     mass_service: MassSpokenService = Depends(get_mass_spoken_service),
 ):
     """
-    Generate fresh AI-powered Mass Spoken practice sentences (POST version for custom count).
-    Use this when user wants to generate more practice sentences with custom count.
+    Generate fresh AI-powered Mass Spoken practice sentences with custom count (3-50).
+    Every single sentence is unique and generated on-demand by AI.
     """
-    import re, random
-
-    ch = mass_service.get_chapter(req.chapter_id)
-    if not ch:
-        raise HTTPException(status_code=404, detail="Chapter not found")
-
-    structures = ch.get("structures", [])
-    formula_text = "; ".join([f"{s['name']}: {s['formula']}" for s in structures]) or ch["title"]
-    rules_text = "\n".join([f"- {r}" for r in ch.get("golden_rules", [])]) or "Follow the chapter formula."
-    examples = ch.get("examples", [])
-    examples_text = "\n".join([f"- {ex['hindi']} => {ex['english']}" for ex in examples[:5]])
-
-    prompt = MASS_SPOKEN_AI_PRACTICE_PROMPT.format(
-        count=req.count,
-        chapter_id=req.chapter_id,
-        chapter_title=ch["title"],
-        chapter_hindi_title=ch.get("hindi_title", ""),
-        formula=formula_text,
-    )
-
-    try:
-        items = await groq.chat_json(
-            "You are an expert bilingual Spoken English teacher. Output valid JSON.",
-            prompt,
-            temperature=0.7,
-            max_tokens=600,
-        )
-        if isinstance(items, dict):
-            items = items.get("sentences", items.get("data", items.get("items", [])))
-        if not isinstance(items, list):
-            items = []
-    except Exception:
-        items = []
-
-    if not items:
-        items = [{"hindi": ex["hindi"], "english": ex["english"]} for ex in examples]
-
-    drills, quiz = [], []
-    for i, it in enumerate(items):
-        hindi = str(it.get("hindi", "")).strip()
-        english = str(it.get("english", "")).strip()
-        if not hindi or not english:
-            continue
-        clean_en = re.sub(r'[?!.]+$', '', english).strip()
-        words = clean_en.split()
-        scrambled = words.copy()
-        random.shuffle(scrambled)
-        if scrambled == words and len(words) > 2:
-            scrambled[0], scrambled[1] = scrambled[1], scrambled[0]
-
-        drills.append({"hindi": hindi, "english": english, "target_words": words, "scrambled_words": scrambled})
-
-        distractors = [
-            " ".join(reversed(words[:2])) + " " + " ".join(words[2:]) if len(words) > 2 else english + " not",
-            english.replace("is", "was").replace("have", "had").replace("can", "should"),
-            english.replace("don't", "didn't").replace("to", "for"),
-        ]
-        filtered = [d for d in distractors if d != english]
-        opts = [english] + filtered[:3]
-        random.shuffle(opts)
-        quiz.append({
-            "id": i + 1,
-            "question": f"Translate into English: '{hindi}'",
-            "hindi_sentence": hindi,
-            "options": opts,
-            "correct_answer": english,
-            "explanation": f"सही अनुवाद है: '{english}'",
-        })
-
+    res = await mass_service.generate_dynamic_drills(req.chapter_id, req.count, groq)
     return {
         "success": True,
-        "drills": drills,
-        "quiz": quiz,
-        "count": len(drills),
+        "drills": res.get("drills", []),
+        "quiz": res.get("quiz", []),
+        "count": len(res.get("drills", [])),
         "chapter_id": req.chapter_id,
         "ai_generated": True,
     }

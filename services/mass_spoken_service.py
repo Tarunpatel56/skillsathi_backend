@@ -58,6 +58,42 @@ class MassSpokenService:
             self._load_data()
         return self._chapters_by_id.get(chapter_id)
 
+    @staticmethod
+    def _create_drill(hindi: str, english: str) -> dict:
+        clean_en = re.sub(r'[?!.]+$', '', english).strip()
+        words = clean_en.split()
+        scrambled = words.copy()
+        random.shuffle(scrambled)
+        if scrambled == words and len(words) > 2:
+            scrambled[0], scrambled[1] = scrambled[1], scrambled[0]
+        return {
+            "hindi": hindi,
+            "english": english,
+            "target_words": words,
+            "scrambled_words": scrambled,
+        }
+
+    @staticmethod
+    def _create_quiz(id_: int, hindi: str, english: str, formula: str = "") -> dict:
+        clean_en = re.sub(r'[?!.]+$', '', english).strip()
+        words = clean_en.split()
+        distractors = [
+            " ".join(reversed(words[:2])) + " " + " ".join(words[2:]) if len(words) > 2 else english + " not",
+            english.replace("is", "was").replace("have", "had").replace("can", "should"),
+            english.replace("don't", "didn't").replace("to", "for"),
+        ]
+        filtered = [d for d in distractors if d.lower() != english.lower()]
+        opts = [english] + filtered[:3]
+        random.shuffle(opts)
+        return {
+            "id": id_,
+            "question": f"Translate into English: '{hindi}'",
+            "hindi_sentence": hindi,
+            "options": opts,
+            "correct_answer": english,
+            "explanation": f"सही अनुवाद है: '{english}'",
+        }
+
     def get_practice_pack(self, chapter_id: int, count: int = 10) -> Optional[Dict[str, Any]]:
         """Return interactive drills, flashcards, and worksheet quiz for a chapter with custom count."""
         if len(self._chapters_by_id) < 50:
@@ -76,29 +112,32 @@ class MassSpokenService:
                 "hint": ch["title"]
             })
 
+        # Start with pre-stored drills
         drills = list(ch.get("sentence_builder_drills", []))
         quiz = list(ch.get("worksheet_quiz", []))
 
-        # If user requested more than pre-stored drills, repeat/cycle through with slight shuffle
-        if count > len(drills) and len(drills) > 0:
-            expanded_drills = []
-            while len(expanded_drills) < count:
-                expanded_drills.extend(drills)
-            drills = expanded_drills[:count]
-        elif count > 0:
-            drills = drills[:count]
+        # Merge in all examples as drills and quizzes so we have a large pool of 15-20+ unique items
+        existing_en = {d.get("english", "").strip().lower() for d in drills}
+        for ex in examples:
+            en = ex.get("english", "").strip()
+            hi = ex.get("hindi", "").strip()
+            if en and hi and en.lower() not in existing_en:
+                existing_en.add(en.lower())
+                drills.append(self._create_drill(hi, en))
+                quiz.append(self._create_quiz(len(quiz) + 1, hi, en))
 
-        if count > len(quiz) and len(quiz) > 0:
-            expanded_quiz = []
-            while len(expanded_quiz) < count:
-                expanded_quiz.extend(quiz)
-            # Re-index questions cleanly
-            quiz = []
-            for i, q in enumerate(expanded_quiz[:count]):
-                q_copy = dict(q)
-                q_copy["id"] = i + 1
-                quiz.append(q_copy)
-        elif count > 0:
+        # Always SHUFFLE so the starting 5-6 are NEVER identical on repeat visits
+        combined = list(zip(drills, quiz))
+        random.shuffle(combined)
+        drills = [c[0] for c in combined]
+        quiz = [c[1] for c in combined]
+
+        # Re-number quiz cleanly
+        for i, q in enumerate(quiz):
+            q["id"] = i + 1
+
+        if count > 0 and len(drills) > count:
+            drills = drills[:count]
             quiz = quiz[:count]
 
         if count > 0 and len(flashcards) >= count:
@@ -115,7 +154,7 @@ class MassSpokenService:
             "golden_rules": ch.get("golden_rules", []),
             "structures": ch.get("structures", []),
             "requested_count": count,
-            "total_available": len(ch.get("sentence_builder_drills", []))
+            "total_available": len(drills)
         }
 
     def get_knowledge_context(self, chapter_id: int) -> str:
@@ -149,74 +188,47 @@ Examples:
         if not ch:
             return {"drills": [], "quiz": []}
 
-        context = self.get_knowledge_context(chapter_id)
-        prompt = f"""
-Generate {count} new Hindi-to-English practice sentences for Mass Spoken English Chapter {chapter_id}: {ch['title']} ({ch['hindi_title']}).
+        structures = ch.get("structures", [])
+        formula_text = "; ".join([f"{s['name']}: {s['formula']}" for s in structures]) or ch["title"]
 
-Book Chapter Rules:
-{context}
+        prompt = f"""
+Generate exactly {count} unique practical daily-life Hindi to English sentences for Mass Spoken English Chapter {chapter_id}: {ch['title']} ({ch.get('hindi_title', '')}).
+Grammar Rule/Formula to practice: {formula_text}
 
 Requirements:
-- Each sentence must strictly follow the chapter formulas and rules.
-- Sentences should be realistic daily-life spoken English (office, home, market, college).
-- Return a JSON object with a "sentences" key containing the list:
-{{
-  "sentences": [
-    {{
-      "hindi": "हिंदी वाक्य",
-      "english": "Natural English translation following formula"
-    }}
-  ]
-}}
+- Everyday conversational Hindi sentences (office, college, market, friends, home).
+- Accurate English translation following the chapter formula.
+
+Output a JSON object with a 'questions' key:
+{{"questions": [{{"hindi": "हिंदी वाक्य", "english": "English translation"}}]}}
 """
         try:
-            items = await groq.chat_json("You are an expert bilingual Spoken English teacher creating exercises. Return a JSON object with a 'sentences' list.", prompt, max_tokens=800, temperature=0.7)
-            if isinstance(items, dict):
-                items = items.get("sentences", items.get("data", items.get("examples", [])))
-            if not isinstance(items, list):
-                items = []
+            res = await groq.chat_json(
+                "You are an expert bilingual Spoken English teacher. Respond with a JSON object containing a 'questions' list.",
+                prompt,
+                max_tokens=2500,
+                temperature=0.85,
+                model="qwen/qwen3.8-27b",
+            )
+            items = []
+            if isinstance(res, dict):
+                items = res.get("questions", res.get("sentences", res.get("data", [])))
+            elif isinstance(res, list):
+                items = res
 
             new_drills = []
             new_quiz = []
             for i, it in enumerate(items):
-                hindi = it.get("hindi", "").strip()
-                english = it.get("english", "").strip()
+                hindi = str(it.get("hindi", "")).strip()
+                english = str(it.get("english", "")).strip()
                 if not hindi or not english:
                     continue
-                clean_en = re.sub(r'[?!.]+$', '', english).strip()
-                words = clean_en.split()
-                scrambled = words.copy()
-                random.shuffle(scrambled)
-                if scrambled == words and len(words) > 2:
-                    scrambled[0], scrambled[1] = scrambled[1], scrambled[0]
-
-                new_drills.append({
-                    "hindi": hindi,
-                    "english": english,
-                    "target_words": words,
-                    "scrambled_words": scrambled
-                })
-
-                distractors = [
-                    " ".join(reversed(words[:2])) + " " + " ".join(words[2:]) if len(words) > 2 else english + " not",
-                    english.replace("is", "was").replace("have", "had").replace("can", "should"),
-                    english.replace("don't", "not").replace("to", "for")
-                ]
-                filtered = [d for d in distractors if d != english]
-                opts = [english] + filtered[:3]
-                random.shuffle(opts)
-
-                new_quiz.append({
-                    "id": i + 1,
-                    "question": f"Translate into English: '{hindi}'",
-                    "hindi_sentence": hindi,
-                    "options": opts,
-                    "correct_answer": english,
-                    "explanation": f"Mass Spoken Rule: सही अनुवाद '{english}' है।"
-                })
+                new_drills.append(self._create_drill(hindi, english))
+                new_quiz.append(self._create_quiz(i + 1, hindi, english, formula_text))
 
             return {"drills": new_drills, "quiz": new_quiz}
-        except Exception:
+        except Exception as e:
+            print(f"Error in generate_dynamic_drills: {e}")
             return {"drills": [], "quiz": []}
 
 

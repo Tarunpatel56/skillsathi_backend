@@ -85,11 +85,12 @@ class GroqService:
         temperature: float,
         max_tokens: int,
         response_format: dict | None = None,
+        model: str | None = None,
     ) -> str:
         """Synchronous Groq API call. Returns the model's text content."""
         self._refresh_client()
         kwargs = dict(
-            model=self.model,
+            model=model or self.model,
             messages=messages,
             temperature=temperature,
             max_tokens=max_tokens,
@@ -230,6 +231,7 @@ class GroqService:
         temperature: float | None = None,
         max_tokens: int | None = None,
         max_retries: int = 3,
+        model: str | None = None,
     ) -> dict | list:
         """
         Send a chat request and return a parsed JSON object or array.
@@ -266,6 +268,7 @@ class GroqService:
                 temperature=temp,
                 max_tokens=token_limit,
                 response_format={"type": "json_object"},
+                model=model,
             )
             if raw and raw.strip():
                 # JSON mode guarantees structure; _extract_json handles edge cases.
@@ -286,6 +289,7 @@ class GroqService:
                     messages=msgs,
                     temperature=temp,
                     max_tokens=token_limit,
+                    model=model,
                 )
                 result = self._extract_json(raw)
                 return result
