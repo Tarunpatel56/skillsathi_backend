@@ -159,16 +159,18 @@ Book Chapter Rules:
 Requirements:
 - Each sentence must strictly follow the chapter formulas and rules.
 - Sentences should be realistic daily-life spoken English (office, home, market, college).
-- Return a JSON array of objects:
-[
-  {{
-    "hindi": "हिंदी वाक्य",
-    "english": "Natural English translation following formula"
-  }}
-]
+- Return a JSON object with a "sentences" key containing the list:
+{{
+  "sentences": [
+    {{
+      "hindi": "हिंदी वाक्य",
+      "english": "Natural English translation following formula"
+    }}
+  ]
+}}
 """
         try:
-            items = await groq.chat_json("You are an expert bilingual Spoken English teacher creating exercises.", prompt)
+            items = await groq.chat_json("You are an expert bilingual Spoken English teacher creating exercises. Return a JSON object with a 'sentences' list.", prompt, max_tokens=800, temperature=0.7)
             if isinstance(items, dict):
                 items = items.get("sentences", items.get("data", items.get("examples", [])))
             if not isinstance(items, list):

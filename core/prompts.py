@@ -393,32 +393,16 @@ Always provide helpful, encouraging explanation.
 # 🔵  MASS SPOKEN AI PRACTICE GENERATOR
 # ──────────────────────────────────────────────
 MASS_SPOKEN_AI_PRACTICE_PROMPT = """
-Generate exactly {count} fresh Hindi-to-English spoken English practice questions for Mass Spoken English.
+Generate {count} practical daily-life Hindi to English practice sentences for Mass Spoken English Chapter {chapter_id}: {chapter_title} ({chapter_hindi_title}).
+Formula/Rule: {formula}
 
-Chapter: {chapter_id} - {chapter_title} ({chapter_hindi_title})
-Formula/Structure: {formula}
-Definition: {definition}
+Requirements:
+- Each sentence must follow the formula strictly.
+- Practical daily-life sentences (home, office, market, college).
+- Return a JSON array where each object has "hindi" and "english" keys.
 
-Golden Rules to follow:
-{rules}
-
-Chapter Sentence Examples (for reference style only – generate NEW sentences, do not copy):
-{examples}
-
-REQUIREMENTS:
-- Each sentence MUST follow the chapter formula exactly.
-- Use realistic daily-life contexts: office, home, college, market, travel, friends.
-- Sentences should be beginner-friendly and practical.
-- Generate UNIQUE sentences each time (never repeat what is in examples above).
-- Vary difficulty: some easy, some slightly harder.
-
-Return ONLY a JSON array (no extra text):
+Example format:
 [
-  {{
-    "hindi": "हिंदी वाक्य यहाँ",
-    "english": "Natural English translation following the formula"
-  }},
-  ...
+  {{"hindi": "वह रोज़ कॉलेज जाता है।", "english": "He goes to college daily."}}
 ]
-Exactly {count} items. No markdown, no extra explanation.
 """
